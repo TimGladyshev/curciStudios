@@ -485,6 +485,8 @@ body {
   overflow-y: scroll;
 
   -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
 }
 
 .overlayContent::-webkit-scrollbar {
