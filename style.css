@@ -55,20 +55,31 @@ body {
   /*background-image: url("img/texture/bernard-hermant-1nDW7BjBj1s-unsplash.jpg");
 
    */
-  background-image: url("img/texture/alex-loup-Md6_qA-BMis-unsplash.jpg");
+  background-image: url("img/texture/godrays/god-rays-png-8/god-rays-png-8-transparent.png")
+  , url("img/texture/alex-loup-Md6_qA-BMis-unsplash.jpg");
 }
 
 .li-last {
+  /* last element of caption */
   padding-bottom: 1rem;
 }
 
 .btn {
+  /* caption buttons */
   border-width: medium;
   color: white;
   border-radius: 0;
   box-shadow: .2rem .2rem 3rem rgba(0,0,0,.3)!important;
 }
 
+.captionIris {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  z-index: 5;
+}
+
+/*
 .caption {
   width: 50%;
   max-width: 50%;
@@ -83,13 +94,25 @@ body {
   , -.4rem -.4rem 5rem rgba(0,0,0,1)
   !important;
 }
+ */
+
+.caption {
+  position: relative;
+  top: 50%;
+  color: floralwhite;
+  text-shadow: .2rem .2rem 3rem rgba(0,0,0,1)
+  , -.2rem -.2rem 3rem rgba(0,0,0,1)
+  , .4rem .4rem 5rem rgba(0,0,0,1)
+  , -.4rem -.4rem 5rem rgba(0,0,0,1)
+  !important;
+}
 
 
 .rhombus {
   width: 20%;
   max-width: 20%;
-  position: absolute;
-  top: 44%;
+  position: relative;
+  top: 65%;
   left: 40%;
   z-index: 1;
   opacity: .7;
@@ -98,30 +121,34 @@ body {
 
 .ls {
   display: block;
-  width: 7%;
-  max-width: 7%;
+  width: 16%;
+  max-width: 16%;
   position: absolute;
   top: 30%;
-  left: 5%;
+  left: 24%;
   z-index: 1;
+  opacity: .5;
   transition: transform 200ms ease;
   transform-origin: bottom right;
-  opacity: .5;
+
+  -webkit-transform:rotate(10deg);
+  -moz-transform:rotate(10deg);
+  -o-transform:rotate(10deg);
 }
 
 .ls:hover {
   display: block;
-  width: 7%;
-  max-width: 7%;
+  width: 16%;
+  max-width: 16%;
   position: absolute;
   top: 30%;
-  left: 5%;
+  left: 24%;
   z-index: 1;
   opacity: .5;
 
-  -webkit-transform:rotate(30deg);
-  -moz-transform:rotate(30deg);
-  -o-transform:rotate(30deg);
+  -webkit-transform:rotate(40deg);
+  -moz-transform:rotate(40deg);
+  -o-transform:rotate(40deg);
   transition: transform 200ms ease;
   transform-origin: bottom right;
 
@@ -129,88 +156,94 @@ body {
 
 .ls-out {
   display: block;
-  width: 7%;
-  max-width: 7%;
+  width: 16%;
+  max-width: 16%;
   position: absolute;
   top: 30%;
-  left: 5%;
+  left: 24%;
   z-index: 1;
   opacity: .5;
 
-  -webkit-transform:rotate(30deg);
-  -moz-transform:rotate(30deg);
-  -o-transform:rotate(30deg);
+  -webkit-transform:rotate(40deg);
+  -moz-transform:rotate(40deg);
+  -o-transform:rotate(40deg);
   transition: transform 200ms ease;
   transform-origin: bottom right;
 
 }
 
 .lm {
-  width: 11%;
-  max-width: 11%;
+  display: block;
+
+  width: 20%;
+  max-width: 20%;
   position: absolute;
-  top: 27%;
-  left: 12%;
+  top: 19%;
+  left: 20%;
   z-index: 1;
   opacity: .5;
 
-  transition: transform 200ms ease;
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  -o-transform:rotate(5deg);
+
+  transition: transform 400ms ease;
   transform-origin: bottom right;
 }
 
 .lm-out {
-  width: 11%;
-  max-width: 11%;
+  width: 20%;
+  max-width: 20%;
   position: absolute;
-  top: 27%;
-  left: 12%;
+  top: 19%;
+  left: 20%;
   z-index: 1;
   opacity: .5;
 
-  -webkit-transform:rotate(30deg);
-  -moz-transform:rotate(30deg);
-  -o-transform:rotate(30deg);
+  -webkit-transform:rotate(35deg);
+  -moz-transform:rotate(35deg);
+  -o-transform:rotate(35deg);
 
-  transition: transform 200ms ease;
+  transition: transform 400ms ease;
   transform-origin: bottom right;
 }
 
 .lm:hover {
-  width: 11%;
-  max-width: 11%;
+  width: 20%;
+  max-width: 20%;
   position: absolute;
-  top: 27%;
-  left: 12%;
+  top: 19%;
+  left: 20%;
   z-index: 1;
   opacity: .5;
 
-  -webkit-transform:rotate(30deg);
-  -moz-transform:rotate(30deg);
-  -o-transform:rotate(30deg);
+  -webkit-transform:rotate(35deg);
+  -moz-transform:rotate(35deg);
+  -o-transform:rotate(35deg);
 
-  transition: transform 200ms ease;
+  transition: transform 400ms ease;
   transform-origin: bottom right;
 }
 
 .ll {
-  width: 17%;
-  max-width: 17%;
+  width: 25%;
+  max-width: 25%;
   position: absolute;
-  top: 23%;
-  left: 23%;
+  top: 5%;
+  left: 15%;
   z-index: 1;
   opacity: .5;
 
-  transition: transform 200ms ease;
+  transition: transform 600ms ease;
   transform-origin: bottom right;
 }
 
 .ll-out {
-  width: 17%;
-  max-width: 17%;
+  width: 25%;
+  max-width: 25%;
   position: absolute;
-  top: 23%;
-  left: 23%;
+  top: 5%;
+  left: 15%;
   z-index: 1;
   opacity: .5;
 
@@ -218,16 +251,16 @@ body {
   -moz-transform:rotate(30deg);
   -o-transform:rotate(30deg);
 
-  transition: transform 200ms ease;
+  transition: transform 600ms ease;
   transform-origin: bottom right;
 }
 
 .ll:hover {
-  width: 17%;
-  max-width: 17%;
+  width: 25%;
+  max-width: 25%;
   position: absolute;
-  top: 23%;
-  left: 23%;
+  top: 5%;
+  left: 15%;
   z-index: 1;
   opacity: .5;
 
@@ -235,123 +268,131 @@ body {
   -moz-transform:rotate(30deg);
   -o-transform:rotate(30deg);
 
-  transition: transform 200ms ease;
+  transition: transform 600ms ease;
   transform-origin: bottom right;
 }
 
 .rs {
-  width: 7%;
-  max-width: 7%;
+  width: 16%;
+  max-width: 16%;
   position: absolute;
   top: 30%;
-  right: 5%;
+  right: 24%;
   z-index: 1;
   opacity: .5;
+
+  -webkit-transform:rotate(-10deg);
+  -moz-transform:rotate(-10deg);
+  -o-transform:rotate(-10deg);
 
   transition: transform 200ms ease;
   transform-origin: bottom left;
 }
 
 .rs-out {
-  width: 7%;
-  max-width: 7%;
+  width: 16%;
+  max-width: 16%;
   position: absolute;
   top: 30%;
-  right: 5%;
+  right: 24%;
   z-index: 1;
   opacity: .5;
 
-  -webkit-transform:rotate(-30deg);
-  -moz-transform:rotate(-30deg);
-  -o-transform:rotate(-30deg);
+  -webkit-transform:rotate(-40deg);
+  -moz-transform:rotate(-40deg);
+  -o-transform:rotate(-40deg);
 
   transition: transform 200ms ease;
   transform-origin: bottom left;
 }
 
 .rs:hover {
-  width: 7%;
-  max-width: 7%;
+  width: 16%;
+  max-width: 16%;
   position: absolute;
   top: 30%;
-  right: 5%;
+  right: 24%;
   z-index: 1;
   opacity: .5;
 
-  -webkit-transform:rotate(-30deg);
-  -moz-transform:rotate(-30deg);
-  -o-transform:rotate(-30deg);
+  -webkit-transform:rotate(-40deg);
+  -moz-transform:rotate(-40deg);
+  -o-transform:rotate(-40deg);
 
   transition: transform 200ms ease;
   transform-origin: bottom left;
 }
 
 .rm {
-  width: 11%;
-  max-width: 11%;
+  width: 20%;
+  max-width: 20%;
   position: absolute;
-  top: 27%;
-  right: 12%;
+  top: 19%;
+  right: 20%;
   z-index: 1;
   opacity: .5;
 
-  transition: transform 200ms ease;
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+
+  transition: transform 400ms ease;
   transform-origin: bottom left;
 }
 
 .rm-out {
-  width: 11%;
-  max-width: 11%;
+  width: 20%;
+  max-width: 20%;
   position: absolute;
-  top: 27%;
-  right: 12%;
+  top: 19%;
+  right: 20%;
   z-index: 1;
   opacity: .5;
 
-  -webkit-transform:rotate(-30deg);
-  -moz-transform:rotate(-30deg);
-  -o-transform:rotate(-30deg);
+  -webkit-transform:rotate(-35deg);
+  -moz-transform:rotate(-35deg);
+  -o-transform:rotate(-35deg);
 
-  transition: transform 200ms ease;
+  transition: transform 400ms ease;
   transform-origin: bottom left;
 }
 
 .rm:hover {
-  width: 11%;
-  max-width: 11%;
+  width: 20%;
+  max-width: 20%;
   position: absolute;
-  top: 27%;
-  right: 12%;
+  top: 19%;
+  right: 20%;
   z-index: 1;
   opacity: .5;
 
-  -webkit-transform:rotate(-30deg);
-  -moz-transform:rotate(-30deg);
-  -o-transform:rotate(-30deg);
+  -webkit-transform:rotate(-35deg);
+  -moz-transform:rotate(-35deg);
+  -o-transform:rotate(-35deg);
 
-  transition: transform 200ms ease;
+  transition: transform 400ms ease;
   transform-origin: bottom left;
 }
 
 .rl {
-  width: 17%;
-  max-width: 17%;
+  width: 25%;
+  max-width: 25%;
   position: absolute;
-  top: 23%;
-  right: 23%;
+  top: 5%;
+  right: 15%;
   z-index: 1;
   opacity: .5;
 
-  transition: transform 200ms ease;
+  transition: transform 600ms ease;
   transform-origin: bottom left;
 }
 
 .rl-out {
-  width: 17%;
-  max-width: 17%;
+  width: 25%;
+  max-width: 25%;
   position: absolute;
-  top: 23%;
-  right: 23%;
+  top: 5%;
+  right: 15%;
   z-index: 1;
   opacity: .5;
 
@@ -359,16 +400,16 @@ body {
   -moz-transform:rotate(-30deg);
   -o-transform:rotate(-30deg);
 
-  transition: transform 200ms ease;
+  transition: transform 600ms ease;
   transform-origin: bottom left;
 }
 
 .rl:hover {
-  width: 17%;
-  max-width: 17%;
+  width: 25%;
+  max-width: 25%;
   position: absolute;
-  top: 23%;
-  right: 23%;
+  top: 5%;
+  right: 15%;
   z-index: 1;
   opacity: .5;
 
@@ -376,7 +417,7 @@ body {
   -moz-transform:rotate(-30deg);
   -o-transform:rotate(-30deg);
 
-  transition: transform 200ms ease;
+  transition: transform 600ms ease;
   transform-origin: bottom left;
 }
 
@@ -415,9 +456,10 @@ body {
 }
 
 #contact .row .contact-logo {
-  max-width: 25%;
+  max-width: 75%;
   z-index: 1;
-  opacity: .5;
+  opacity: .8;
+  padding-top: 2rem;
 }
 
 #contact .row .contact-qr {
