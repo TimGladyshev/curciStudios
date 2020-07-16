@@ -72,33 +72,22 @@ body {
   box-shadow: .2rem .2rem 3rem rgba(0,0,0,.3)!important;
 }
 
-.captionIris {
+
+.iris {
   position: absolute;
   width: 100%;
-  top: 30%;
-  z-index: 5;
+  top: 10%;
+  z-index: 1;
 }
 
-/*
+
 .caption {
   width: 50%;
   max-width: 50%;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 25%;
   z-index: 3;
-  color: floralwhite;
-  text-shadow: .2rem .2rem 3rem rgba(0,0,0,1)
-  , -.2rem -.2rem 3rem rgba(0,0,0,1)
-  , .4rem .4rem 5rem rgba(0,0,0,1)
-  , -.4rem -.4rem 5rem rgba(0,0,0,1)
-  !important;
-}
- */
-
-.caption {
-  position: relative;
-  top: 50%;
   color: floralwhite;
   text-shadow: .2rem .2rem 3rem rgba(0,0,0,1)
   , -.2rem -.2rem 3rem rgba(0,0,0,1)
@@ -109,15 +98,34 @@ body {
 
 
 .rhombus {
+  position: relative;
   width: 20%;
   max-width: 20%;
-  position: relative;
-  top: 65%;
   left: 40%;
   z-index: 1;
   opacity: .7;
+  transform-origin: top;
 
+
+  -webkit-transform: translateY(76%);
+  -moz-transform:translate(76%);
+  -o-transform:translate(76%);
 }
+
+.rhombus-out {
+  position: relative;
+  width: 20%;
+  max-width: 20%;
+  left: 40%;
+  z-index: 1;
+  opacity: .7;
+  transition: transform 800ms ease;
+
+  -webkit-transform: translateY(79%);
+  -moz-transform:translate(79%);
+  -o-transform:translate(79%);
+}
+
 
 .ls {
   display: block;
@@ -128,30 +136,12 @@ body {
   left: 24%;
   z-index: 1;
   opacity: .5;
-  transition: transform 200ms ease;
+  transition: transform 400ms ease;
   transform-origin: bottom right;
 
   -webkit-transform:rotate(10deg);
   -moz-transform:rotate(10deg);
   -o-transform:rotate(10deg);
-}
-
-.ls:hover {
-  display: block;
-  width: 16%;
-  max-width: 16%;
-  position: absolute;
-  top: 30%;
-  left: 24%;
-  z-index: 1;
-  opacity: .5;
-
-  -webkit-transform:rotate(40deg);
-  -moz-transform:rotate(40deg);
-  -o-transform:rotate(40deg);
-  transition: transform 200ms ease;
-  transform-origin: bottom right;
-
 }
 
 .ls-out {
@@ -187,7 +177,7 @@ body {
   -moz-transform:rotate(5deg);
   -o-transform:rotate(5deg);
 
-  transition: transform 400ms ease;
+  transition: transform 800ms ease;
   transform-origin: bottom right;
 }
 
@@ -204,24 +194,7 @@ body {
   -moz-transform:rotate(35deg);
   -o-transform:rotate(35deg);
 
-  transition: transform 400ms ease;
-  transform-origin: bottom right;
-}
-
-.lm:hover {
-  width: 20%;
-  max-width: 20%;
-  position: absolute;
-  top: 19%;
-  left: 20%;
-  z-index: 1;
-  opacity: .5;
-
-  -webkit-transform:rotate(35deg);
-  -moz-transform:rotate(35deg);
-  -o-transform:rotate(35deg);
-
-  transition: transform 400ms ease;
+  transition: transform 800ms ease;
   transform-origin: bottom right;
 }
 
@@ -234,7 +207,7 @@ body {
   z-index: 1;
   opacity: .5;
 
-  transition: transform 600ms ease;
+  transition: transform 1200ms ease;
   transform-origin: bottom right;
 }
 
@@ -251,24 +224,7 @@ body {
   -moz-transform:rotate(30deg);
   -o-transform:rotate(30deg);
 
-  transition: transform 600ms ease;
-  transform-origin: bottom right;
-}
-
-.ll:hover {
-  width: 25%;
-  max-width: 25%;
-  position: absolute;
-  top: 5%;
-  left: 15%;
-  z-index: 1;
-  opacity: .5;
-
-  -webkit-transform:rotate(30deg);
-  -moz-transform:rotate(30deg);
-  -o-transform:rotate(30deg);
-
-  transition: transform 600ms ease;
+  transition: transform 1200ms ease;
   transform-origin: bottom right;
 }
 
@@ -285,7 +241,7 @@ body {
   -moz-transform:rotate(-10deg);
   -o-transform:rotate(-10deg);
 
-  transition: transform 200ms ease;
+  transition: transform 400ms ease;
   transform-origin: bottom left;
 }
 
@@ -302,24 +258,7 @@ body {
   -moz-transform:rotate(-40deg);
   -o-transform:rotate(-40deg);
 
-  transition: transform 200ms ease;
-  transform-origin: bottom left;
-}
-
-.rs:hover {
-  width: 16%;
-  max-width: 16%;
-  position: absolute;
-  top: 30%;
-  right: 24%;
-  z-index: 1;
-  opacity: .5;
-
-  -webkit-transform:rotate(-40deg);
-  -moz-transform:rotate(-40deg);
-  -o-transform:rotate(-40deg);
-
-  transition: transform 200ms ease;
+  transition: transform 400ms ease;
   transform-origin: bottom left;
 }
 
@@ -336,7 +275,7 @@ body {
   -moz-transform:rotate(-5deg);
   -o-transform:rotate(-5deg);
 
-  transition: transform 400ms ease;
+  transition: transform 800ms ease;
   transform-origin: bottom left;
 }
 
@@ -353,24 +292,7 @@ body {
   -moz-transform:rotate(-35deg);
   -o-transform:rotate(-35deg);
 
-  transition: transform 400ms ease;
-  transform-origin: bottom left;
-}
-
-.rm:hover {
-  width: 20%;
-  max-width: 20%;
-  position: absolute;
-  top: 19%;
-  right: 20%;
-  z-index: 1;
-  opacity: .5;
-
-  -webkit-transform:rotate(-35deg);
-  -moz-transform:rotate(-35deg);
-  -o-transform:rotate(-35deg);
-
-  transition: transform 400ms ease;
+  transition: transform 800ms ease;
   transform-origin: bottom left;
 }
 
@@ -383,7 +305,7 @@ body {
   z-index: 1;
   opacity: .5;
 
-  transition: transform 600ms ease;
+  transition: transform 1200ms ease;
   transform-origin: bottom left;
 }
 
@@ -400,24 +322,7 @@ body {
   -moz-transform:rotate(-30deg);
   -o-transform:rotate(-30deg);
 
-  transition: transform 600ms ease;
-  transform-origin: bottom left;
-}
-
-.rl:hover {
-  width: 25%;
-  max-width: 25%;
-  position: absolute;
-  top: 5%;
-  right: 15%;
-  z-index: 1;
-  opacity: .5;
-
-  -webkit-transform:rotate(-30deg);
-  -moz-transform:rotate(-30deg);
-  -o-transform:rotate(-30deg);
-
-  transition: transform 600ms ease;
+  transition: transform 1200ms ease;
   transform-origin: bottom left;
 }
 
