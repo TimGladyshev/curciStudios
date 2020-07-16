@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
 
 body {
   overflow-x: hidden;
-  font-family: 'Quicksand', sans-serif;
+  /*font-family: 'Spartan', sans-serif;*/
+  font-family: 'Maven Pro', sans-serif;
+
   color: #505962;
 }
 
@@ -52,11 +55,7 @@ body {
 }
 
 .home-inner {
-  /*background-image: url("img/texture/bernard-hermant-1nDW7BjBj1s-unsplash.jpg");
-
-   */
-  background-image: url("img/texture/godrays/god-rays-png-8/god-rays-png-8-transparent.png")
-  , url("img/texture/alex-loup-Md6_qA-BMis-unsplash.jpg");
+  background-image: url("img/texture/alex-loup-Md6_qA-BMis-unsplash.jpg");
 }
 
 .li-last {
@@ -136,7 +135,7 @@ body {
   left: 24%;
   z-index: 1;
   opacity: .5;
-  transition: transform 400ms ease;
+  transition: transform 600ms ease;
   transform-origin: bottom right;
 
   -webkit-transform:rotate(10deg);
@@ -157,7 +156,7 @@ body {
   -webkit-transform:rotate(40deg);
   -moz-transform:rotate(40deg);
   -o-transform:rotate(40deg);
-  transition: transform 200ms ease;
+  transition: transform 600ms ease;
   transform-origin: bottom right;
 
 }
@@ -241,7 +240,7 @@ body {
   -moz-transform:rotate(-10deg);
   -o-transform:rotate(-10deg);
 
-  transition: transform 400ms ease;
+  transition: transform 600ms ease;
   transform-origin: bottom left;
 }
 
@@ -258,7 +257,7 @@ body {
   -moz-transform:rotate(-40deg);
   -o-transform:rotate(-40deg);
 
-  transition: transform 400ms ease;
+  transition: transform 600ms ease;
   transform-origin: bottom left;
 }
 
@@ -326,7 +325,7 @@ body {
   transform-origin: bottom left;
 }
 
-
+/* hover effects! ---------------------------------------------------------------------- */
 .hvr-grow-shadow {
   display: inline-block;
   vertical-align: middle;
@@ -360,6 +359,27 @@ body {
   transform: scale(1.1);
 }
 
+.hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+.carousel-item {
+  height: 82vh;
+}
+
 #contact .row .contact-logo {
   max-width: 75%;
   z-index: 1;
@@ -370,6 +390,11 @@ body {
 #contact .row .contact-qr {
   max-width: 50%;
   z-index: 1;
+}
+
+.carousel-indicators {
+  position: relative;
+  top: 1rem;
 }
 
 .carousel-indicators li {
