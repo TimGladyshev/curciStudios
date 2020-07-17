@@ -40,11 +40,12 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-  color: #660080;
+  /*color: #660080;*/
+  color: #fCCD04;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #8800AA;
+  color: #802BB1;
 }
 
 .offset-bar:before {
@@ -55,7 +56,9 @@ body {
 }
 
 .home-inner {
-  background-image: url("img/texture/alex-loup-Md6_qA-BMis-unsplash.jpg");
+  /*background-image: url("img/texture/alex-loup-Md6_qA-BMis-unsplash.jpg");*/
+  /*background-image: url("img/texture/pawel-czerwinski-APVgVX_yDDc-unsplash.jpg");*/
+  background-image: url("img/texture/cropped-pawel-czerwinski-APVgVX_yDDc-unsplash.jpg");
 }
 
 .li-last {
@@ -105,10 +108,12 @@ body {
   opacity: .7;
   transform-origin: top;
 
+  transition: transform 800ms ease;
 
-  -webkit-transform: translateY(76%);
-  -moz-transform:translate(76%);
-  -o-transform:translate(76%);
+
+  -webkit-transform: translateY(60%);
+  -moz-transform:translate(60%);
+  -o-transform:translate(60%);
 }
 
 .rhombus-out {
@@ -120,9 +125,9 @@ body {
   opacity: .7;
   transition: transform 800ms ease;
 
-  -webkit-transform: translateY(79%);
-  -moz-transform:translate(79%);
-  -o-transform:translate(79%);
+  -webkit-transform: translateY(65%);
+  -moz-transform:translate(65%);
+  -o-transform:translate(65%);
 }
 
 
@@ -131,8 +136,8 @@ body {
   width: 16%;
   max-width: 16%;
   position: absolute;
-  top: 30%;
-  left: 24%;
+  top: 25%;
+  left: 29%;
   z-index: 1;
   opacity: .5;
   transition: transform 600ms ease;
@@ -148,8 +153,8 @@ body {
   width: 16%;
   max-width: 16%;
   position: absolute;
-  top: 30%;
-  left: 24%;
+  top: 25%;
+  left: 29%;
   z-index: 1;
   opacity: .5;
 
@@ -167,8 +172,8 @@ body {
   width: 20%;
   max-width: 20%;
   position: absolute;
-  top: 19%;
-  left: 20%;
+  top: 16%;
+  left: 25%;
   z-index: 1;
   opacity: .5;
 
@@ -184,8 +189,8 @@ body {
   width: 20%;
   max-width: 20%;
   position: absolute;
-  top: 19%;
-  left: 20%;
+  top: 16%;
+  left: 25%;
   z-index: 1;
   opacity: .5;
 
@@ -202,7 +207,7 @@ body {
   max-width: 25%;
   position: absolute;
   top: 5%;
-  left: 15%;
+  left: 20%;
   z-index: 1;
   opacity: .5;
 
@@ -215,7 +220,7 @@ body {
   max-width: 25%;
   position: absolute;
   top: 5%;
-  left: 15%;
+  left: 20%;
   z-index: 1;
   opacity: .5;
 
@@ -231,8 +236,8 @@ body {
   width: 16%;
   max-width: 16%;
   position: absolute;
-  top: 30%;
-  right: 24%;
+  top: 25%;
+  right: 29%;
   z-index: 1;
   opacity: .5;
 
@@ -248,8 +253,8 @@ body {
   width: 16%;
   max-width: 16%;
   position: absolute;
-  top: 30%;
-  right: 24%;
+  top: 25%;
+  right: 29%;
   z-index: 1;
   opacity: .5;
 
@@ -265,8 +270,8 @@ body {
   width: 20%;
   max-width: 20%;
   position: absolute;
-  top: 19%;
-  right: 20%;
+  top: 16%;
+  right: 25%;
   z-index: 1;
   opacity: .5;
 
@@ -282,8 +287,8 @@ body {
   width: 20%;
   max-width: 20%;
   position: absolute;
-  top: 19%;
-  right: 20%;
+  top: 16%;
+  right: 25%;
   z-index: 1;
   opacity: .5;
 
@@ -300,7 +305,7 @@ body {
   max-width: 25%;
   position: absolute;
   top: 5%;
-  right: 15%;
+  right: 20%;
   z-index: 1;
   opacity: .5;
 
@@ -313,7 +318,7 @@ body {
   max-width: 25%;
   position: absolute;
   top: 5%;
-  right: 15%;
+  right: 20%;
   z-index: 1;
   opacity: .5;
 
@@ -394,7 +399,7 @@ body {
 
 .carousel-indicators {
   position: relative;
-  top: 1rem;
+  top: .8rem;
 }
 
 .carousel-indicators li {
@@ -402,7 +407,7 @@ body {
 }
 
 .carousel-indicators .active {
-  background-color: #8800AA;
+  background-color: #fCCD04;
 }
 
 .controls-top {
@@ -530,7 +535,7 @@ body {
 }
 
 #contact .fixed {
-  background-image: url("img/texture/pawel-czerwinski-65PXDFYkSGg-unsplash.jpg");
+  background-image: url("img/texture/shapelined-_JBKdviweXI-unsplash.jpg");
 }
 
 #wind .fixed {
