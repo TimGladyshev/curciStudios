@@ -147,8 +147,8 @@ body {
 
 
   -webkit-transform: translateY(60%);
-  -moz-transform:translate(60%);
-  -o-transform:translate(60%);
+  -moz-transform:translateY(60%);
+  -o-transform:translateY(60%);
 }
 
 .rhombus-out {
@@ -161,8 +161,8 @@ body {
   transition: transform 800ms ease;
 
   -webkit-transform: translateY(65%);
-  -moz-transform:translate(65%);
-  -o-transform:translate(65%);
+  -moz-transform:translateY(65%);
+  -o-transform:translateY(65%);
 }
 
 
