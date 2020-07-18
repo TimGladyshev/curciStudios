@@ -1,3 +1,4 @@
+/* Petal movement on caption hover*/
 let captionText = document.getElementsByClassName('caption')[0];
 
 captionText.addEventListener('mouseover', function (e) {
@@ -9,8 +10,6 @@ captionText.addEventListener('mouseover', function (e) {
   let rmp = document.getElementsByClassName('rm')[0];
   let rlp = document.getElementsByClassName('rl')[0];
   let rhombus = document.getElementsByClassName('rhombus')[0];
-
-  console.log(lsp);
 
   lsp.classList.remove('ls');
   lsp.classList.add('ls-out');

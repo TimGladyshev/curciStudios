@@ -32,23 +32,92 @@
         <li class="nav-item">
           <a class="nav-link" href="#home">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item drop-down-button ">
           <a class="nav-link" href="#solar">Solar</a>
+          <div class="drop-down-content finder">
+            <!--- Href doesnt work here bc of data-target, but is ness. to appear as a link --->
+            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="0"
+               onclick="moveTo('solar')">Amarylis</a>
+            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="1"
+               onclick="moveTo('solar')">Iris</a>
+            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="2"
+               onclick="moveTo('solar')">Morning Glories</a>
+            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="3"
+               onclick="moveTo('solar')">Morning Glories 2</a>
+            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="4"
+               onclick="moveTo('solar')">Noonstone</a>
+            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="5"
+               onclick="moveTo('solar')">Sun Birds</a>
+            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="6"
+               onclick="moveTo('solar')">Sunflower</a>
+            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="7"
+               onclick="moveTo('solar')">Sisyphus</a>
+            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="8"
+               onclick="moveTo('solar')">Greenfield Clock</a>
+            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="9"
+               onclick="moveTo('solar')">Tulips</a>
+          </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item drop-down-button">
           <a class="nav-link" href="#wind">Wind</a>
+          <div class="drop-down-content finder">
+            <a href="#wind" data-target="#wcarousel-with-lb" data-slide-to="0"
+               onclick="moveTo('wind')">He Said She Said</a>
+            <a href="#wind" data-target="#wcarousel-with-lb" data-slide-to="1"
+               onclick="moveTo('wind')">Journey To The Planets</a>
+            <a href="#wind" data-target="#wcarousel-with-lb" data-slide-to="2"
+               onclick="moveTo('wind')">Wind Can Take You Anywhere</a>
+          </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item drop-down-button">
           <a class="nav-link" href="#animametric">Animametric</a>
+          <div class="drop-down-content finder">
+            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="0"
+               onclick="moveTo('animametric')">Lift Off</a>
+            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="1"
+               onclick="moveTo('animametric')">Peacock</a>
+            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="2"
+               onclick="moveTo('animametric')">The Dance</a>
+            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="3"
+               onclick="moveTo('animametric')">Sundance</a>
+          </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item drop-down-button">
           <a class="nav-link" href="#restoration">Restoration</a>
+          <div class="drop-down-content finder">
+            <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="0"
+               onclick="moveTo('restoration')">Alexander Calder's Octopus</a>
+            <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="1"
+               onclick="moveTo('restoration')">Elsworth Kelly, Arcs</a>
+            <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="2"
+               onclick="moveTo('restoration')">Louise Nevelson</a>
+            <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="3"
+               onclick="moveTo('restoration')">Shingu</a>
+          </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item drop-down-button">
           <a class="nav-link" href="#freshpaint">Fresh Paint</a>
+          <div class="drop-down-content finder">
+            <a href="#freshpaint" data-target="#fpcarousel-with-lb" data-slide-to="0"
+               onclick="moveTo('freshpaint')">Memorial Curch Bell at Harvard University</a>
+            <a href="#freshpaint" data-target="#fpcarousel-with-lb" data-slide-to="1"
+               onclick="moveTo('freshpaint')">Merrimac Poem Wheel</a>
+            <a href="#freshpaint" data-target="#fpcarousel-with-lb" data-slide-to="2"
+               onclick="moveTo('freshpaint')">Bust of Lowell at Harvard University</a>
+            <a href="#freshpaint" data-target="#fpcarousel-with-lb" data-slide-to="3"
+               onclick="moveTo('freshpaint')">Dunster House Sundial</a>
+          </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item drop-down-button">
           <a class="nav-link" href="#other">Few Other Things</a>
+          <div class="drop-down-content finder">
+            <a href="#other" data-target="#focarousel-with-lb" data-slide-to="1"
+               onclick="moveTo('other')">Greenfeild Sign</a>
+            <a href="#other" data-target="#focarousel-with-lb" data-slide-to="2"
+               onclick="moveTo('other')">Sengenuity Sign</a>
+            <a href="#other" data-target="#focarousel-with-lb" data-slide-to="3"
+               onclick="moveTo('other')">Portraits</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
@@ -78,15 +147,16 @@
   </div>
   <!---End Landing Page--->
 
-    <div class="caption col-md-6 hvr-underline-reveal text-center">
-      <h1>Curci Studio</h1>
-      <h4>Multidisciplinary Design and Fabrication</h4>
+  <div class="caption col-md-6 hvr-underline-reveal text-center">
+    <h1>Curci Studio</h1>
+    <h4>Multidisciplinary Design and Fabrication</h4>
+    <strong>
       <li>Works of art for individuals and public spaces</li>
       <li class="li-last">Restoration projects of significant artworks</li>
-
-      <a class="btn btn-outline-light btn-lg" href="#solar">Designs</a>
-      <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
-    </div>
+    </strong>
+    <a class="btn btn-outline-light btn-lg" href="#solar">Designs</a>
+    <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
+  </div>
 
 </div>
 <!---End home--->
@@ -149,50 +219,50 @@
           <div id="smdb-lightbox-ui"></div>
 
           <!--First slide-->
-          <div class="Amarylis carousel-item active text-center">
+          <div class="Amarylis solarSlide carousel-item active text-center">
             <figure class="col-md-12 row d-md-inline-block text-center">
 
-                <img src="img/Solar/Amarylis%20O&C%20Northend.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>Amarylis</h3>
-                    <br>
-                    A solar powered sculpture © 1996 by Gregory Curci located in Cambridge
-                    Massachusetts
-                    <br>
-                    <br>
-                    Solar cells, fiber glass, stainless steel, aluminum, motor, 14 ft. tall, 5 ft
-                    deep, 5 ft wide
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Solar/Amarylis%20O&C%20Northend.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Amarylis</h3>
+                  <br>
+                  A solar powered sculpture © 1996 by Gregory Curci located in Cambridge
+                  Massachusetts
+                  <br>
+                  <br>
+                  Solar cells, fiber glass, stainless steel, aluminum, motor, 14 ft. tall, 5 ft
+                  deep, 5 ft wide
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
           <!--/.First slide-->
 
           <!--Second slide-->
-          <div class="Iris carousel-item text-center">
+          <div class="Iris solarSlide carousel-item text-center">
             <figure class="col-md-12 d-md-inline-block">
 
-                <img src="img/Solar/Iris%20open%20closed%20dpi%20150.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>Iris</h3>
-                    A solar powered sculpture © 2000 by Gregory Curci; collection of the artist
-                    <br>
-                    <br>
-                    IRIS (closed/open) solar cells, motor, painted aluminum, stainless steel; This
-                    flower blossom sculpture opens and closes throughout the day on about a two
-                    minute cycle, faster when sunny, slower when cloudy, and stopping in the
-                    evening. 10 ft. high, 18 in. wide, 18 in. deep;
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Solar/Iris%20open%20closed%20dpi%20150.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Iris</h3>
+                  A solar powered sculpture © 2000 by Gregory Curci; collection of the artist
+                  <br>
+                  <br>
+                  IRIS (closed/open) solar cells, motor, painted aluminum, stainless steel; This
+                  flower blossom sculpture opens and closes throughout the day on about a two
+                  minute cycle, faster when sunny, slower when cloudy, and stopping in the
+                  evening. 10 ft. high, 18 in. wide, 18 in. deep;
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
@@ -202,25 +272,25 @@
           <div class="mg carousel-item text-center">
             <figure class="col-md-12 d-md-inline-block">
 
-                <img src="img/Solar/morning%20glories%20150dpi.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>Morning Glories</h3>
-                    ©1997; Collection of Artist.
-                    <br>
-                    The brightly colored blossoms open and close on about a two minute cycle,
-                    powered by the sun. The sculpture was created for an exhibit with Environmental
-                    Arts, a Boston base artist group, at the Fuller Museum of Art, Brockton, MA;
-                    solar cells, motor, metals, plastic; 15 ft. high, 15 ft. wide, 6 ft. deep
-                    (varies with installation)
-                    <br>
-                    <br>
-                    Solar cells, metal, plastic, motor
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Solar/morning%20glories%20150dpi.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Morning Glories</h3>
+                  ©1997; Collection of Artist.
+                  <br>
+                  The brightly colored blossoms open and close on about a two minute cycle,
+                  powered by the sun. The sculpture was created for an exhibit with Environmental
+                  Arts, a Boston base artist group, at the Fuller Museum of Art, Brockton, MA;
+                  solar cells, motor, metals, plastic; 15 ft. high, 15 ft. wide, 6 ft. deep
+                  (varies with installation)
+                  <br>
+                  <br>
+                  Solar cells, metal, plastic, motor
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
@@ -240,14 +310,14 @@
             </div>
             <figure class="col-md-5 d-md-inline-block">
 
-                <img src="img/Solar/morning%20Glories.jpg"
-                     class="img-fluid">
+              <img src="img/Solar/morning%20Glories.jpg"
+                   class="img-fluid">
 
             </figure>
 
             <figure class="col-md-5 d-md-inline-block">
 
-                <img src="img/Solar/Morning%20Glories%20tight.jpg" class="img-fluid">
+              <img src="img/Solar/Morning%20Glories%20tight.jpg" class="img-fluid">
 
             </figure>
           </div>
@@ -257,25 +327,25 @@
           <div class="ns carousel-item text-center">
             <figure class="col-md-12 d-md-inline-block">
 
-                <img src="img/Solar/noonstone%20150dpi.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>Noonstone</h3>
-                    ©1999; Collection of Artist.
-                    <br>
-                    This sculpture is a simple kind of “day” clock. At noon the angle of the sun is
-                    such that it shines on the sculpture and the boulder begins to rise and fall on
-                    about a fifteen-minute cycle, stopping as the sun sets. The cycle begins again
-                    the next day. The sculpture was created for an exhibit with Environmental Arts,
-                    a Boston base artist group, at the Fuller Museum of Art, Brockton, MA
-                    <br>
-                    <br>
-                    solar cells, motor, steel, natural boulder; 12 ft high, 4 ft wide, 4 ft deep.
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Solar/noonstone%20150dpi.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Noonstone</h3>
+                  ©1999; Collection of Artist.
+                  <br>
+                  This sculpture is a simple kind of “day” clock. At noon the angle of the sun is
+                  such that it shines on the sculpture and the boulder begins to rise and fall on
+                  about a fifteen-minute cycle, stopping as the sun sets. The cycle begins again
+                  the next day. The sculpture was created for an exhibit with Environmental Arts,
+                  a Boston base artist group, at the Fuller Museum of Art, Brockton, MA
+                  <br>
+                  <br>
+                  solar cells, motor, steel, natural boulder; 12 ft high, 4 ft wide, 4 ft deep.
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
@@ -303,8 +373,8 @@
             </div>
             <figure class="col-md-5 d-md-inline-block">
 
-                <img src="img/Solar/Sunbirds%200330%20web%20site150.jpg"
-                     class="img-fluid">
+              <img src="img/Solar/Sunbirds%200330%20web%20site150.jpg"
+                   class="img-fluid">
 
             </figure>
             <!---
@@ -325,21 +395,21 @@
           <div class="sf carousel-item text-center">
             <figure class="col-md-12 d-md-inline-block">
 
-                <img src="img/Solar/Sunflower%20150dpi%20web.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>Sunflower</h3>
-                    A solar powered sculpture, third in a series of three ©2007 by Gregory Curci,
-                    Collection of the artist, (1&2 are in Private Collections)
-                    <br>
-                    <br>
-                    Solar cells, aluminum, stainless steel, motor,approximately 11 feet tall, 3 feet
-                    deep, 3 feet wide
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Solar/Sunflower%20150dpi%20web.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Sunflower</h3>
+                  A solar powered sculpture, third in a series of three ©2007 by Gregory Curci,
+                  Collection of the artist, (1&2 are in Private Collections)
+                  <br>
+                  <br>
+                  Solar cells, aluminum, stainless steel, motor,approximately 11 feet tall, 3 feet
+                  deep, 3 feet wide
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
@@ -349,22 +419,22 @@
           <div class="sys carousel-item text-center">
             <figure class="col-md-12 d-md-inline-block">
 
-                <img src="img/Solar/Sysiphis%20150dpi.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>Sisyphus</h3>
-                    ©1999; collection of the artist
-                    <br>
-                    <br>
-                    As the sun shines, Sisyphus pushes the ball up to the top of the ramp, where
-                    upon it rolls down the other side, and he must come around to the other side and
-                    do it over again. Steel, aluminum, solar panels, titanium figures; 7in. high,
-                    60in. wide, 30in deep.
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Solar/Sysiphis%20150dpi.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Sisyphus</h3>
+                  ©1999; collection of the artist
+                  <br>
+                  <br>
+                  As the sun shines, Sisyphus pushes the ball up to the top of the ramp, where
+                  upon it rolls down the other side, and he must come around to the other side and
+                  do it over again. Steel, aluminum, solar panels, titanium figures; 7in. high,
+                  60in. wide, 30in deep.
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
@@ -374,25 +444,25 @@
           <div class="gc carousel-item text-center">
             <figure class="col-md-12 d-md-inline-block">
 
-                <img src="img/Solar/Greenfield%20Clock%20150dpi%20.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>Greenfield Clock</h3>
-                    A solar powered sculpture © 2001 by Gregory Curci
-                    <br>
-                    Commissioned by North East Sustainable Energy Association, Greenfield Ma,
-                    donated to Town of Greenfield MA. It is located at the site of an old train
-                    station. The folk art train has twelve historic figures, selected by the
-                    community, in the passenger cars. At one o’clock the first one sits up in front
-                    of a window in the passenger car, at two a second, and so on until twelve fifty
-                    nine when they all lay down and the cycle begins again. The sculpture is solar
-                    powered. Steel, mixed media, solar powered clock mechanism. 14 ft. high, 1 ft.
-                    deep, 14 ft. wide.
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Solar/Greenfield%20Clock%20150dpi%20.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Greenfield Clock</h3>
+                  A solar powered sculpture © 2001 by Gregory Curci
+                  <br>
+                  Commissioned by North East Sustainable Energy Association, Greenfield Ma,
+                  donated to Town of Greenfield MA. It is located at the site of an old train
+                  station. The folk art train has twelve historic figures, selected by the
+                  community, in the passenger cars. At one o’clock the first one sits up in front
+                  of a window in the passenger car, at two a second, and so on until twelve fifty
+                  nine when they all lay down and the cycle begins again. The sculpture is solar
+                  powered. Steel, mixed media, solar powered clock mechanism. 14 ft. high, 1 ft.
+                  deep, 14 ft. wide.
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
@@ -402,22 +472,22 @@
           <div class="tulips carousel-item text-center">
             <figure class="col-md-12 d-md-inline-block">
 
-                <img src="img/Solar/Tulips%204%20up150%20.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>Tulips</h3>
-                    © 1983 by GREGORY CURCI
-                    <br>
-                    This was the first sculpture in my Solar Flower series. It is an indoor
-                    sculpture designed to be placed in a sunny window. It slowly opens and closes,
-                    and is constantly changing through out the day. The cycle is about 25 minutes,
-                    so the changes are slow and not dramatic. 23 in tall, 12 in wide, 12 in deep,
-                    solar cells, motor, metal, plastic.
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Solar/Tulips%204%20up150%20.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Tulips</h3>
+                  © 1983 by GREGORY CURCI
+                  <br>
+                  This was the first sculpture in my Solar Flower series. It is an indoor
+                  sculpture designed to be placed in a sunny window. It slowly opens and closes,
+                  and is constantly changing through out the day. The cycle is about 25 minutes,
+                  so the changes are slow and not dramatic. 23 in tall, 12 in wide, 12 in deep,
+                  solar cells, motor, metal, plastic.
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
@@ -440,38 +510,38 @@
 
   <div class="fixed-background">
 
-  <div class="row text-center">
+    <div class="row text-center">
 
 
-    <div class="col-md-6 order-sm-last order-xs-last order-md-first">
-      <!--Carousel Wrapper-->
-      <div id="wcarousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
+      <div class="col-md-6 order-sm-last order-xs-last order-md-first">
+        <!--Carousel Wrapper-->
+        <div id="wcarousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-        <!--Controls-->
-        <div class="controls-top">
-          <a class="btn-floating btn-secondary" href="#wcarousel-with-lb" data-slide="prev"><i
-              class="material-icons">chevron_left</i></a>
-          <a class="btn-floating btn-secondary" href="#wcarousel-with-lb" data-slide="next"><i
-              class="material-icons">chevron_right</i></a>
-        </div>
-        <!--/.Controls-->
+          <!--Controls-->
+          <div class="controls-top">
+            <a class="btn-floating btn-secondary" href="#wcarousel-with-lb" data-slide="prev"><i
+                class="material-icons">chevron_left</i></a>
+            <a class="btn-floating btn-secondary" href="#wcarousel-with-lb" data-slide="next"><i
+                class="material-icons">chevron_right</i></a>
+          </div>
+          <!--/.Controls-->
 
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-          <li data-target="#wcarousel-with-lb" data-slide-to="0" class="active"></li>
-          <li data-target="#wcarousel-with-lb" data-slide-to="1"></li>
-          <li data-target="#wcarousel-with-lb" data-slide-to="2"></li>
-        </ol>
-        <!--/.Indicators-->
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#wcarousel-with-lb" data-slide-to="0" class="active"></li>
+            <li data-target="#wcarousel-with-lb" data-slide-to="1"></li>
+            <li data-target="#wcarousel-with-lb" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
 
-        <!--Slides and lightbox-->
+          <!--Slides and lightbox-->
 
-        <div class="carousel-inner mdb-lightbox" role="listbox">
-          <div id="wmdb-lightbox-ui"></div>
+          <div class="carousel-inner mdb-lightbox" role="listbox">
+            <div id="wmdb-lightbox-ui"></div>
 
-          <!--First slide-->
-          <div class="hsss carousel-item active text-center">
-            <figure class="col-md-12 d-md-inline-block">
+            <!--First slide-->
+            <div class="hsss carousel-item active text-center">
+              <figure class="col-md-12 d-md-inline-block">
 
                 <img src="img/Wind/He%20Said%20She%20Said.jpg"
                      class="img-fluid">
@@ -488,13 +558,13 @@
                   </div>
                 </div>
 
-            </figure>
-          </div>
-          <!--/.First slide-->
+              </figure>
+            </div>
+            <!--/.First slide-->
 
-          <!---Second Slide--->
-          <div class="jttp carousel-item text-center">
-            <figure class="col-md-12 d-md-inline-block">
+            <!---Second Slide--->
+            <div class="jttp carousel-item text-center">
+              <figure class="col-md-12 d-md-inline-block">
 
                 <img src="img/Wind/Journey%20To%20The%20Planets%20150dpi.jpg"
                      class="img-fluid">
@@ -511,13 +581,13 @@
                   </div>
                 </div>
 
-            </figure>
-          </div>
-          <!---Second Slide--->
+              </figure>
+            </div>
+            <!---Second Slide--->
 
-          <!---Third Slide--->
-          <div class="wctya carousel-item text-center">
-            <figure class="col-md-12 d-md-inline-block">
+            <!---Third Slide--->
+            <div class="wctya carousel-item text-center">
+              <figure class="col-md-12 d-md-inline-block">
 
                 <img src="img/Wind/Any%20Way%20the%20Wind%20Blows.jpg"
                      class="img-fluid">
@@ -534,35 +604,37 @@
                   </div>
                 </div>
 
-            </figure>
+              </figure>
+            </div>
+            <!---Third Slide--->
+
           </div>
-          <!---Third Slide--->
+          <!--Slides-->
 
         </div>
-        <!--Slides-->
-
+        <!--Carousel Wrapper-->
       </div>
-      <!--Carousel Wrapper-->
+      <!---column--->
+
+
+      <div class="col-md-6 order-sm-first order-xs-first order-md-last">
+        <div class="content">
+          <h3 class="mainName">Wind Sculptures</h3>
+          <div class="mainIcon">
+            <i class="material-icons">toys</i>
+          </div>
+          <p class="mainBlurb">
+            The wind is one of the earths most universal natural forces. It is both soothing and
+            powerful, and moves many of my sculptures. From milling grain to flying a kite, mankind
+            has
+            found many wonderful uses for the wind. My wind powered sculptures are meant to reflect
+            the
+            energy and excitement of the wind, and as such are lively and colorful.
+          </p>
+        </div>
+      </div>
+
     </div>
-    <!---column--->
-
-
-    <div class="col-md-6 order-sm-first order-xs-first order-md-last">
-      <div class="content">
-      <h3 class="mainName">Wind Sculptures</h3>
-      <div class="mainIcon">
-        <i class="material-icons">toys</i>
-      </div>
-      <p class="mainBlurb">
-        The wind is one of the earths most universal natural forces. It is both soothing and
-        powerful, and moves many of my sculptures. From milling grain to flying a kite, mankind has
-        found many wonderful uses for the wind. My wind powered sculptures are meant to reflect the
-        energy and excitement of the wind, and as such are lively and colorful.
-      </p>
-      </div>
-    </div>
-
-  </div>
 
     <div class="fixed-wrap">
       <div class="fixed">
@@ -649,20 +721,20 @@
           <div class="lo carousel-item active text-center">
             <figure class="col-md-12 d-md-inline-block">
 
-                <img src="img/Animametric/Lift%20off.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>Lift Off</h3>
-                    <br>
-                    sculpture ©1993 by Gregory Curci, Collection of the Artist
-                    <br>
-                    <br>
-                    cast bronze, slate, 6”w 6”d 12”h
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Animametric/Lift%20off.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Lift Off</h3>
+                  <br>
+                  sculpture ©1993 by Gregory Curci, Collection of the Artist
+                  <br>
+                  <br>
+                  cast bronze, slate, 6”w 6”d 12”h
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
@@ -672,23 +744,23 @@
           <div class="pc carousel-item text-center">
             <figure class="col-md-12 d-md-inline-block">
 
-                <img src="img/Animametric/Peacock.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>Peacock</h3>
-                    <br>
-                    Sculpture ©1983 by Gregory Curci in Private Collection
-                    <br>
-                    Appears in art history text book, Art in Your World (page 53) by Gerald F.
-                    Brommer and George F. Horn
-                    <br>
-                    <br>
-                    Painted aluminum, mahogany, 48”w, 18”d, 34”h
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Animametric/Peacock.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Peacock</h3>
+                  <br>
+                  Sculpture ©1983 by Gregory Curci in Private Collection
+                  <br>
+                  Appears in art history text book, Art in Your World (page 53) by Gerald F.
+                  Brommer and George F. Horn
+                  <br>
+                  <br>
+                  Painted aluminum, mahogany, 48”w, 18”d, 34”h
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
@@ -698,20 +770,20 @@
           <div class="td carousel-item text-center">
             <figure class="col-md-12 d-md-inline-block">
 
-                <img src="img/Animametric/The%20Dance.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>The Dance</h3>
-                    <br>
-                    Sculpture © 1997 by Gregory Curci, Collection of the Artist
-                    <br>
-                    <br>
-                    Painted aluminum, 22”w, 22”d, 32”h
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Animametric/The%20Dance.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>The Dance</h3>
+                  <br>
+                  Sculpture © 1997 by Gregory Curci, Collection of the Artist
+                  <br>
+                  <br>
+                  Painted aluminum, 22”w, 22”d, 32”h
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
@@ -721,20 +793,20 @@
           <div class="sd carousel-item text-center">
             <figure class="col-md-12 d-md-inline-block">
 
-                <img src="img/Animametric/Sundance%201997.jpg"
-                     class="img-fluid">
-                <div class="overlay img-fluid">
-                  <div class="overlayContent">
-                    <h3>Sunance</h3>
-                    <br>
-                    Sculpture © 1997 by Gregory Curci in Private Collection
-                    <br>
-                    <br>
-                    Painted aluminum, 44”h, 24”dia
-                    <br>
-                    <br>
-                  </div>
+              <img src="img/Animametric/Sundance%201997.jpg"
+                   class="img-fluid">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Sunance</h3>
+                  <br>
+                  Sculpture © 1997 by Gregory Curci in Private Collection
+                  <br>
+                  <br>
+                  Painted aluminum, 44”h, 24”dia
+                  <br>
+                  <br>
                 </div>
+              </div>
 
             </figure>
           </div>
@@ -757,38 +829,41 @@
 <!---Start restoration landing--->
 <div id="restoration" class="offset-bar">
 
-  <div class="row text-center">
+  <div class="fixed-background">
+    <div class="row text-center">
 
-    <div class="col-md-6">
-      <!--Carousel Wrapper-->
-      <div id="rcarousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
+      <div class="col-md-6">
 
-        <!--Controls-->
-        <div class="controls-top">
-          <a class="btn-floating btn-secondary" href="#rcarousel-with-lb" data-slide="prev"><i
-              class="material-icons">chevron_left</i></a>
-          <a class="btn-floating btn-secondary" href="#rcarousel-with-lb" data-slide="next"><i
-              class="material-icons">chevron_right</i></a>
-        </div>
-        <!--/.Controls-->
+        <!--- Main Carousel --->
+        <!--Carousel Wrapper-->
+        <div id="rcarousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-          <li data-target="#rcarousel-with-lb" data-slide-to="0" class="active"></li>
-          <li data-target="#rcarousel-with-lb" data-slide-to="1"></li>
-          <li data-target="#rcarousel-with-lb" data-slide-to="2"></li>
-          <li data-target="#rcarousel-with-lb" data-slide-to="3"></li>
-        </ol>
-        <!--/.Indicators-->
+          <!--Controls-->
+          <div class="controls-top">
+            <a class="btn-floating btn-secondary" href="#rcarousel-with-lb" data-slide="prev"><i
+                class="material-icons">chevron_left</i></a>
+            <a class="btn-floating btn-secondary" href="#rcarousel-with-lb" data-slide="next"><i
+                class="material-icons">chevron_right</i></a>
+          </div>
+          <!--/.Controls-->
 
-        <!--Slides and lightbox-->
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#rcarousel-with-lb" data-slide-to="0" class="active"></li>
+            <li data-target="#rcarousel-with-lb" data-slide-to="1"></li>
+            <li data-target="#rcarousel-with-lb" data-slide-to="2"></li>
+            <li data-target="#rcarousel-with-lb" data-slide-to="3"></li>
+          </ol>
+          <!--/.Indicators-->
 
-        <div class="carousel-inner mdb-lightbox" role="listbox">
-          <div id="rmdb-lightbox-ui"></div>
+          <!--Slides and lightbox-->
 
-          <!--First slide-->
-          <div class="oct carousel-item active text-center">
-            <figure class="col-md-12 d-md-inline-block">
+          <div class="carousel-inner mdb-lightbox" role="listbox">
+            <div id="rmdb-lightbox-ui"></div>
+
+            <!--First slide-->
+            <div class="oct carousel-item active text-center">
+              <figure class="col-md-12 d-md-inline-block">
 
                 <img src="img/Restoration/Calder%20onion%20done%20henry%20150%20dpi.jpg"
                      class="img-fluid">
@@ -815,13 +890,13 @@
                   </div>
                 </div>
 
-            </figure>
-          </div>
-          <!--/.First slide-->
+              </figure>
+            </div>
+            <!--/.First slide-->
 
-          <!---Second Slide--->
-          <div class="ec carousel-item text-center">
-            <figure class="col-md-12 d-md-inline-block">
+            <!---Second Slide--->
+            <div class="ec carousel-item text-center">
+              <figure class="col-md-12 d-md-inline-block">
 
                 <img src="img/Restoration/Kelly%20done%20front%20150%20dpi.jpg"
                      class="img-fluid">
@@ -852,13 +927,13 @@
                   </div>
                 </div>
 
-            </figure>
-          </div>
-          <!---Second Slide--->
+              </figure>
+            </div>
+            <!---Second Slide--->
 
-          <!---Third Slide--->
-          <div class="ln carousel-item text-center">
-            <figure class="col-md-12 d-md-inline-block">
+            <!---Third Slide--->
+            <div class="ln carousel-item text-center">
+              <figure class="col-md-12 d-md-inline-block">
 
                 <img src="img/Restoration/Nevelson%20me%20lamp.jpg"
                      class="img-fluid">
@@ -883,46 +958,685 @@
                     Collection of Harvard University
                     <br>
                     <br>
+                    <button type="button" id="nevelsonBtn" class="btn btn-outline-light btn-lg">More
+                      Details
+                    </button>
+                    <!--- data-toggle="nevelsonModal" data-target="#nevelsonModal" --->
+                    <br>
+                    <br>
                   </div>
                 </div>
 
-            </figure>
-          </div>
-          <!---Third Slide--->
-
-          <!---Fourth Slide--->
-          <div class="shingu carousel-item text-center">
-            <div class="overlay img-fluid">
-              <div class="overlayContent">
-                <h3>Shingu</h3>
-                Located at Mt Ida College, this sculpture ”Message Across From The Ocean” by
-                sculptor Susumu Shingu had not been cared for in many years. The pivot bearings
-                which had been over greased were now caked in a mud like substance that had hardened
-                onto the paint. Using pressurized hot water we cleaned the surfaces and returned it
-                to its original white with corten panels
-                <br>
-                <br>
-                <img src="img/Restoration/shingu3.jpg">
-              </div>
+              </figure>
             </div>
-            <figure class="col-md-5 d-md-inline-block">
+            <!---Third Slide--->
+
+            <!---Fourth Slide--->
+            <div class="shingu carousel-item text-center">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Shingu</h3>
+                  Located at Mt Ida College, this sculpture ”Message Across From The Ocean” by
+                  sculptor Susumu Shingu had not been cared for in many years. The pivot bearings
+                  which had been over greased were now caked in a mud like substance that had
+                  hardened
+                  onto the paint. Using pressurized hot water we cleaned the surfaces and returned
+                  it
+                  to its original white with corten panels
+                </div>
+              </div>
+              <figure class="col-md-5 d-md-inline-block">
 
                 <img src="img/Restoration/shingu1.jpg"
                      class="img-fluid">
 
+              </figure>
+
+              <figure class="col-md-5 d-md-inline-block">
+
+                <img src="img/Restoration/shingu2.jpg" class="img-fluid">
+
+              </figure>
+            </div>
+            <!---Fourth Slide--->
+
+          </div>
+          <!--Slides-->
+
+        </div>
+        <!--Carousel Wrapper-->
+
+
+        <!--- Monuments Carousel--->
+        <!--Carousel Wrapper-->
+        <div id="moncarousel-with-lb" class="carousel slide carousel-multi-item"
+             data-ride="carousel">
+
+          <!--Controls-->
+          <div class="controls-top">
+            <a class="btn-floating btn-secondary" href="#moncarousel-with-lb" data-slide="prev"><i
+                class="material-icons">chevron_left</i></a>
+            <a class="btn-floating btn-secondary" href="#moncarousel-with-lb" data-slide="next"><i
+                class="material-icons">chevron_right</i></a>
+          </div>
+          <!--/.Controls-->
+
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#moncarousel-with-lb" data-slide-to="0" class="active"></li>
+            <li data-target="#moncarousel-with-lb" data-slide-to="1"></li>
+            <li data-target="#moncarousel-with-lb" data-slide-to="2"></li>
+            <li data-target="#moncarousel-with-lb" data-slide-to="3"></li>
+            <li data-target="#moncarousel-with-lb" data-slide-to="4"></li>
+          </ol>
+          <!--/.Indicators-->
+
+          <!--Slides and lightbox-->
+
+          <div class="carousel-inner mdb-lightbox" role="listbox">
+            <div id="monmdb-lightbox-ui"></div>
+
+            <!---1st Slide--->
+            <div class="mon1 carousel-item active text-center">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>WW I Monument by Gerald Horrigan</h3>
+                  The only surviving public monument by Gerald Horrigan, 1920. The entire monument
+                  was washed with low pressure water. The bronze tablets and figure were then be
+                  heated carefully with a torch to drive all moisture out of the pores of the metal.
+                  Three coats of the wax were applied, allowing time in between (overnight) coats
+                  for drying. The stone blocks were repointed as necessary with polyurethane
+                  architectural sealant.
+                  This treatment is used by the US Park Service and has the desired effect of
+                  protecting the monuments and inhibiting damage due to moisture and pollution, as
+                  well as greatly improving the appearance of the monuments. After 20 years there
+                  have only needed to be two subsequent waxings which only require a light soapy
+                  wash/clear rinse and one light coat of wax to maintain the protective coat and
+                  appearance.
+                </div>
+              </div>
+              <figure class="col-md-5 d-md-inline-block">
+
+                <img src="img/Restoration/monuments/Doughboy%20before2011_7.jpg"
+                     class="img-fluid">
+
+              </figure>
+
+              <figure class="col-md-5 d-md-inline-block">
+
+                <img src="img/Restoration/monuments/Doughboy%20done2011_6.jpg" class="img-fluid">
+
+              </figure>
+            </div>
+            <!---1st Slide--->
+
+            <!---2nd Slide--->
+            <div class="mon2 carousel-item text-center">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>
+                    The Hiker by Moseman
+                  </h3>
+                </div>
+              </div>
+
+              <figure class="col-md-5 d-md-inline-block">
+                <div class="row text-center">
+                  <img src="img/Restoration/monuments/Spainish%20Am%20done.jpg"
+                       class="img-fluid">
+                </div>
+              </figure>
+
+              <figure class="col-md-5 d-md-inline-block">
+                <figure class="row">
+                  <img src="img/Restoration/monuments/Spainish%20Am%20boots%20before%20after.jpg"
+                       class="img-fluid">
+                </figure>
+                <figure class="row">
+                  <img src="img/Restoration/monuments/Spainish%20Am%20arm%20before2011_3.jpg"
+                       class="img-fluid">
+                </figure>
+                <figure class="row">
+                  <img src="img/Restoration/monuments/Spainish%20Am%20ARM%20DONE2011_5.jpg"
+                       class="img-fluid">
+                </figure>
+              </figure>
+            </div>
+            <!---2nd Slide--->
+
+            <!---3rd Slide--->
+            <div class="mon3 carousel-item text-center">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Civil War Monument by Edward Clark</h3>
+                  Carved granite Monument by Edward Clark was washed with low pressure water and
+                  detergent, stone joints were resealed with polyurethane architectural sealant as
+                  needed, bronze fastener cover made to match missing one on bronze tablet. The
+                  tablet was gently glass beaded to even out the wear due to weathering, and to
+                  remove old hardened coats of bronze paint applied in years past that were causing
+                  uneven wear on the surface It was then given a ferric nitrate patina to match a
+                  tablet in adjacent town hall, and a heavy coat of Incralac.
+                  <br>
+                  <br>
+                  This tablet is mounted on the back of a Carved granite Monument by Edward Clark.
+                  The tablet was gently glass beaded to even out the wear due to weathering, and to
+                  remove old hardened coats of bronze paint applied in years past that were causing
+                  uneven wear on the surface It was then given a ferric nitrate patina to match a
+                  tablet in adjacent town hall, and a heavy coat of Incralac.
+                </div>
+              </div>
+
+              <figure class="col-md-5 d-md-inline-block">
+                <img src="img/Restoration/monuments/Civil%20War%20cleaned.jpg"
+                     class="img-fluid">
+              </figure>
+
+              <figure class="col-md-5 d-md-inline-block">
+                <img src="img/Restoration/monuments/Civil%20war%20tablet%20done2011_5.jpg"
+                     class="img-fluid">
+              </figure>
+            </div>
+            <!---3rd Slide--->
+
+            <!--4th slide-->
+            <div class="mon4 carousel-item text-center">
+              <figure class="col-md-12 d-md-inline-block">
+
+                <img src="img/Restoration/monuments/Kuchmeister%20done2011_3.jpg"
+                     class="img-fluid">
+                <div class="overlay img-fluid">
+                  <div class="overlayContent">
+                    <h3>Medal of Honor Memorial Hermann Kuchmeister</h3>
+                    <br>
+                    By C. O. Crawford, 1924. I found this monument had been acid cleaned and high
+                    pressure washed by untrained cemetery workers earlier in the year. The chemicals
+                    dissolved all of the soft metallic structures on the surface, leaving a badly
+                    alligatored and cratered surface. Cavities as large as 2mm were created by this
+                    harsh cleaning. I washed it with copious amounts of water, and subsequent
+                    reaction to the cleaners applied by the workers did not appear after being
+                    allowed to stabilize for three months. The uneven luster of the remaining metal,
+                    and its unprotected unsightly appearance was problematic to all. I cleaned the
+                    surface with glass beads which have the effect of tightening the metal surface,
+                    and applied a ferric nitrate patina, then a heavy coat of pigmented wax was
+                    applied hot, allowing the wax to fill all of the deep pores in the metal
+                    surface. While not the most durable outdoor coating it was chosen in this case
+                    because it will keep water from entering the pores in the surface and causing
+                    ice (water freezing in the pores could damage the surface, but wax will simply
+                    get pushed out by the frost action leaving the metal undamaged) or corrosion
+                    damage. This coating has required touch up every few years, which simply
+                    requires a light coat of carnuba wax applied with a soft cloth.
+                  </div>
+                </div>
+
+              </figure>
+            </div>
+            <!--/.5th slide-->
+
+            <!--5th slide-->
+            <div class="mon5 carousel-item text-center">
+              <figure class="col-md-12 d-md-inline-block">
+
+                <img src="img/Restoration/monuments/WW%201%20tablet%20done2011_1.jpg"
+                     class="img-fluid">
+                <div class="overlay img-fluid">
+                  <div class="overlayContent">
+                    <h3>WW I Memorial Tablet</h3>
+                    <br>
+                    This monument consists of a bronze tablet affixed to a Quincy granite base. The
+                    bronze tablet has been vandalized over the years, probably because of its
+                    location in front of a school. It may also have been stolen and replace at one
+                    time, as the tablet does not fit the flattened space provided on the front of
+                    the stone, and it is fastened with four heavy and homely bolts through the front
+                    of the tablet. The aging coats of paint on the bronze had begun to cause uneven
+                    corrosion to develop on the surface. The tablet was carefully cleaned with glass
+                    beads, repatined with a dark ferric nitrate, patina. The names were brightened
+                    with a light abrasive, and then many coats of Incralac were applied. The tablet
+                    was then waxed with Black Diamond co. Butchers Wax to resist the efforts of
+                    vandals.
+                  </div>
+                </div>
+
+              </figure>
+            </div>
+            <!--/.5th slide-->
+
+          </div>
+          <!--Slides-->
+
+        </div>
+        <!--Carousel Wrapper-->
+
+
+        <!--- Mounts Carousel --->
+        <!--Carousel Wrapper-->
+        <div id="mtcarousel-with-lb" class="carousel slide carousel-multi-item"
+             data-ride="carousel">
+
+          <!--Controls-->
+          <div class="controls-top">
+            <a class="btn-floating btn-secondary" href="#mtcarousel-with-lb" data-slide="prev"><i
+                class="material-icons">chevron_left</i></a>
+            <a class="btn-floating btn-secondary" href="#mtcarousel-with-lb" data-slide="next"><i
+                class="material-icons">chevron_right</i></a>
+          </div>
+          <!--/.Controls-->
+
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#mtcarousel-with-lb" data-slide-to="0" class="active"></li>
+            <li data-target="#mtcarousel-with-lb" data-slide-to="1"></li>
+            <li data-target="#mtcarousel-with-lb" data-slide-to="2"></li>
+            <li data-target="#mtcarousel-with-lb" data-slide-to="3"></li>
+            <li data-target="#mtcarousel-with-lb" data-slide-to="4"></li>
+            <li data-target="#mtcarousel-with-lb" data-slide-to="5"></li>
+          </ol>
+          <!--/.Indicators-->
+
+          <!--Slides and lightbox-->
+
+          <div class="carousel-inner mdb-lightbox" role="listbox">
+            <div id="mtmdb-lightbox-ui"></div>
+
+            <!---1st Slide--->
+            <div class="mt1 carousel-item active text-center">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Coelacanth</h3>
+                  Ok, so maybe this isn’t a mount, but Harvard Natural History Museum has a rare
+                  specimen of a Coelacanth that was thought to be extinct millions of years ago then
+                  someone caught one. The existing tank was poorly made and about to fail which
+                  would have resulted in 75 gallons of formaldehide spilling out.
+                  <br>
+                  We made a new tank out of heavy tempered glass with a slate bottom and stainless
+                  steel top rim. I also supplied fitted cradles to secure the fish in place.
+                </div>
+              </div>
+              <figure class="col-md-5 d-md-inline-block">
+
+                <img src="img/Restoration/mounts/coelacanth%205.jpg"
+                     class="img-fluid">
+
+              </figure>
+
+              <figure class="col-md-5 d-md-inline-block">
+
+                <img src="img/Restoration/mounts/coelacanth%206.jpg" class="img-fluid">
+
+              </figure>
+            </div>
+            <!---1st Slide--->
+
+            <!---2nd Slide--->
+            <div class="mt2 carousel-item text-center">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Myan Lid Support</h3>
+                  Made with a low fire clay, and pieced together by Conservator Nina Vinogradskya,
+                  this Myan vessel was too weak to support the lid. Shown here during fitting, the
+                  white material is Velara and after trimming Nina painted it to blend in with the
+                  clay.
+                  <br>
+                  Steel and aluminum “Hat” mount that was formed to match the rim of the lid and
+                  keep it from crushing the bottom. 30 inches wide, 18 inches deep, 18 inches high.
+                </div>
+              </div>
+
+              <figure class="col-md-5 d-md-inline-block">
+                <img src="img/Restoration/mounts/IMG_0088.jpg"
+                     class="img-fluid">
+              </figure>
+
+              <figure class="col-md-5 d-md-inline-block">
+                <img src="img/Restoration/mounts/100_1461.jpg" class="img-fluid">
+              </figure>
+            </div>
+            <!---2nd Slide--->
+
+            <!---3rd Slide--->
+            <div class="mt3 carousel-item text-center">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Pre Columbian Figure Mount</h3>
+                  This was a replacement for a poorly constructed stand that was rusting and weak.
+                  <br>
+                  Hot rolled steel, cold galvanized epoxy finished. Private collection.
+                </div>
+              </div>
+
+              <figure class="col-md-5 d-md-inline-block">
+                <img src="img/Restoration/mounts/100_1462.jpg"
+                     class="img-fluid">
+              </figure>
+
+              <figure class="col-md-5 d-md-inline-block">
+                <img src="img/Restoration/mounts/100_1685.jpg" class="img-fluid">
+              </figure>
+            </div>
+            <!---3rd Slide--->
+
+            <!---4th Slide--->
+            <div class="mt4 carousel-item text-center">
+              <div class="overlay img-fluid">
+                <div class="overlayContent">
+                  <h3>Tebesca Jaguar</h3>
+                  Made with a low fire clay, and pieced together by Conservator Nina Vinogradskya,
+                  this Tebesca Jaguar figure could not support it’s own weight safely
+                  <br>
+                  Epoxy and aluminum “Hat” mount that was formed to fit the inner shape of the
+                  Jaguar as well as the bottom rim. The base plate is 1/2 inch aluminum and was
+                  painted with a black epoxy.
+                </div>
+              </div>
+
+              <figure class="col-md-5 d-md-inline-block">
+                <img src="img/Restoration/mounts/100_1902.jpg"
+                     class="img-fluid">
+              </figure>
+
+              <figure class="col-md-5 d-md-inline-block">
+                <img src="img/Restoration/mounts/IMG_0239.jpg" class="img-fluid">
+              </figure>
+            </div>
+            <!---4th Slide--->
+
+            <!--5th slide-->
+            <div class="mt5 carousel-item text-center">
+              <figure class="col-md-12 d-md-inline-block">
+
+                <img src="img/Restoration/mounts/IMG_0612.jpg"
+                     class="img-fluid">
+                <div class="overlay img-fluid">
+                  <div class="overlayContent">
+                    <h3>Right Whale</h3>
+                    <br>
+                    New England Aquarium has a 100 year old right whale skeleton that had been cut
+                    apart and put in storage. They asked me to reassemble it. I had to weld most of
+                    the hand made attachments back together and replace a few that were missing. We
+                    also made some custom shackles and a tail mount to support the 2000 lb skeleton
+                    inside the aquarium.
+                  </div>
+                </div>
+
+              </figure>
+            </div>
+            <!--/.5th slide-->
+
+            <!--6th slide-->
+            <div class="mt6 carousel-item text-center">
+              <figure class="col-md-12 d-md-inline-block">
+
+                <img src="img/Restoration/mounts/World%20Tree%20on%20cart8x10.jpg"
+                     class="img-fluid">
+                <div class="overlay img-fluid">
+                  <div class="overlayContent">
+                    <h3>World Tree</h3>
+                    <br>
+                    Sometimes a mount is temporary, like this dolly that we used to move the World
+                    Tree at Harvard University. The sculpture had to be moved to a temporary site
+                    and left there for the duration of a construction project. Later we rolled it to
+                    its final location, we poured a concrete footing and secured it. Extensive
+                    repairs and finishing were done after placement
+                  </div>
+                </div>
+
+              </figure>
+            </div>
+            <!--/.6th slide-->
+
+          </div>
+          <!--Slides-->
+
+        </div>
+        <!--Carousel Wrapper-->
+
+      </div>
+      <!---column--->
+
+      <div class="col-md-6 order-xs-first order-sm-first order-md-last">
+        <h3 class="mainName">Restoration Projects</h3>
+        <div class="mainIcon">
+          <i class="material-icons">restore</i>
+        </div>
+        <p class="mainBlurb"><strong>
+          On a selective basis our studios will undertake restoration of significant works of art
+          for
+          institutions, municipalities, and private collectors.</strong>
+        </p>
+        <br>
+        <br>
+        <button type="button" id="restBtn" class="btn btn-outline-light btn-lg restButton">
+          Artworks
+        </button>
+        <br>
+        <br>
+        <button type="button" id="monBtn" class="btn btn-outline-light btn-lg restButton">Public
+          Monuments
+        </button>
+        <br>
+        <br>
+        <button type="button" id="mountsBtn" class="btn btn-outline-light btn-lg restButton">Mounts
+          And Things
+        </button>
+        <!---
+        <p id="monblurb" class="monumentsBlurb"><strong>
+          Since 1990 we have undertaken the restoration of many public monuments, primarily made of
+          bronze, stone, or a combination. We have performed repatination followed by application of
+          weather resistant coatings, structural repairs and fabrication of missing parts. Our
+          familiarity with most materials used in outdoor sculpture includes cleaning and repointing
+          of stone work also.
+        </strong>
+        </p>
+        --->
+      </div>
+
+    </div>
+    <!---row--->
+
+    <div class="fixed-wrap">
+      <div class="fixed">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!---End restoration Landing--->
+
+<!---Start fresh paint landing--->
+<div id="freshpaint" class="offset-bar">
+
+  <div class="row text-center fp-row">
+
+    <div class="col-md-6 order-first">
+      <h3 class="mainName">Fresh Paint</h3>
+      <div class="mainIcon">
+        <i class="material-icons">brush</i>
+      </div>
+      <p class="mainBlurb">
+        From time to time we will add a few projects that we are either in the middle of or have
+        just finished.
+      </p>
+    </div>
+
+    <div class="col-md-6 order-last">
+      <!--Carousel Wrapper-->
+      <div id="fpcarousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+        <!--Controls-->
+        <div class="controls-top">
+          <a class="btn-floating btn-secondary" href="#fpcarousel-with-lb" data-slide="prev"><i
+              class="material-icons">chevron_left</i></a>
+          <a class="btn-floating btn-secondary" href="#fpcarousel-with-lb" data-slide="next"><i
+              class="material-icons">chevron_right</i></a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#fpcarousel-with-lb" data-slide-to="0" class="active"></li>
+          <li data-target="#fpcarousel-with-lb" data-slide-to="1"></li>
+          <li data-target="#fpcarousel-with-lb" data-slide-to="2"></li>
+          <li data-target="#fpcarousel-with-lb" data-slide-to="3"></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides and lightbox-->
+
+        <div class="carousel-inner mdb-lightbox" role="listbox">
+          <div id="fpmdb-lightbox-ui"></div>
+
+          <!---1st slide--->
+          <div class="fp1 carousel-item text-center active">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Memorial Curch Bell at Harvard University</h3>
+                <br>
+                <br>
+                The original 1926 bell at Memorial Church located in Harvard Yard, Cambridge,
+                suffered a catastrophic crack and had to be replaced. The church had a new bell cast
+                in England and placed in their steeple. They decided that they wanted to display the
+                original bell in front of the church, so they brought it to me to be cared for and
+                made presentable. After meeting with the architect (Payette Associates) as well as
+                people from Memorial Church and Harvard University, I developed a treatment plan
+                that they approved.
+
+                Upon receiving the bell we detached the cast iron yoke/counter weight from the bell
+                so that we could treat them separately. The 4500 pound, 60 inch diameter bronze bell
+                was cleaned with high pressure hot water followed by a brush blasting with glass
+                beads to prepare it for patination. A Ferric Nitrate patina (Hughes and Rowe
+                formula) was applied hot followed by a sprayed on coat of Incralac.
+
+                The cast iron yoke was stripped of old paint, and brush blasted with ground glass.
+                The yoke was primered with a high zinc content epoxy followed by an appearance coat
+                of a marine grade epoxy primer. Then a flat black catalyzed urethane top coat
+                finished it off.
+
+                The architect wanted the bell to be suspended a few inches above the pavement
+                surface, and to be locked so that it wouldn’t move. We fabricated a pair of steel
+                stanchions using plasma cut 2 inch plate and 1 inch plate that was cnc bored and
+                tapped on the top to accept the original pillow blocks. We removed the original
+                bearings from the pillow blocks and cnc machined some heavy duty shaft collars to
+                fit inside the pillow block shells and lock the bell once it was leveled.
+
+              </div>
+            </div>
+            <figure class="col-md-5 d-md-inline-block">
+
+              <img src="img/freshPaint/IMG_6309.jpg"
+                   class="img-fluid">
+
             </figure>
 
             <figure class="col-md-5 d-md-inline-block">
 
-                <img src="img/Restoration/shingu2.jpg" class="img-fluid">
-              
+              <img src="img/freshPaint/shapeimage_3.png" class="img-fluid">
+
             </figure>
           </div>
-          <!---Fourth Slide--->
+          <!---1st slide--->
 
-          <!---Fifth Slide--->
+          <!---2nd slide--->
+          <div class="fp2 carousel-item text-center">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Merrimac Poem Wheel</h3>
+                <br>
+                <br>
+                Proposal for Poem Wheel, an interactive sculpture by Gregory Curci for Merrimack
+                College, North Andover, MA. in collaboration with poet Andrea Cohen.
+                <br>
+                Poem wheel get’s its inspiration from Tibetan prayer wheels. It is hoped that the
+                sculpture will inspire people to interact with it and that the words engraved on the
+                wheel will inspire them to pause and think about the context of their lives and the
+                world around them. The connection to the wind ties the sculpture to the Earth and
+                the processes of nature that provide the sustenance for all life on our planet. The
+                sculpture will also serve as a place marker for the Writer’s House. The sculpture is
+                constructed of stainless steel, and be 13 ft tall to the wind mill, and about 6 1/2
+                ft tall to the wheel.
+                <br>
+                <br>
+                <button type="button" id="mBtn" class="btn btn-outline-light btn-lg">More
+                  More
+                </button>
+              </div>
+            </div>
+            <figure class="col-md-5 d-md-inline-block">
 
-          <!---Fifth Slide--->
+              <img src="img/freshPaint/IMG_3464.jpg"
+                   class="img-fluid">
+
+            </figure>
+
+            <figure class="col-md-5 d-md-inline-block">
+
+              <img src="img/freshPaint/IMG_3471.jpg" class="img-fluid">
+
+            </figure>
+          </div>
+          <!---2nd slide--->
+
+          <!--3rd slide-->
+          <div class="fp3 carousel-item text-center">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Bust of Lowell at Harvard University</h3>
+                <br>
+                <br>
+                A bust of Abbot Lowell located in the courtyard at Lowell House. The bust was
+                created by John Wilson, sculptor at Harvard University. I cleaned it and stripped
+                off the old Incralac. A Ferric Nitrate patina (Hughes and Rowe formula) was applied
+                followed by three coats of Incralac, brushed on.
+                <br>
+                <br>
+              </div>
+            </div>
+            <figure class="col-md-5 d-md-inline-block">
+
+              <img src="img/freshPaint/IMG_3949.jpg"
+                   class="img-fluid">
+
+            </figure>
+
+            <figure class="col-md-5 d-md-inline-block">
+
+              <img src="img/freshPaint/IMG_3990.jpg" class="img-fluid">
+
+            </figure>
+          </div>
+          <!--Third slide-->
+
+          <!---Fourth slide--->
+          <div class="fp4 carousel-item text-center">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Dunster House Sundial</h3>
+                <br>
+                I’ve always wanted to make a sundial, with all of the other solar sculptures that I
+                have created, it seemed to be on my bucket list. Harvard University was finishing a
+                restoration of Dunster House and they asked me to design and make a new Gnomen for a
+                dial that had been in the courtyard and disappeared without a trace. I converted
+                simple 2d artwork with the Dunster House Shield into a 3d design. I cut it out of a
+                piece of 3/4 inch thick silicon bronze.
+                <br>
+                <br>
+                <button type="button" id="dBtn" class="btn btn-outline-light btn-lg">Details
+                </button>
+              </div>
+            </div>
+
+            <figure class="col-md-5 d-md-inline-block">
+
+              <img src="img/freshPaint/IMG_4108.jpg" class="img-fluid">
+
+            </figure>
+
+            <figure class="col-md-5 d-md-inline-block">
+
+              <img src="img/freshPaint/Dunster%20Dial%20website3.jpg" class="img-fluid">
+
+            </figure>
+          </div>
+          <!---Fourth slide--->
 
         </div>
         <!--Slides-->
@@ -930,56 +1644,220 @@
       </div>
       <!--Carousel Wrapper-->
     </div>
-    <!---column--->
-
-    <div class="col-md-6 order-xs-first order-sm-first order-md-last">
-      <h3 class="mainName">Restoration Projects</h3>
-      <div class="mainIcon">
-        <i class="material-icons">restore</i>
-      </div>
-      <p class="mainBlurb">
-        On a selective basis our studios will undertake restoration of significant works of art for
-        institutions, municipalities, and private collectors.
-      </p>
-    </div>
-
+    <!---column2--->
   </div>
-  <!---row--->
 
-</div>
-<!---End restoration Landing--->
-
-<!---Start fresh paint landing--->
-<div id="freshpaint" class="offset-bar">
 </div>
 <!---End fresh paint Landing--->
 
 <!---Start few other things landing--->
 <div id="other" class="offset-bar">
+
+  <div class="fixed-background">
+
+    <div class="row text-center">
+
+
+      <div class="col-md-6 order-sm-last order-xs-last order-md-first">
+        <!--Carousel Wrapper-->
+        <div id="focarousel-with-lb" class="carousel slide carousel-multi-item"
+             data-ride="carousel">
+
+          <!--Controls-->
+          <div class="controls-top">
+            <a class="btn-floating btn-secondary" href="#focarousel-with-lb" data-slide="prev"><i
+                class="material-icons">chevron_left</i></a>
+            <a class="btn-floating btn-secondary" href="#focarousel-with-lb" data-slide="next"><i
+                class="material-icons">chevron_right</i></a>
+          </div>
+          <!--/.Controls-->
+
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#focarousel-with-lb" data-slide-to="0" class="active"></li>
+            <li data-target="#focarousel-with-lb" data-slide-to="1"></li>
+            <li data-target="#focarousel-with-lb" data-slide-to="2"></li>
+            <li data-target="#focarousel-with-lb" data-slide-to="3"></li>
+          </ol>
+          <!--/.Indicators-->
+
+          <!--Slides and lightbox-->
+
+          <div class="carousel-inner mdb-lightbox active" role="listbox">
+            <div id="fomdb-lightbox-ui"></div>
+
+            <!---1st Slide--->
+            <div class="fo1 carousel-item text-center active">
+              <figure class="col-md-12 d-md-inline-block">
+
+                <img src="img/fewOther/Me%20Painting%20sign%201970.jpg"
+                     class="img-fluid">
+                <div class="overlay img-fluid">
+                  <div class="overlayContent">
+                    <h3>Paying my way through college lettering signs in my studio 1975.</h3>
+                    <br>
+                  </div>
+                </div>
+
+              </figure>
+            </div>
+            <!---1st Slide--->
+
+            <!--2nd slide-->
+            <div class="fo2 carousel-item text-center">
+              <figure class="col-md-12 d-md-inline-block">
+
+                <img src="img/fewOther/Greenfield%20Sign%20150.jpg"
+                     class="img-fluid">
+                <div class="overlay img-fluid">
+                  <div class="overlayContent">
+                    <h3>Greenfeild Sign</h3>
+                    <br>
+                    © 2001 by Gregory Curci located in Greenfield Massachusetts
+                    <br>
+                    <br>
+                    Painted Steel Entrance Sign 1/2 inch and 1 inch plate steel 84 inches wide, 28
+                    inches high, 1 inch deep.
+                    <br>
+                    <br>
+                  </div>
+                </div>
+
+              </figure>
+            </div>
+            <!--/.2nd slide-->
+
+            <!---3rd Slide--->
+            <div class="fo3 carousel-item text-center">
+              <figure class="col-md-12 d-md-inline-block">
+                <video width="720" height="960" autoplay muted>
+                  <source src="img/fewOther/Sengenuity%20tank.mp4">
+                </video>
+                <div class="overlay img-fluid">
+                  <div class="overlayContent">
+                    <h3>Sengenuity Sign</h3>
+                    <br>
+                    Sengenuity was a company that made a sensor that could measure properties of
+                    lubricating oil and other liquids. They asked me to create a kinetic display
+                    that would incorporate their product. We started by cnc machining a large set of
+                    aluminum bevel gears onto which oil was pumped from the tank below. The film
+                    here is a “dry run” without the oil that it normally would have.
+                    <br>
+                    <br>
+                    Acrylic, metal, motor, oil pump 40”high, 24 inches wide.
+                    <br>
+                    <br>
+                  </div>
+                </div>
+
+              </figure>
+            </div>
+            <!---3rd Slide--->
+
+            <!---4th Slide--->
+            <div class="fo4 carousel-item text-center">
+              <figure class="col-md-12 d-md-inline-block">
+
+                <img src="img/fewOther/portraits/Ed%20Rosin%20Old%20South.jpg"
+                     class="img-fluid">
+                <div class="overlay img-fluid">
+                  <div class="overlayContent">
+                    <h3>Portraits</h3>
+                    <br>
+                    <p>
+                      Every once in a while I get asked to create images of characters real and
+                      imagined, here are a few of them.
+                    </p>
+                    <br>
+                    <button type="button" id="pBtn" class="btn btn-outline-light btn-lg">
+                      See all Portraits
+                    </button>
+                    <br>
+                    <br>
+                    <p>
+                      Ed Rosen at Old South Meeting House, Boston MA. 1/2 inch aluminum plate , silk
+                      screened artwork from drawing ⓒ 1990
+                    </p>
+                  </div>
+                </div>
+
+              </figure>
+            </div>
+            <!---Third Slide--->
+
+          </div>
+          <!--Slides-->
+
+        </div>
+        <!--Carousel Wrapper-->
+      </div>
+      <!---column--->
+
+
+      <div class="col-md-6 order-sm-first order-xs-first order-md-last">
+        <div class="content">
+          <h3 class="mainName">Few Other Things</h3>
+          <div class="mainIcon">
+            <i class="material-icons">self_improvement</i>
+          </div>
+          <p class="mainBlurb">
+            Over the years we have created many different things, some with a purpose, others just
+            for the pure joy of craft and expression. Here are a few examples. Others will get added
+            as we get around to putting them here. Enjoy.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="fixed-wrap">
+      <div class="fixed">
+      </div>
+    </div>
+
+  </div>
 </div>
+
+<!--- asdfasdfasdfasdfasdf--->
 <!---End few other things Landing--->
 
 <!---Start contact landing--->
 <div id="contact" class="offset-bar">
   <div class="fixed-background">
 
-  <div class="row justify-content-center">
+    <div class="row justify-content-center">
 
-    <div class="col-md-5 text-center">
-      <img class="contact-logo" src="img/logo/peacock/curciStudioBlack.png">
-    </div>
-
-    <div class="col-md-5 text-center">
-      <div class="content hvr-grow"><br>
-      <strong>
-        <p>617 846 4423<br>gc@gregorycurci.com<br>20 Madison Ave, Winthrop Massachusetts 02152</p></strong>
-      <i class="material-icons">trending_flat</i>
-      <p>Scan with any smartphone camera to add as contact:</p>
-      <img class="contact-qr" src="img/frame.png">
+      <div class="col-md-4 text-center hvr-grow">
+        <img class="contact-logo" src="img/logo/peacock/curciStudioBlack.png">
       </div>
-    </div>
 
-  </div>
+      <div class="col-md-4 text-center">
+        <div class="content">
+          <br>
+          <br>
+          <strong>
+            <p><a href="tel:1-617-846-4423"><i class="material-icons">call</i></a>
+              <br>617 846 4423
+              <br><br><a href="mailto:gc@gregorycurci.com">
+                <i class="material-icons">alternate_email</i></a>
+              <br>gc@gregorycurci.com
+              <br><br><a href="https://www.google.com/maps/search/?api=1&query=20+Madison+Ave%2C+Winthrop%2C+MA+02152">
+                <i class="material-icons">map</i>
+              </a>
+              <br>20 Madison Ave, Winthrop Massachusetts 02152
+            </p></strong>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <div class="content">
+          <i class="material-icons">trending_flat</i>
+          <p>Scan with any smartphone camera to add as contact:</p>
+          <img class="contact-qr" src="img/frame.png">
+        </div>
+      </div>
+
+    </div>
 
     <div class="fixed-wrap">
       <div class="fixed">
@@ -987,21 +1865,568 @@
     </div>
   </div>
 
+  <!---
   <hr class="socket">
   &copy; Tim Gladyshev
+  --->
 </div>
-<!---End few other things Landing--->
+<!---End contact Landing--->
+
+<!--- Modal for Louise Nevelson  --->
+<div id="nevelsonModel" class="shadow-modal">
+  <div class="shadow-modal-content text-center card">
+    <h3 class="modal-header-color">More Details</h3>
+    <span class="close nevelson">&times</span>
 
 
-<!--- Jquery, Bootstrap, and font awesome -->
+    <div id="encarousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating btn-secondary" href="#encarousel-with-lb" data-slide="prev"><i
+            class="material-icons">chevron_left</i></a>
+        <a class="btn-floating btn-secondary" href="#encarousel-with-lb" data-slide="next"><i
+            class="material-icons">chevron_right</i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#encarousel-with-lb" data-slide-to="0" class="active"></li>
+        <li data-target="#encarousel-with-lb" data-slide-to="1"></li>
+        <li data-target="#encarousel-with-lb" data-slide-to="2"></li>
+        <li data-target="#encarousel-with-lb" data-slide-to="3"></li>
+        <li data-target="#encarousel-with-lb" data-slide-to="4"></li>
+        <li data-target="#encarousel-with-lb" data-slide-to="5"></li>
+        <li data-target="#encarousel-with-lb" data-slide-to="6"></li>
+        <li data-target="#encarousel-with-lb" data-slide-to="7"></li>
+        <li data-target="#encarousel-with-lb" data-slide-to="8"></li>
+        <li data-target="#encarousel-with-lb" data-slide-to="9"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides and lightbox-->
+
+      <div class="carousel-inner mdb-lightbox" role="listbox">
+        <div id="enmdb-lightbox-ui"></div>
+
+        <!--First slide-->
+        <div class="en1 carousel-item active text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/Restoration/100_1631.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Stripping Paint</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="en2 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/Restoration/100_1633.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Stripping Paint</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.2nd slide-->
+
+        <!--3rd slide-->
+        <div class="en3 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/Restoration/100_1677.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Weld Crack</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.3rd slide-->
+
+        <!--4th slide-->
+        <div class="en4 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/Restoration/100_1870.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Cleaned, ready for paint</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.4th slide-->
+
+        <!--5th slide-->
+        <div class="en5 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/Restoration/IMG_1777.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Attention to detail</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.5th slide-->
+
+        <!--6th slide-->
+        <div class="en6 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/Restoration/IMG_1783.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Buffing</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.6th slide-->
+
+        <!--7th slide-->
+        <div class="en7 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/Restoration/_MG_1755.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Painted</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.7th slide-->
+
+        <!--8th slide-->
+        <div class="en8 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/Restoration/100_1496.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>detail</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.8th slide-->
+
+        <!--9th slide-->
+        <div class="en9 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/Restoration/100_1614.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>detail</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.9th slide-->
+
+        <!--10th slide-->
+        <div class="en10 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/Restoration/100_1618.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>detail</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.10th slide-->
+
+      </div>
+      <!--Slides-->
+
+    </div>
+
+  </div>
+</div>
+
+<!---Modal for Merrimack Poem Wheel--->
+<div id="mModal" class="shadow-modal">
+  <div class="shadow-modal-content text-center">
+    <h3 class="modal-header-color">More Details</h3>
+    <span class="close m">&times</span>
+
+    <div id="mcarousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating btn-secondary" href="#mcarousel-with-lb" data-slide="prev"><i
+            class="material-icons">chevron_left</i></a>
+        <a class="btn-floating btn-secondary" href="#mcarousel-with-lb" data-slide="next"><i
+            class="material-icons">chevron_right</i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#dcarousel-with-lb" data-slide-to="0" class="active"></li>
+        <li data-target="#dcarousel-with-lb" data-slide-to="1"></li>
+        <li data-target="#dcarousel-with-lb" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides and lightbox-->
+
+      <div class="carousel-inner mdb-lightbox" role="listbox">
+        <div id="mmdb-lightbox-ui"></div>
+
+        <!--First slide-->
+        <div class="m1 carousel-item active text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/freshPaint/_EST0116.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Install Crew</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.First slide-->
+
+        <!--2nd slide-->
+        <div class="m2 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/freshPaint/Merrimac%20Poem%20Wheel%202015%20website2.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>At Merrimack College</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.2nd slide-->
+
+        <!--3rd slide-->
+        <div class="m3 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/freshPaint/poetry%20wheel%20model.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>The Model</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.3rd slide-->
+
+
+      </div>
+      <!--Slides-->
+
+    </div>
+  </div>
+</div>
+
+<!---Modal for Dunster Sundial--->
+<div id="dModal" class="shadow-modal">
+  <div class="shadow-modal-content text-center card">
+    <h3 class="modal-header-color">More Details</h3>
+    <span class="close d">&times</span>
+
+    <div id="dcarousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating btn-secondary" href="#dcarousel-with-lb" data-slide="prev"><i
+            class="material-icons">chevron_left</i></a>
+        <a class="btn-floating btn-secondary" href="#dcarousel-with-lb" data-slide="next"><i
+            class="material-icons">chevron_right</i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#dcarousel-with-lb" data-slide-to="0" class="active"></li>
+        <li data-target="#dcarousel-with-lb" data-slide-to="1"></li>
+        <li data-target="#dcarousel-with-lb" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides and lightbox-->
+
+      <div class="carousel-inner mdb-lightbox" role="listbox">
+        <div id="dmdb-lightbox-ui"></div>
+
+        <!--First slide-->
+        <div class="d1 carousel-item active text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/freshPaint/IMG_3413.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>The Model</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.First slide-->
+
+        <!--2nd slide-->
+        <div class="d2 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/freshPaint/IMG_3811.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Roughing with the CNC</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.2nd slide-->
+
+        <!--3rd slide-->
+        <div class="d3 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/freshPaint/IMG_3841.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>First Side Cut</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.3rd slide-->
+
+
+      </div>
+      <!--Slides-->
+
+    </div>
+  </div>
+</div>
+
+<!---Modal for Portraits--->
+<div id="pModal" class="shadow-modal">
+  <div class="shadow-modal-content text-center card">
+    <h3 class="modal-header-color">More Details</h3>
+    <span class="close p">&times</span>
+
+    <div id="pcarousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating btn-secondary" href="#pcarousel-with-lb" data-slide="prev"><i
+            class="material-icons">chevron_left</i></a>
+        <a class="btn-floating btn-secondary" href="#pcarousel-with-lb" data-slide="next"><i
+            class="material-icons">chevron_right</i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#pcarousel-with-lb" data-slide-to="0" class="active"></li>
+        <li data-target="#pcarousel-with-lb" data-slide-to="1"></li>
+        <li data-target="#pcarousel-with-lb" data-slide-to="2"></li>
+        <li data-target="#pcarousel-with-lb" data-slide-to="3"></li>
+        <li data-target="#pcarousel-with-lb" data-slide-to="4"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides and lightbox-->
+
+      <div class="carousel-inner mdb-lightbox" role="listbox">
+        <div id="pmdb-lightbox-ui"></div>
+
+        <!--First slide-->
+        <div class="p1 carousel-item active text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/fewOther/portraits/Pilsbury%20doughboy%20150.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Dough Boy</h3>
+                <br>
+                <p>
+                  Pillsbury Dough Boy, somebody wanted to take his picture and he wouldn’t stand
+                  still,so I modeled this in Sculpey and Fran sewed his hat.
+                </p>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.First slide-->
+
+        <!--2nd slide-->
+        <div class="p2 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/fewOther/portraits/Greenfield%20Clock%20inside.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>Greenfield Clock</h3>
+                <br>
+                <p>
+                  People from historic Greenfield MA, part of the Greenfield Clock, carved in high
+                  density foam and epoxy painted, they pop up once per hour. About 6 inches tall.
+                </p>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.2nd slide-->
+
+        <!--3rd slide-->
+        <div class="p3 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/fewOther/portraits/nynex%20bank%20240dpi.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>
+                  Piggy Bank
+                </h3>
+                <br>
+                <p>
+                  Remember NYNEX yellow pages? They needed a piggy bank for one of their adds.
+                  Sculpey and paint, about a foot long.
+                </p>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.3rd slide-->
+
+        <!--4th slide-->
+        <div class="p3 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/fewOther/portraits/Randy%20the%20Dog%20Faced%20boy%20web.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>
+                  Randy (after Wayne White)
+                </h3>
+                <br>
+                <p>
+                  This is a portrait of Randy, the bad boy on Pee Wee’s Playhouse. Wayne White
+                  created the character, I made this as a piece of art to be hung in a corporate
+                  office, it had nothing to do with the Play House, the client just had childhood
+                  memories of the character and wanted to keep him near, so I interpreted the
+                  character.
+                </p>
+                <br>
+                <p>
+                  Painted wood and foam, wire, other stuff to make him interesting. 3 ft tall.
+                </p>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.4th slide-->
+
+        <!--4th slide-->
+        <div class="p5 carousel-item text-center">
+          <figure class="col-md-12 d-md-inline-block">
+
+            <img src="img/fewOther/portraits/Jack%20in%20Box%20Uncle%20Sam.jpg"
+                 class="img-fluid">
+            <div class="overlay img-fluid">
+              <div class="overlayContent">
+                <h3>
+                  Uncle Sam
+                </h3>
+                <br>
+                <p>
+                  Every once in a while I get asked to create images of characters real and
+                  imagined, here are a few of them.
+                </p>
+                <br>
+                <p>
+                  Casey Stingle once said “I’ve forgotten more than most people know” and for the
+                  life of me I can’t remember who I made these for, they were props in a TV add and
+                  had to pop up. Carved foam, plastic box, spring loaded.
+                </p>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.4th slide-->
+
+
+      </div>
+      <!--Slides-->
+
+    </div>
+  </div>
+</div>
+
+
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script src="js/petals.js"></script>
-<!--- End of Script Source Files -->
+<script src="js/dropdown.js"></script>
+<script src="js/nevelsonModal.js"></script>
+<script src="js/mounts.js"></script>
+<script src="js/dunsterModel.js"></script>
+<script src="js/merModal.js"></script>
+<script src="js/pModal.js"></script>
+
+
 
 </body>
 </html>
-
-
-
 

@@ -4418,7 +4418,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.3): modal.js
+   * Bootstrap (v4.1.3): nevelsonModal.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4431,7 +4431,7 @@
      */
     var NAME = 'modal';
     var VERSION = '4.1.3';
-    var DATA_KEY = 'bs.modal';
+    var DATA_KEY = 'bs.nevelsonModal';
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
     var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
@@ -4463,16 +4463,16 @@
       CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
     };
     var ClassName = {
-      SCROLLBAR_MEASURER: 'modal-scrollbar-measure',
-      BACKDROP: 'modal-backdrop',
-      OPEN: 'modal-open',
+      SCROLLBAR_MEASURER: 'nevelsonModal-scrollbar-measure',
+      BACKDROP: 'nevelsonModal-backdrop',
+      OPEN: 'nevelsonModal-open',
       FADE: 'fade',
       SHOW: 'show'
     };
     var Selector = {
-      DIALOG: '.modal-dialog',
-      DATA_TOGGLE: '[data-toggle="modal"]',
-      DATA_DISMISS: '[data-dismiss="modal"]',
+      DIALOG: '.nevelsonModal-dialog',
+      DATA_TOGGLE: '[data-toggle="nevelsonModal"]',
+      DATA_DISMISS: '[data-dismiss="nevelsonModal"]',
       FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
       STICKY_CONTENT: '.sticky-top'
       /**
@@ -4629,7 +4629,7 @@
         var transition = $$$1(this._element).hasClass(ClassName.FADE);
 
         if (!this._element.parentNode || this._element.parentNode.nodeType !== Node.ELEMENT_NODE) {
-          // Don't move modal's DOM position
+          // Don't move nevelsonModal's DOM position
           document.body.appendChild(this._element);
         }
 
@@ -4807,7 +4807,7 @@
         }
       }; // ----------------------------------------------------------------------
       // the following methods are used to handle overflowing modals
-      // todo (fat): these should probably be refactored out of modal.js
+      // todo (fat): these should probably be refactored out of nevelsonModal.js
       // ----------------------------------------------------------------------
 
 
@@ -4957,7 +4957,7 @@
 
       var $target = $$$1(target).one(Event.SHOW, function (showEvent) {
         if (showEvent.isDefaultPrevented()) {
-          // Only register focus restorer if modal will actually get shown
+          // Only register focus restorer if nevelsonModal will actually get shown
           return;
         }
 
@@ -5158,7 +5158,7 @@
         clearTimeout(this._timeout);
         $$$1.removeData(this.element, this.constructor.DATA_KEY);
         $$$1(this.element).off(this.constructor.EVENT_KEY);
-        $$$1(this.element).closest('.modal').off('hide.bs.modal');
+        $$$1(this.element).closest('.nevelsonModal').off('hide.bs.nevelsonModal');
 
         if (this.tip) {
           $$$1(this.tip).remove();
@@ -5406,7 +5406,7 @@
             });
           }
 
-          $$$1(_this3.element).closest('.modal').on('hide.bs.modal', function () {
+          $$$1(_this3.element).closest('.nevelsonModal').on('hide.bs.nevelsonModal', function () {
             return _this3.hide();
           });
         });
