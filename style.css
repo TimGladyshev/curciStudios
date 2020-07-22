@@ -36,7 +36,8 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-  color: #fCCD04;
+  /*color: #fCCD04;*/
+  color: #a9bafc;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -86,8 +87,12 @@ body {
 }
 
 
-.home-inner {
-  background-image: url("img/texture/cropped-pawel-czerwinski-APVgVX_yDDc-unsplash.jpg");
+.no-webp .home-inner {
+  background-image: url("img/texture/cropped-pawel-czerwinski-APVgVX_yDDc-unsplash25.jpg");
+}
+
+.webp .home-inner {
+  background-image: url("img/texture/pawelCompressed/cropped-pawel-czerwinski-apvgvx_yddc-unsplash25.webp");
 }
 
 .li-last {
@@ -132,7 +137,7 @@ body {
 }
 
 
-.rhombus {
+.rhombus img {
   position: relative;
   width: 20%;
   max-width: 20%;
@@ -149,7 +154,7 @@ body {
   -o-transform:translateY(60%);
 }
 
-.rhombus-out {
+.rhombus-out img {
   position: relative;
   width: 20%;
   max-width: 20%;
@@ -164,7 +169,7 @@ body {
 }
 
 
-.ls {
+.ls img {
   display: block;
   width: 16%;
   max-width: 16%;
@@ -181,7 +186,7 @@ body {
   -o-transform:rotate(10deg);
 }
 
-.ls-out {
+.ls-out img {
   display: block;
   width: 16%;
   max-width: 16%;
@@ -199,7 +204,7 @@ body {
 
 }
 
-.lm {
+.lm img {
   display: block;
 
   width: 20%;
@@ -218,7 +223,7 @@ body {
   transform-origin: bottom right;
 }
 
-.lm-out {
+.lm-out img {
   width: 20%;
   max-width: 20%;
   position: absolute;
@@ -235,7 +240,7 @@ body {
   transform-origin: bottom right;
 }
 
-.ll {
+.ll img {
   width: 25%;
   max-width: 25%;
   position: absolute;
@@ -248,7 +253,7 @@ body {
   transform-origin: bottom right;
 }
 
-.ll-out {
+.ll-out img {
   width: 25%;
   max-width: 25%;
   position: absolute;
@@ -265,7 +270,7 @@ body {
   transform-origin: bottom right;
 }
 
-.rs {
+.rs img {
   width: 16%;
   max-width: 16%;
   position: absolute;
@@ -282,7 +287,7 @@ body {
   transform-origin: bottom left;
 }
 
-.rs-out {
+.rs-out img {
   width: 16%;
   max-width: 16%;
   position: absolute;
@@ -299,7 +304,7 @@ body {
   transform-origin: bottom left;
 }
 
-.rm {
+.rm img {
   width: 20%;
   max-width: 20%;
   position: absolute;
@@ -316,7 +321,7 @@ body {
   transform-origin: bottom left;
 }
 
-.rm-out {
+.rm-out img {
   width: 20%;
   max-width: 20%;
   position: absolute;
@@ -333,7 +338,7 @@ body {
   transform-origin: bottom left;
 }
 
-.rl {
+.rl img {
   width: 25%;
   max-width: 25%;
   position: absolute;
@@ -346,7 +351,7 @@ body {
   transform-origin: bottom left;
 }
 
-.rl-out {
+.rl-out img {
   width: 25%;
   max-width: 25%;
   position: absolute;
@@ -418,7 +423,7 @@ body {
   height: 82vh;
 }
 
-#contact .row .contact-logo {
+#contact .row .contact-logo img {
   max-width: 75%;
   z-index: 1;
   opacity: .8;
@@ -441,7 +446,8 @@ body {
 }
 
 .carousel-indicators .active {
-  background-color: #fCCD04;
+  /*background-color: #fCCD04;*/
+  background-color: #a9bafc;
 }
 
 .controls-top {
@@ -449,11 +455,6 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
-}
-
-.controls-top .button-floating {
-  color: white;
-  border-radius: 0;
 }
 
 .mainName {
@@ -602,26 +603,45 @@ body {
   opacity: .7;
 }
 
-#contact .fixed {
+#contactBG.lazy {
+  background-image: none;
+  background-color: #4D4E53;
+}
+
+
+#windBG.lazy {
+  background-image: none;
+  background-color: #4D4E53;
+}
+
+#windBG {
+  background-image: url("img/texture/sincerely-media-5S697CKfwlY-unsplash.jpg");
+}
+
+#restorationBG.lazy {
+  background-image: none;
+  background-color: #4D4E53;
+}
+
+#restorationBG {
+  background-image: url("img/ownTextures/thumbnail_Amarylis 2007 detail Porter Square - 1.jpg");
+}
+
+#otherBG.lazy {
+  background-image: none;
+  background-color: #4D4E53;
+}
+
+#otherBG {
+  background-image: url("img/texture/marjanblan-_kUxT8WkoeY-unsplash.jpg");
+}
+
+#contactBG {
   background-image: url("img/texture/marjanblan-_kUxT8WkoeY-unsplash.jpg");
 }
 
 #contact .fixed-background {
   background: rgba(0,0,0,.3);
-}
-
-#wind .fixed {
-  background-image: url("img/texture/sincerely-media-5S697CKfwlY-unsplash.jpg");
-}
-
-#restoration .fixed {
-  background-image: url("img/ownTextures/thumbnail_Amarylis 2007 detail Porter Square - 1.jpg");
-  /*background-image: url("img/texture/shapelined-_JBKdviweXI-unsplash.jpg");*/
-}
-
-
-#other .fixed {
-  background-image: url("img/texture/marjanblan-_kUxT8WkoeY-unsplash.jpg");
 }
 
 #wind .content h3, #wind .content p, #wind .content i {

@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           var image = entry.target;
-          image.src = image.dataset.src;
           image.classList.remove("lazy");
           imageObserver.unobserve(image);
         }
