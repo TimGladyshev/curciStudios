@@ -87,8 +87,6 @@ body {
 
 
 .home-inner {
-  /*background-image: url("img/texture/alex-loup-Md6_qA-BMis-unsplash.jpg");*/
-  /*background-image: url("img/texture/pawel-czerwinski-APVgVX_yDDc-unsplash.jpg");*/
   background-image: url("img/texture/cropped-pawel-czerwinski-APVgVX_yDDc-unsplash.jpg");
 }
 
@@ -617,8 +615,10 @@ body {
 }
 
 #restoration .fixed {
-  background-image: url("img/texture/shapelined-_JBKdviweXI-unsplash.jpg");
+  background-image: url("img/ownTextures/thumbnail_Amarylis 2007 detail Porter Square - 1.jpg");
+  /*background-image: url("img/texture/shapelined-_JBKdviweXI-unsplash.jpg");*/
 }
+
 
 #other .fixed {
   background-image: url("img/texture/marjanblan-_kUxT8WkoeY-unsplash.jpg");
@@ -631,11 +631,22 @@ body {
   !important;
 }
 
+#restoration .content strong, #restoration .content p,
+#restoration .content i, #restoration .content h3 {
+  color: floralwhite;
+  text-shadow: .2rem .2rem 2rem rgba(0,0,0,1)
+  , -.2rem -.2rem 2rem rgba(0,0,0,1)
+  ,.2rem .2rem 3rem rgba(0,0,0,1)
+  , -.2rem -.2rem 3rem rgba(0,0,0,1)
+  ,.2rem .2rem 4rem rgba(0,0,0,1)
+  , -.2rem -.2rem 4rem rgba(0,0,0,1)
+  !important;
+  z-index: -1;
+}
+
 #contact .content strong, #contact .content p, #contact .content i {
   color: floralwhite;
-  text-shadow: .2rem .2rem 1rem rgba(0,0,0,1)
-  , -.2rem -.2rem 1rem rgba(0,0,0,1)
-  ,.2rem .2rem 2rem rgba(0,0,0,.5)
+  text-shadow: .2rem .2rem 2rem rgba(0,0,0,.5)
   , -.2rem -.2rem 2rem rgba(0,0,0,.5)
   ,.2rem .2rem 3rem rgba(0,0,0,.3)
   , -.2rem -.2rem 3rem rgba(0,0,0,.3)
