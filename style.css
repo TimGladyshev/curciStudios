@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
-
 
 body {
   overflow-x: hidden;
@@ -95,7 +92,7 @@ body {
   background-image: url("img/texture/cropped-pawel-czerwinski-apvgvx_yddc-unsplash2000.webp");
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1000px) {
   .no-webp .home-inner {
     background-image: url("img/texture/cropped-pawel-czerwinski-APVgVX_yDDc-unsplashS.jpg");
   }
@@ -609,6 +606,10 @@ body {
 }
 
 .p1:hover .overlay, .p2:hover .overlay, .p3:hover .overlay, .p4:hover .overlay, .p5:hover .overlay {
+  opacity: .7;
+}
+
+.moss1:hover .overlay, .moss2:hover .overlay, .moss3:hover .overlay {
   opacity: .7;
 }
 

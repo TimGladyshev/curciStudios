@@ -1,10 +1,11 @@
 var restButton = document.getElementById("restBtn");
 var monButton = document.getElementById('monBtn');
-var mountsButton = document.getElementById('mountsBtn')
+var mountsButton = document.getElementById('mountsBtn');
 
 var restCar = document.getElementById("rcarousel-with-lb");
 var monCar = document.getElementById("moncarousel-with-lb");
 var mountCar = document.getElementById("mtcarousel-with-lb");
+
 
 restCar.style.display = "block";
 monCar.style.display = "none";

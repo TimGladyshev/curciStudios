@@ -21,5 +21,7 @@ window.onclick = function(event) {
     nevelsonModal.style.display = "none";
   } else if (event.target === pModal) {
     pModal.style.display = "none";
+  } else if (event.target === mossModal) {
+    mossModal.style.display = "none";
   }
 }
