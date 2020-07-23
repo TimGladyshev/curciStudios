@@ -11,13 +11,13 @@ restCar.style.display = "block";
 monCar.style.display = "none";
 mountCar.style.display = "none";
 
-restButton.style.backgroundColor = "rgba(255,255,255,.7)"
+restButton.style.backgroundColor = "rgba(255,255,255,.7)";
 
 restButton.onclick = function () {
 
   restButton.style.backgroundColor = "rgba(255,255,255,.7)";
-  monButton.style.backgroundColor = "rgba(255,255,255,.3)"
-  mountsButton.style.backgroundColor = "rgba(255,255,255,.3)"
+  monButton.style.backgroundColor = "rgba(255,255,255,.3)";
+  mountsButton.style.backgroundColor = "rgba(255,255,255,.3)";
 
   /*document.getElementById("monblurb").style.display = "none";*/
 
@@ -29,8 +29,8 @@ restButton.onclick = function () {
 monButton.onclick = function () {
 
   restButton.style.backgroundColor = "rgba(255,255,255,.3)";
-  monButton.style.backgroundColor = "rgba(255,255,255,.7)"
-  mountsButton.style.backgroundColor = "rgba(255,255,255,.3)"
+  monButton.style.backgroundColor = "rgba(255,255,255,.7)";
+  mountsButton.style.backgroundColor = "rgba(255,255,255,.3)";
 
   /*document.getElementById("monblurb").style.display = "block";*/
 
@@ -42,8 +42,8 @@ monButton.onclick = function () {
 mountsButton.onclick = function () {
 
   restButton.style.backgroundColor = "rgba(255,255,255,.3)";
-  monButton.style.backgroundColor = "rgba(255,255,255,.3)"
-  mountsButton.style.backgroundColor = "rgba(255,255,255,.7)"
+  monButton.style.backgroundColor = "rgba(255,255,255,.3)";
+  mountsButton.style.backgroundColor = "rgba(255,255,255,.7)";
 
   /*document.getElementById("monblurb").style.display = "none";*/
 

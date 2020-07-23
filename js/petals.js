@@ -30,7 +30,7 @@ captionText.addEventListener('mouseover', function (e) {
   rlp.classList.remove('rl');
 
   rhombus.classList.add('rhombus-out');
-  rhombus.classList.remove('rhombus')
+  rhombus.classList.remove('rhombus');
 
 }, false);
 
@@ -44,17 +44,17 @@ captionText.addEventListener('mouseout', function () {
   let rlp = document.getElementsByClassName('rl-out')[0];
   let rhombus = document.getElementsByClassName('rhombus-out')[0];
 
-  lsp.classList.remove('ls-out');
   lsp.classList.add('ls');
+  lsp.classList.remove('ls-out');
 
-  lmp.classList.remove('lm-out');
   lmp.classList.add('lm');
+  lmp.classList.remove('lm-out');
 
-  llp.classList.remove('ll-out');
   llp.classList.add('ll');
+  llp.classList.remove('ll-out');
 
-  rsp.classList.remove('rs-out');
   rsp.classList.add('rs');
+  rsp.classList.remove('rs-out');
 
   rmp.classList.remove('rm-out');
   rmp.classList.add('rm');

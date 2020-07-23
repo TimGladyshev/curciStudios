@@ -6,11 +6,11 @@ var mSpan = document.getElementsByClassName("close m")[0];
 
 mBtn.onclick = function() {
   mModal.style.display = "block";
-}
+};
 
 mSpan.onclick = function() {
   mModal.style.display = "none";
-}
+};
 
 window.onclick = function(event) {
   if (event.target === mModal) {
@@ -23,5 +23,11 @@ window.onclick = function(event) {
     pModal.style.display = "none";
   } else if (event.target === mossModal) {
     mossModal.style.display = "none";
+  } else {
+    mModal.style.display = "none";
+    dModal.style.display = "none";
+    nevelsonModal.style.display = "none";
+    pModal.style.display = "none";
+    mossModal.style.display = "none";
   }
-}
+};
