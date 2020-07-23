@@ -24,7 +24,7 @@ restButton.onclick = function () {
   restCar.style.display = "block";
   monCar.style.display = "none";
   mountCar.style.display = "none";
-}
+};
 
 monButton.onclick = function () {
 
@@ -37,7 +37,7 @@ monButton.onclick = function () {
   restCar.style.display = "none";
   monCar.style.display = "block";
   mountCar.style.display = "none";
-}
+};
 
 mountsButton.onclick = function () {
 
@@ -50,5 +50,5 @@ mountsButton.onclick = function () {
   restCar.style.display = "none";
   monCar.style.display = "none";
   mountCar.style.display = "block";
-}
+};
 

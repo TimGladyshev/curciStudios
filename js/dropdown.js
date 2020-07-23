@@ -3,7 +3,7 @@ function moveTo(x) {
   window.location.hash = x;
 }
 
-let btn = document.getElementsByClassName('nav-item')
+let btn = document.getElementsByClassName('nav-item');
 
 /* this makes sure that dropdown doesnt show in condensed nav*/
 $(window).on('resize load', function() {

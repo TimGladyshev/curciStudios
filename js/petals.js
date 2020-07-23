@@ -56,12 +56,12 @@ captionText.addEventListener('mouseout', function () {
   rsp.classList.add('rs');
   rsp.classList.remove('rs-out');
 
-  rmp.classList.remove('rm-out');
   rmp.classList.add('rm');
+  rmp.classList.remove('rm-out');
 
-  rlp.classList.remove('rl-out');
   rlp.classList.add('rl');
+  rlp.classList.remove('rl-out');
 
-  rhombus.classList.remove('rhombus-out');
   rhombus.classList.add('rhombus');
+  rhombus.classList.remove('rhombus-out');
 }, false);

@@ -427,6 +427,16 @@ body {
 
 .carousel-item {
   height: 82vh;
+  text-align: center;
+  overflow-y: scroll;
+
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+
+.carousel-item::-webkit-scrollbar {
+  display: none;
 }
 
 #contact .row .contact-logo img {
@@ -505,8 +515,8 @@ body {
   overflow-y: scroll;
 
   -ms-overflow-style: none;
-  scrollbar-width: none;
   overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
 }
 
 .overlayContent::-webkit-scrollbar {
@@ -695,6 +705,16 @@ body {
   height: 87%;
   top: 10%;
   left: 20%;
+  text-align: center;
+  overflow-y: scroll;
+
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+
+.shadow-modal-content::-webkit-scrollbar {
+  display: none;
 }
 
 .modal-header-color {
