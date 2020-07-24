@@ -102,6 +102,10 @@ body {
   }
 }
 
+ul {
+  list-style-type: none;
+}
+
 .li-last {
   /* last element of caption */
   padding-bottom: 1rem;
