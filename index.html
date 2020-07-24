@@ -14,20 +14,20 @@
 
 <body data-spy="scroll" data-target="#navbarResponsive">
 
-<!---Start home--->
+<!-- Start home -->
 <div id="home">
 
-  <!---Nav Bar--->
+  <!-- Nav Bar -->
   <nav class="navbar navbar-expand-xl navbar-light fixed-top">
     <a class="navbar-brand" href="index.html">
 
-      <!---<img src="img/logo/peacock/peacock.png">--->
       <picture>
         <source srcset="img/logo/peacock/optimized/peacock.webp" type="image/webp">
         <source srcset="img/logo/peacock/peacock.png" type="image/png">
-        <img src="img/logo/peacock/peacock.png">
+        <img src="img/logo/peacock/peacock.png" alt="logo">
       </picture>
-      <h3 class="d-inline"> Curci Studio</h3></a>
+
+      <h3 class="d-inline">&nbspCurci Studio</h3></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarResponsive">
@@ -42,7 +42,7 @@
         <li class="nav-item drop-down-button ">
           <a class="nav-link" href="#solar">Solar</a>
           <div class="drop-down-content finder">
-            <!--- Href doesnt work here bc of data-target, but is ness. to appear as a link --->
+            <!-- Href doesnt work here bc of data-target, but is ness. to appear as a link -->
             <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="0"
                onclick="moveTo('solar')">Amarylis</a>
             <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="1"
@@ -132,9 +132,9 @@
       </ul>
     </div>
   </nav>
-  <!---end Nav Bar--->
+  <!-- end Nav Bar -->
 
-  <!---Landing Page--->
+  <!-- Landing Page -->
   <div class="landing">
     <div class="home-wrap">
       <div class="home-inner">
@@ -142,76 +142,62 @@
           <picture class="ll">
             <source srcset="img/logo/IrisLargeLeft.webp" type="image/webp">
             <source srcset="img/logo/IrisPetalLargeLeft.png" type="image/png">
-            <img src="img/logo/IrisPetalLargeLeft.png">
+            <img src="img/logo/IrisPetalLargeLeft.png" alt="iris petal">
           </picture>
-          <!---<img class="ll" src="img/logo/IrisPetalLargeLeft.png"> also remove img tag in css: .ll {--->
-          <!---
-          <img class="lm" src="img/logo/IrisPetalLargeLeft.png">
-          <img class="ls" id="ls" src="img/logo/IrisPetalLargeLeft.png">
-
-          <img class="rl" src="img/logo/IrisPetalLargeRight.png">
-          <img class="rm" src="img/logo/IrisPetalLargeRight.png">
-          <img class="rs" src="img/logo/IrisPetalLargeRight.png">
-          --->
           <picture class="lm">
             <source srcset="img/logo/IrisLargeLeft.webp" type="image/webp">
             <source srcset="img/logo/IrisPetalLargeLeft.png" type="image/png">
-            <img src="img/logo/IrisPetalLargeLeft.png">
+            <img src="img/logo/IrisPetalLargeLeft.png" alt="iris petal">
           </picture>
           <picture class="ls">
             <source srcset="img/logo/IrisLargeLeft.webp" type="image/webp">
             <source srcset="img/logo/IrisPetalLargeLeft.png" type="image/png">
-            <img src="img/logo/IrisPetalLargeLeft.png">
+            <img src="img/logo/IrisPetalLargeLeft.png" alt="iris petal">
           </picture>
           <picture class="rl">
             <source srcset="img/logo/IrisLargeRight.webp" type="image/webp">
             <source srcset="img/logo/IrisPetalLargeRight.png" type="image/png">
-            <img src="img/logo/IrisPetalLargeRight.png">
+            <img src="img/logo/IrisPetalLargeRight.png" alt="iris petal">
           </picture>
           <picture class="rm">
             <source srcset="img/logo/IrisLargeRight.webp" type="image/webp">
             <source srcset="img/logo/IrisPetalLargeRight.png" type="image/png">
-            <img src="img/logo/IrisPetalLargeRight.png">
+            <img src="img/logo/IrisPetalLargeRight.png" alt="iris petal">
           </picture>
           <picture class="rs">
             <source srcset="img/logo/IrisLargeRight.webp" type="image/webp">
             <source srcset="img/logo/IrisPetalLargeRight.png" type="image/png">
-            <img src="img/logo/IrisPetalLargeRight.png">
+            <img src="img/logo/IrisPetalLargeRight.png" alt="iris petal">
           </picture>
-
           <picture class="rhombus">
             <source srcset="img/logo/stalkTriple/stalkTripleComplex.webp" type="image/webp">
             <source srcset="img/logo/stalkTriple/stalkTripleComplex.png" type="image/png">
-            <img src="img/logo/IrisPetalLargeRight.png">
+            <img src="img/logo/IrisPetalLargeRight.png" alt="iris petal">
           </picture>
-          <!---
-          <img class="rhombus" src="img/logo/stalkTriple/stalkTripleComplex.png">
-          --->
         </div>
       </div>
     </div>
   </div>
-  <!---End Landing Page--->
+  <!-- End Landing Page -->
 
   <div class="caption col-md-6 hvr-underline-reveal text-center">
     <h1>Curci Studio</h1>
     <h4>Multidisciplinary Design and Fabrication</h4>
-    <strong>
-      <li>Works of art for individuals and public spaces</li>
-      <li class="li-last">Restoration projects of significant artworks</li>
-    </strong>
+    <ol>
+      <li><strong>Works of art for individuals and public spaces</strong></li>
+      <li class="li-last"><strong>Restoration projects of significant artworks</strong></li>
+    </ol>
     <a class="btn btn-outline-light btn-lg" href="#solar">Designs</a>
     <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
   </div>
 
 </div>
-<!---End home--->
+<!-- End home -->
 
-<!---Start solar landing--->
+<!-- ======================================================================= Start solar landing -->
 <div id="solar" class="offset-bar">
 
   <div class="row text-center solar-row">
-
     <div class="col-md-6 order-first">
       <h3 class="mainName">Solar Sculptures</h3>
       <div class="mainIcon">
@@ -231,20 +217,17 @@
       </p>
     </div>
 
-    <div class="col-md-6 order-last swipeAble">
-      <!--Carousel Wrapper-->
-      <div id="scarousel-with-lb" class="carousel slide carousel-multi-item lazy-load" data-touch data-ride="carousel">
+    <div class="col-md-6 order-last">
+      <!-- Carousel Wrapper -->
+      <div id="scarousel-with-lb" class="carousel slide carousel-multi-item lazy-load swipeAble" data-touch data-ride="carousel">
 
-        <!--Controls-->
         <div class="controls-top">
           <a class="btn btn-floating btn-secondary" href="#scarousel-with-lb" data-slide="prev"><i
               class="material-icons">chevron_left</i></a>
           <a class="btn btn-floating btn-secondary" href="#scarousel-with-lb" data-slide="next"><i
               class="material-icons">chevron_right</i></a>
         </div>
-        <!--/.Controls-->
 
-        <!--Indicators-->
         <ol class="carousel-indicators">
           <li data-target="#scarousel-with-lb" data-slide-to="0" class="active"></li>
           <li data-target="#scarousel-with-lb" data-slide-to="1"></li>
@@ -257,19 +240,17 @@
           <li data-target="#scarousel-with-lb" data-slide-to="8"></li>
           <li data-target="#scarousel-with-lb" data-slide-to="9"></li>
         </ol>
-        <!--/.Indicators-->
 
-        <!--Slides and lightbox-->
-
+        <!-- Slides and lightbox -->
         <div class="carousel-inner mdb-lightbox" role="listbox">
           <div id="smdb-lightbox-ui"></div>
 
-          <!--First slide-->
+          <!-- First slide -->
           <div class="Amarylis solarSlide carousel-item active text-center">
             <figure class="o col-md-12 row d-md-inline-block text-center">
 
               <img src="img/Solar/Amarylis%20O&C%20Northend.jpg"
-                   class="lazy img-fluid">
+                   class="lazy img-fluid" alt="Amarylis image">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>Amarylis</h3>
@@ -294,7 +275,7 @@
             <figure class="o col-md-12 d-md-inline-block">
 
               <img data-src="img/Solar/Iris%20open%20closed%20dpi%20150.jpg"
-                   class="img-fluid">
+                   class="img-fluid" alt="Iris image">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>Iris</h3>
@@ -319,7 +300,7 @@
             <figure class="o col-md-12 d-md-inline-block">
 
               <img data-src="img/Solar/morning%20glories%20150dpi.jpg"
-                   class="img-fluid">
+                   class="img-fluid" alt="Morning Glories image">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>Morning Glories</h3>
@@ -342,8 +323,9 @@
           </div>
           <!--Third slide-->
 
-          <!---Fourth slide--->
+          <!--Fourth slide-->
           <div class="mg2 carousel-item text-center">
+
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Morning Glories 2</h3>
@@ -354,27 +336,26 @@
                 metals, plastic; 15 ft. high, 2 ft. wide, 2 ft. deep
               </div>
             </div>
+
             <figure class="o col-md-5 d-md-inline-block">
-
               <img data-src="img/Solar/morning%20Glories.jpg"
-                   class="img-fluid">
-
+                   class="img-fluid" alt="Morning Glories 2 image">
             </figure>
 
             <figure class="t col-md-5 d-md-inline-block">
-
-              <img data-src="img/Solar/Morning%20Glories%20tight.jpg" class="img-fluid">
-
+              <img data-src="img/Solar/Morning%20Glories%20tight.jpg"
+                   class="img-fluid" alt="Morning Glories 2 image 2">
             </figure>
           </div>
-          <!---Fourth slide--->
+          <!--Fourth slide-->
 
-          <!---Fifth Slide--->
+          <!--Fifth Slide-->
           <div class="ns carousel-item text-center">
-            <figure class="o col-md-12 d-md-inline-block">
 
+            <figure class="o col-md-12 d-md-inline-block">
               <img data-src="img/Solar/noonstone%20150dpi.jpg"
-                   class="img-fluid">
+                   class="img-fluid" alt="Noonstone image">
+
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>Noonstone</h3>
@@ -392,12 +373,11 @@
                   <br>
                 </div>
               </div>
-
             </figure>
           </div>
-          <!---Fifth Slide--->
+          <!--Fifth Slide-->
 
-          <!---Sixth Slide--->
+          <!--Sixth Slide-->
           <div class="sb carousel-item text-center">
             <div class="overlay img-fluid">
               <div class="overlayContent">
@@ -417,11 +397,10 @@
                 <br>
               </div>
             </div>
+
             <figure class="o col-md-5 d-md-inline-block">
-
               <img data-src="img/Solar/Sunbirds%200330%20web%20site150.jpg"
-                   class="img-fluid">
-
+                   class="img-fluid" alt="Sunbirds image">
             </figure>
             <figure class="col-md-5 d-md-inline-block">
               <video class="lazyVid" autoplay muted loop playsinline width="480" height="360" poster="img/fewOther/Screenshot%20from%202020-07-22%2022-12-25.png">
@@ -430,14 +409,13 @@
               </video>
             </figure>
           </div>
-          <!---Sixth Slide--->
+          <!--Sixth Slide-->
 
-          <!---Seventh Slide--->
+          <!--Seventh Slide-->
           <div class="sf carousel-item text-center">
             <figure class="o col-md-12 d-md-inline-block">
-
               <img data-src="img/Solar/Sunflower%20150dpi%20web.jpg"
-                   class="img-fluid">
+                   class="img-fluid" alt="Sunflower image">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>Sunflower</h3>
@@ -454,14 +432,14 @@
 
             </figure>
           </div>
-          <!---Seventh Slide--->
+          <!--Seventh Slide-->
 
-          <!---Eighth Slide--->
+          <!--Eighth Slide-->
           <div class="sys carousel-item text-center">
             <figure class="o col-md-12 d-md-inline-block">
 
               <img data-src="img/Solar/Sysiphis%20150dpi.jpg"
-                   class="img-fluid">
+                   class="img-fluid" alt="Sysiphis image">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>Sisyphus</h3>
@@ -476,17 +454,16 @@
                   <br>
                 </div>
               </div>
-
             </figure>
           </div>
-          <!---Eighth Slide--->
+          <!--Eighth Slide-->
 
-          <!---Ninth Slide--->
+          <!--Ninth Slide-->
           <div class="gc carousel-item text-center">
             <figure class="o col-md-12 d-md-inline-block">
 
               <img data-src="img/Solar/Greenfield%20Clock%20150dpi%20.jpg"
-                   class="img-fluid">
+                   class="img-fluid" alt="Greenfeild Clock image">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>Greenfield Clock</h3>
@@ -507,14 +484,14 @@
 
             </figure>
           </div>
-          <!---Ninth Slide--->
+          <!--Ninth Slide-->
 
-          <!---Tenth Slide--->
+          <!--Tenth Slide-->
           <div class="tulips carousel-item text-center">
             <figure class="o col-md-12 d-md-inline-block">
 
               <img data-src="img/Solar/Tulips%204%20up150%20.jpg"
-                   class="img-fluid">
+                   class="img-fluid" alt="Tulips">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>Tulips</h3>
@@ -532,7 +509,7 @@
 
             </figure>
           </div>
-          <!---Tenth Slide--->
+          <!--Tenth Slide-->
 
         </div>
         <!--Slides-->
@@ -540,13 +517,13 @@
       </div>
       <!--Carousel Wrapper-->
     </div>
-    <!---column2--->
+    <!--column2-->
   </div>
 
 </div>
-<!---End solar landing--->
+<!--End solar landing-->
 
-<!---Start wind landing--->
+<!-- ========================================================================= Start wind landing-->
 <div id="wind" class="offset-bar">
 
   <div class="fixed-background">
@@ -585,7 +562,7 @@
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img src="img/Wind/He%20Said%20She%20Said.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="He Said She Said image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>He Said She Said</h3>
@@ -603,12 +580,12 @@
             </div>
             <!--/.First slide-->
 
-            <!---Second Slide--->
+            <!--Second Slide-->
             <div class="jttp carousel-item text-center">
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img data-src="img/Wind/Journey%20To%20The%20Planets%20150dpi.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Journey To The Planets image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>Journey to the Planets</h3>
@@ -624,14 +601,14 @@
 
               </figure>
             </div>
-            <!---Second Slide--->
+            <!--Second Slide-->
 
-            <!---Third Slide--->
+            <!--Third Slide-->
             <div class="wctya carousel-item text-center">
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img data-src="img/Wind/Any%20Way%20the%20Wind%20Blows.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Any Way The Wind Blows image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>The Wind Can Take You Anywhere</h3>
@@ -647,7 +624,7 @@
 
               </figure>
             </div>
-            <!---Third Slide--->
+            <!--Third Slide-->
 
           </div>
           <!--Slides-->
@@ -655,7 +632,7 @@
         </div>
         <!--Carousel Wrapper-->
       </div>
-      <!---column--->
+      <!--column-->
 
 
       <div class="col-md-6 order-sm-first order-xs-first order-md-last">
@@ -686,9 +663,9 @@
 
 
 </div>
-<!---End wind Landing--->
+<!--End wind Landing-->
 
-<!---Start animametric landing--->
+<!-- ================================================================== Start Animametric landing-->
 <div id="animametric" class="offset-bar">
   <div class="row text-center">
 
@@ -763,7 +740,7 @@
             <figure class="o col-md-12 d-md-inline-block">
 
               <img src="img/Animametric/Lift%20off.jpg"
-                   class="img-fluid">
+                   class="img-fluid" alt="Liftoff image">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>Lift Off</h3>
@@ -781,12 +758,12 @@
           </div>
           <!--/.First slide-->
 
-          <!---Second Slide--->
+          <!--Second Slide-->
           <div class="pc carousel-item text-center">
             <figure class="o col-md-12 d-md-inline-block">
 
               <img data-src="img/Animametric/Peacock.jpg"
-                   class="img-fluid">
+                   class="img-fluid" alt="Peacock image">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>Peacock</h3>
@@ -805,14 +782,14 @@
 
             </figure>
           </div>
-          <!---Second Slide--->
+          <!--Second Slide-->
 
-          <!---Third Slide--->
+          <!--Third Slide-->
           <div class="td carousel-item text-center">
             <figure class="o col-md-12 d-md-inline-block">
 
               <img data-src="img/Animametric/The%20Dance.jpg"
-                   class="img-fluid">
+                   class="img-fluid" alt="The Dance image">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>The Dance</h3>
@@ -828,14 +805,14 @@
 
             </figure>
           </div>
-          <!---Third Slide--->
+          <!--Third Slide-->
 
-          <!---Fourth Slide--->
+          <!--Fourth Slide-->
           <div class="sd carousel-item text-center">
             <figure class="o col-md-12 d-md-inline-block">
 
               <img data-src="img/Animametric/Sundance%201997.jpg"
-                   class="img-fluid">
+                   class="img-fluid" alt="Sundance image">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
                   <h3>Sunance</h3>
@@ -851,7 +828,7 @@
 
             </figure>
           </div>
-          <!---Fourth Slide--->
+          <!--Fourth Slide-->
 
         </div>
         <!--Slides-->
@@ -859,15 +836,15 @@
       </div>
       <!--Carousel Wrapper-->
     </div>
-    <!---column--->
+    <!--column-->
 
   </div>
-  <!---row--->
+  <!--row-->
 
 </div>
-<!---End animametric Landing--->
+<!--End animametric Landing-->
 
-<!---Start restoration landing--->
+<!-- ================================================================== Start restoration landing-->
 <div id="restoration" class="offset-bar">
 
   <div class="fixed-background">
@@ -875,7 +852,7 @@
 
       <div class="col-md-6">
 
-        <!--- Main Carousel --->
+        <!-- Main Carousel -->
         <!--Carousel Wrapper-->
         <div id="rcarousel-with-lb" class="carousel slide carousel-multi-item lazy-load" data-ride="carousel">
 
@@ -907,7 +884,7 @@
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img src="img/Restoration/Calder%20onion%20done%20henry%20150%20dpi.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Calder image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>Alexander Calder's Octopus</h3>
@@ -935,12 +912,12 @@
             </div>
             <!--/.First slide-->
 
-            <!---Second Slide--->
+            <!--Second Slide-->
             <div class="ec carousel-item text-center">
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img data-src="img/Restoration/Kelly%20done%20front%20150%20dpi.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Kelly image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>Elsworth Kelly, Arcs</h3>
@@ -970,14 +947,14 @@
 
               </figure>
             </div>
-            <!---Second Slide--->
+            <!--Second Slide-->
 
-            <!---Third Slide--->
+            <!--Third Slide-->
             <div class="ln carousel-item text-center">
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img data-src="img/Restoration/Nevelson%20me%20lamp.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Nevelson image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>Louise Nevelson</h3>
@@ -1002,7 +979,6 @@
                     <button type="button" id="nevelsonBtn" class="btn btn-outline-light btn-lg">More
                       Details
                     </button>
-                    <!--- data-toggle="nevelsonModal" data-target="#nevelsonModal" --->
                     <br>
                     <br>
                   </div>
@@ -1010,9 +986,9 @@
 
               </figure>
             </div>
-            <!---Third Slide--->
+            <!--Third Slide-->
 
-            <!---Fourth Slide--->
+            <!--Fourth Slide-->
             <div class="shingu carousel-item text-center">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
@@ -1029,17 +1005,17 @@
               <figure class="o col-md-5 d-md-inline-block">
 
                 <img data-src="img/Restoration/shingu1.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Shengu image 1">
 
               </figure>
 
               <figure class="t col-md-5 d-md-inline-block">
 
-                <img data-src="img/Restoration/shingu2.jpg" class="img-fluid">
+                <img data-src="img/Restoration/shingu2.jpg" class="img-fluid" alt="Shengu image 2">
 
               </figure>
             </div>
-            <!---Fourth Slide--->
+            <!--Fourth Slide-->
 
           </div>
           <!--Slides-->
@@ -1048,8 +1024,7 @@
         <!--Carousel Wrapper-->
 
 
-        <!--- Monuments Carousel--->
-        <!--Carousel Wrapper-->
+        <!-- Monuments Carousel-->
         <div id="moncarousel-with-lb" class="carousel slide carousel-multi-item lazy-load"
              data-ride="carousel">
 
@@ -1077,7 +1052,7 @@
           <div class="carousel-inner mdb-lightbox" role="listbox">
             <div id="monmdb-lightbox-ui"></div>
 
-            <!---1st Slide--->
+            <!--1st Slide-->
             <div class="mon1 carousel-item active text-center">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
@@ -1099,19 +1074,20 @@
               <figure class="o col-md-5 d-md-inline-block">
 
                 <img src="img/Restoration/monuments/Doughboy%20before2011_7.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Horrigan image">
 
               </figure>
 
               <figure class="t col-md-5 d-md-inline-block">
 
-                <img src="img/Restoration/monuments/Doughboy%20done2011_6.jpg" class="img-fluid">
+                <img src="img/Restoration/monuments/Doughboy%20done2011_6.jpg"
+                     class="img-fluid" alt="Horrigan image 2">
 
               </figure>
             </div>
-            <!---1st Slide--->
+            <!--1st Slide-->
 
-            <!---2nd Slide--->
+            <!--2nd Slide-->
             <div class="mon2 carousel-item text-center">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
@@ -1126,12 +1102,12 @@
 
               <figure class="o">
                   <img data-src="img/Restoration/monuments/Spainish%20Am%20done.jpg"
-                       class="img-fluid">
+                       class="img-fluid" alt="Moseman image">
               </figure>
             </div>
-            <!---2nd Slide--->
+            <!--2nd Slide-->
 
-            <!---3rd Slide--->
+            <!--3rd Slide-->
             <div class="mon3 carousel-item text-center">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
@@ -1155,22 +1131,22 @@
 
               <figure class="o col-md-5 d-md-inline-block">
                 <img data-src="img/Restoration/monuments/Civil%20War%20cleaned.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Civil War cleaned image">
               </figure>
 
               <figure class="t col-md-5 d-md-inline-block">
                 <img data-src="img/Restoration/monuments/Civil%20war%20tablet%20done2011_5.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Civil War done image">
               </figure>
             </div>
-            <!---3rd Slide--->
+            <!--3rd Slide-->
 
             <!--4th slide-->
             <div class="mon4 carousel-item text-center">
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img data-src="img/Restoration/monuments/Kuchmeister%20done2011_3.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Kuchmeister image done">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>Medal of Honor Memorial Hermann Kuchmeister</h3>
@@ -1204,7 +1180,7 @@
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img data-src="img/Restoration/monuments/WW%201%20tablet%20done2011_1.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="WWII Tablet image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>WW I Memorial Tablet</h3>
@@ -1234,8 +1210,7 @@
         <!--Carousel Wrapper-->
 
 
-        <!--- Mounts Carousel --->
-        <!--Carousel Wrapper-->
+        <!-- Mounts Carousel -->
         <div id="mtcarousel-with-lb" class="carousel slide carousel-multi-item lazy-load"
              data-ride="carousel">
 
@@ -1264,7 +1239,7 @@
           <div class="carousel-inner mdb-lightbox" role="listbox">
             <div id="mtmdb-lightbox-ui"></div>
 
-            <!---1st Slide--->
+            <!--1st Slide-->
             <div class="mt1 carousel-item active text-center">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
@@ -1278,22 +1253,19 @@
                   steel top rim. I also supplied fitted cradles to secure the fish in place.
                 </div>
               </div>
+
               <figure class="o col-md-5 d-md-inline-block">
-
                 <img src="img/Restoration/mounts/coelacanth%205.jpg"
-                     class="img-fluid">
-
+                     class="img-fluid" alt="coelacanth image">
               </figure>
-
               <figure class="t col-md-5 d-md-inline-block">
-
-                <img src="img/Restoration/mounts/coelacanth%206.jpg" class="img-fluid">
-
+                <img src="img/Restoration/mounts/coelacanth%206.jpg"
+                     class="img-fluid" alt="coelacanth image 2">
               </figure>
             </div>
-            <!---1st Slide--->
+            <!--1st Slide-->
 
-            <!---2nd Slide--->
+            <!--2nd Slide-->
             <div class="mt2 carousel-item text-center">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
@@ -1310,16 +1282,17 @@
 
               <figure class="o col-md-5 d-md-inline-block">
                 <img data-src="img/Restoration/mounts/IMG_0088.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Mayan Lid image">
               </figure>
 
               <figure class="t col-md-5 d-md-inline-block">
-                <img data-src="img/Restoration/mounts/100_1461.jpg" class="img-fluid">
+                <img data-src="img/Restoration/mounts/100_1461.jpg"
+                     class="img-fluid" alt="Mayan Lid image 2">
               </figure>
             </div>
-            <!---2nd Slide--->
+            <!--2nd Slide-->
 
-            <!---3rd Slide--->
+            <!--3rd Slide-->
             <div class="mt3 carousel-item text-center">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
@@ -1332,16 +1305,17 @@
 
               <figure class="o col-md-5 d-md-inline-block">
                 <img data-src="img/Restoration/mounts/100_1462.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Columbian Figure image">
               </figure>
 
               <figure class="t col-md-5 d-md-inline-block">
-                <img data-src="img/Restoration/mounts/100_1685.jpg" class="img-fluid">
+                <img data-src="img/Restoration/mounts/100_1685.jpg"
+                     class="img-fluid" alt="Columbian Figure image 2">
               </figure>
             </div>
-            <!---3rd Slide--->
+            <!--3rd Slide-->
 
-            <!---4th Slide--->
+            <!--4th Slide-->
             <div class="mt4 carousel-item text-center">
               <div class="overlay img-fluid">
                 <div class="overlayContent">
@@ -1357,21 +1331,22 @@
 
               <figure class="o col-md-5 d-md-inline-block">
                 <img data-src="img/Restoration/mounts/100_1902.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Tebesca image">
               </figure>
 
               <figure class="t col-md-5 d-md-inline-block">
-                <img data-src="img/Restoration/mounts/IMG_0239.jpg" class="img-fluid">
+                <img data-src="img/Restoration/mounts/IMG_0239.jpg"
+                     class="img-fluid" alt="Tebesca image 2">
               </figure>
             </div>
-            <!---4th Slide--->
+            <!--4th Slide-->
 
             <!--5th slide-->
             <div class="mt5 carousel-item text-center">
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img data-src="img/Restoration/mounts/IMG_0612.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Right Whale image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>Right Whale</h3>
@@ -1393,7 +1368,7 @@
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img data-src="img/Restoration/mounts/World%20Tree%20on%20cart8x10.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="World Tree image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>World Tree</h3>
@@ -1417,7 +1392,7 @@
         <!--Carousel Wrapper-->
 
       </div>
-      <!---column--->
+      <!--columm-->
 
       <div class="col-md-6 order-xs-first order-sm-first order-md-last content">
         <h3 class="mainName">Restoration Projects</h3>
@@ -1444,20 +1419,10 @@
         <button type="button" id="mountsBtn" class="btn btn-outline-light btn-lg restButton">Mounts
           And Things
         </button>
-        <!---
-        <p id="monblurb" class="monumentsBlurb"><strong>
-          Since 1990 we have undertaken the restoration of many public monuments, primarily made of
-          bronze, stone, or a combination. We have performed repatination followed by application of
-          weather resistant coatings, structural repairs and fabrication of missing parts. Our
-          familiarity with most materials used in outdoor sculpture includes cleaning and repointing
-          of stone work also.
-        </strong>
-        </p>
-        --->
       </div>
 
     </div>
-    <!---row--->
+    <!--row-->
 
     <div class="fixed-wrap">
       <div id="restorationBG" class="fixed lazy">
@@ -1467,9 +1432,9 @@
   </div>
 
 </div>
-<!---End restoration Landing--->
+<!--End restoration Landing-->
 
-<!---Start fresh paint landing--->
+<!-- ================================================================== Start fresh paint landing-->
 <div id="freshpaint" class="offset-bar">
 
   <div class="row text-center fp-row">
@@ -1512,7 +1477,7 @@
         <div class="carousel-inner mdb-lightbox" role="listbox">
           <div id="fpmdb-lightbox-ui"></div>
 
-          <!---1st slide--->
+          <!--1st slide-->
           <div class="fp1 carousel-item text-center active">
             <div class="overlay img-fluid">
               <div class="overlayContent">
@@ -1547,22 +1512,20 @@
 
               </div>
             </div>
+
             <figure class="o col-md-5 d-md-inline-block">
-
               <img src="img/freshPaint/IMG_6309.jpg"
-                   class="img-fluid">
-
+                   class="img-fluid" alt="Memorial Church Bell image">
             </figure>
 
             <figure class="t col-md-5 d-md-inline-block">
-
-              <img src="img/freshPaint/shapeimage_3.png" class="img-fluid">
-
+              <img src="img/freshPaint/shapeimage_3.png"
+                   class="img-fluid" alt="Memorial Church Bell image 2">
             </figure>
           </div>
-          <!---1st slide--->
+          <!--1st slide-->
 
-          <!---2nd slide--->
+          <!--2nd slide-->
           <div class="fp2 carousel-item text-center">
             <div class="overlay img-fluid">
               <div class="overlayContent">
@@ -1586,20 +1549,17 @@
                 </button>
               </div>
             </div>
+
             <figure class="o col-md-5 d-md-inline-block">
-
               <img data-src="img/freshPaint/IMG_3464.jpg"
-                   class="img-fluid">
-
+                   class="img-fluid" alt="Poem Wheel image">
             </figure>
-
             <figure class="t col-md-5 d-md-inline-block">
-
-              <img data-src="img/freshPaint/IMG_3471.jpg" class="img-fluid">
-
+              <img data-src="img/freshPaint/IMG_3471.jpg"
+                   class="img-fluid" alt="Poem Wheel image 2">
             </figure>
           </div>
-          <!---2nd slide--->
+          <!--2nd slide-->
 
           <!--3rd slide-->
           <div class="fp3 carousel-item text-center">
@@ -1616,22 +1576,19 @@
                 <br>
               </div>
             </div>
+
             <figure class="o col-md-5 d-md-inline-block">
-
               <img data-src="img/freshPaint/IMG_3949.jpg"
-                   class="img-fluid">
-
+                   class="img-fluid" alt="Lowell image">
             </figure>
-
             <figure class="t col-md-5 d-md-inline-block">
-
-              <img data-src="img/freshPaint/IMG_3990.jpg" class="img-fluid">
-
+              <img data-src="img/freshPaint/IMG_3990.jpg"
+                   class="img-fluid" alt="Lowel image 2">
             </figure>
           </div>
           <!--Third slide-->
 
-          <!---Fourth slide--->
+          <!--Fourth slide-->
           <div class="fp4 carousel-item text-center">
             <div class="overlay img-fluid">
               <div class="overlayContent">
@@ -1651,18 +1608,15 @@
             </div>
 
             <figure class="o col-md-5 d-md-inline-block">
-
-              <img data-src="img/freshPaint/IMG_4108.jpg" class="img-fluid">
-
+              <img data-src="img/freshPaint/IMG_4108.jpg"
+                   class="img-fluid" alt="Dunster image">
             </figure>
-
             <figure class="t col-md-5 d-md-inline-block">
-
-              <img data-src="img/freshPaint/Dunster%20Dial%20website3.jpg" class="img-fluid">
-
+              <img data-src="img/freshPaint/Dunster%20Dial%20website3.jpg"
+                   class="img-fluid" alt="Dunster image 2">
             </figure>
           </div>
-          <!---Fourth slide--->
+          <!--Fourth slide-->
 
         </div>
         <!--Slides-->
@@ -1670,13 +1624,13 @@
       </div>
       <!--Carousel Wrapper-->
     </div>
-    <!---column2--->
+    <!--column2-->
   </div>
 
 </div>
-<!---End fresh paint Landing--->
+<!--End fresh paint Landing-->
 
-<!---Start few other things landing--->
+<!--Start few other things landing-->
 <div id="other" class="offset-bar">
 
   <div class="fixed-background">
@@ -1712,12 +1666,12 @@
           <div class="carousel-inner mdb-lightbox active" role="listbox">
             <div id="fomdb-lightbox-ui"></div>
 
-            <!---1st Slide--->
+            <!--1st Slide-->
             <div class="fo1 carousel-item text-center active">
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img src="img/fewOther/Me%20Painting%20sign%201970.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Moseman image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>Paying my way through college lettering signs in my studio 1975.</h3>
@@ -1727,14 +1681,14 @@
 
               </figure>
             </div>
-            <!---1st Slide--->
+            <!--1st Slide-->
 
             <!--2nd slide-->
             <div class="fo2 carousel-item text-center">
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img data-src="img/fewOther/Greenfield%20Sign%20150.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Greenfeild Sign image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>Greenfeild Sign</h3>
@@ -1753,7 +1707,7 @@
             </div>
             <!--/.2nd slide-->
 
-            <!---3rd Slide--->
+            <!--3rd Slide-->
             <div class="fo3 carousel-item text-center">
               <figure class="o col-md-12 d-md-inline-block">
                 <video class="lazyVid" autoplay muted loop playsinline width="720" height="960" poster="img/fewOther/Screenshot%20from%202020-07-22%2022-12-25.png">
@@ -1779,14 +1733,14 @@
 
               </figure>
             </div>
-            <!---3rd Slide--->
+            <!--3rd Slide-->
 
-            <!---4th Slide--->
+            <!--4th Slide-->
             <div class="fo4 carousel-item text-center">
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img data-src="img/fewOther/portraits/Ed%20Rosin%20Old%20South.jpg"
-                     class="img-fluid">
+                     class="img-fluid" alt="Rosen image">
                 <div class="overlay img-fluid">
                   <div class="overlayContent">
                     <h3>Portraits</h3>
@@ -1810,7 +1764,7 @@
 
               </figure>
             </div>
-            <!---Third Slide--->
+            <!--Third Slide-->
 
           </div>
           <!--Slides-->
@@ -1818,7 +1772,7 @@
         </div>
         <!--Carousel Wrapper-->
       </div>
-      <!---column--->
+      <!--column-->
 
 
       <div class="col-md-6 order-sm-first order-xs-first order-md-last">
@@ -1845,9 +1799,9 @@
   </div>
 </div>
 
-<!---End few other things Landing--->
+<!--End few other things Landing-->
 
-<!---Start contact landing--->
+<!--Start contact landing-->
 <div id="contact" class="offset-bar">
   <div class="fixed-background">
 
@@ -1857,7 +1811,7 @@
         <picture class="contact-logo">
           <source srcset="img/logo/peacock/peacockWhite.webp" type="image/webp">
           <source srcset="img/logo/peacock/curciStudioWhiteText.png" type="image/png">
-          <img src="img/logo/peacock/curciStudioWhiteText.png">
+          <img src="img/logo/peacock/curciStudioWhiteText.png" alt="Logo image">
         </picture>
       </div>
 
@@ -1884,7 +1838,7 @@
         <div class="content">
           <i class="material-icons">trending_flat</i>
           <p>Scan with any smartphone camera to add as contact:</p>
-          <img class="contact-qr" src="img/frame.png">
+          <img class="contact-qr" src="img/frame.png" alt="QR contact image">
         </div>
       </div>
 
@@ -1896,14 +1850,10 @@
     </div>
   </div>
 
-  <!---
-  <hr class="socket">
-  &copy; Tim Gladyshev
-  --->
 </div>
-<!---End contact Landing--->
+<!--End contact Landing-->
 
-<!--- Modal for Louise Nevelson  --->
+<!-- Modal for Louise Nevelson  -->
 <div id="nevelsonModel" class="shadow-modal">
   <div class="shadow-modal-content text-center card">
     <h3 class="modal-header-color">More Details</h3>
@@ -1946,7 +1896,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img src="img/Restoration/100_1631.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="stripping paint image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Stripping Paint</h3>
@@ -1962,7 +1912,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/Restoration/100_1633.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="stripping paint image 2">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Stripping Paint</h3>
@@ -1978,7 +1928,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/Restoration/100_1677.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="crack image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Weld Crack</h3>
@@ -1994,7 +1944,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/Restoration/100_1870.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="cleaned image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Cleaned, ready for paint</h3>
@@ -2010,7 +1960,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/Restoration/IMG_1777.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="closeup image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Attention to detail</h3>
@@ -2026,7 +1976,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/Restoration/IMG_1783.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="Buffing image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Buffing</h3>
@@ -2042,7 +1992,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/Restoration/_MG_1755.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="painted image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Painted</h3>
@@ -2058,7 +2008,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/Restoration/100_1496.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="detail image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>detail</h3>
@@ -2074,7 +2024,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/Restoration/100_1614.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="detail image 2">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>detail</h3>
@@ -2090,7 +2040,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/Restoration/100_1618.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="detail image 3">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>detail</h3>
@@ -2109,7 +2059,7 @@
   </div>
 </div>
 
-<!---Modal for Merrimack Poem Wheel--->
+<!--Modal for Merrimack Poem Wheel-->
 <div id="mModal" class="shadow-modal">
   <div class="shadow-modal-content text-center">
     <h3 class="modal-header-color">More Details</h3>
@@ -2144,7 +2094,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img src="img/freshPaint/_EST0116.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="install crew image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Install Crew</h3>
@@ -2160,7 +2110,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/freshPaint/Merrimac%20Poem%20Wheel%202015%20website2.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="Merrimac Poem wheel image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>At Merrimack College</h3>
@@ -2176,7 +2126,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/freshPaint/poetry%20wheel%20model.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="Model image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>The Model</h3>
@@ -2195,7 +2145,7 @@
   </div>
 </div>
 
-<!---Modal for Dunster Sundial--->
+<!--Modal for Dunster Sundial-->
 <div id="dModal" class="shadow-modal">
   <div class="shadow-modal-content text-center card">
     <h3 class="modal-header-color">More Details</h3>
@@ -2230,7 +2180,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img src="img/freshPaint/IMG_3413.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="Model image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>The Model</h3>
@@ -2246,7 +2196,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/freshPaint/IMG_3811.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="CNC image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Roughing with the CNC</h3>
@@ -2262,7 +2212,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/freshPaint/IMG_3841.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="Dunster image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>First Side Cut</h3>
@@ -2281,7 +2231,7 @@
   </div>
 </div>
 
-<!---Modal for Portraits--->
+<!--Modal for Portraits-->
 <div id="pModal" class="shadow-modal">
   <div class="shadow-modal-content text-center card">
     <h3 class="modal-header-color">More Details</h3>
@@ -2318,7 +2268,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img src="img/fewOther/portraits/Pilsbury%20doughboy%20150.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="DoughBoy image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Dough Boy</h3>
@@ -2339,7 +2289,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/fewOther/portraits/Greenfield%20Clock%20inside.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="Greenfeild Clock image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Greenfield Clock</h3>
@@ -2360,7 +2310,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/fewOther/portraits/nynex%20bank%20240dpi.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="Piggy Bank image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>
@@ -2383,7 +2333,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/fewOther/portraits/Randy%20the%20Dog%20Faced%20boy%20web.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="Randy image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>
@@ -2413,7 +2363,7 @@
           <figure class="o col-md-12 d-md-inline-block">
 
             <img data-src="img/fewOther/portraits/Jack%20in%20Box%20Uncle%20Sam.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="Jack image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>
@@ -2445,7 +2395,7 @@
   </div>
 </div>
 
-<!---Modal for Mossman--->
+<!--Modal for Mossman-->
 <div id="mossModal" class="shadow-modal">
   <div class="shadow-modal-content text-center card">
     <h3 class="modal-header-color">More Details</h3>
@@ -2479,7 +2429,7 @@
         <div class="moss1 carousel-item active text-center">
           <figure class="col-md-12 d-md-inline-block">
             <img src="img/Restoration/monuments/Spainish%20Am%20boots%20before%20after.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="Boots closeup image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Boots - front before, back after</h3>
@@ -2494,7 +2444,7 @@
         <div class="moss2 carousel-item text-center">
           <figure class="o col-md-12 d-md-inline-block">
             <img data-src="img/Restoration/monuments/Spainish%20Am%20arm%20before2011_3.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="boots after image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Arm - after</h3>
@@ -2509,7 +2459,7 @@
         <div class="moss3 carousel-item text-center">
           <figure class="o col-md-12 d-md-inline-block">
             <img data-src="img/Restoration/monuments/Spainish%20Am%20ARM%20DONE2011_5.jpg"
-                 class="img-fluid">
+                 class="img-fluid" alt="Arm closeup image">
             <div class="overlay img-fluid">
               <div class="overlayContent">
                 <h3>Arm - before</h3>
@@ -2532,7 +2482,6 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script src="js/modernizr-custom.js"></script>
-<!---<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>--->
 
 <script src="js/petals.js"></script>
 <script src="js/dropdown.js"></script>

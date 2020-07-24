@@ -1,19 +1,19 @@
 $(function() {
   $('.carousel.lazy-load').bind('slide.bs.carousel', function (e) {
-    let image = $(e.relatedTarget).find('figure.o img[data-src]');
-    image.attr('src', image.data('src'));
-    image.removeAttr('data-src');
+    var image = $(e.relatedTarget).find('figure.o img[data-src]');
+    image.prop('src', image.data('src'));
+    image.removeProp('data-src');
 
-    let image2 = $(e.relatedTarget).find('figure.t img[data-src]');
-    image2.attr('src', image2.data('src'));
-    image2.removeAttr('data-src');
+    var image2 = $(e.relatedTarget).find('figure.t img[data-src]');
+    image2.prop('src', image2.data('src'));
+    image2.removeProp('data-src');
 
-    let image3 = $(e.relatedTarget).find('figure.th img[data-src]');
-    image3.attr('src', image3.data('src'));
-    image3.removeAttr('data-src');
+    var image3 = $(e.relatedTarget).find('figure.th img[data-src]');
+    image3.prop('src', image3.data('src'));
+    image3.removeProp('data-src');
 
-    let image4 = $(e.relatedTarget).find('figure.f img[data-src]');
-    image4.attr('src', image4.data('src'));
-    image4.removeAttr('data-src');
+    var image4 = $(e.relatedTarget).find('figure.f img[data-src]');
+    image4.prop('src', image4.data('src'));
+    image4.removeProp('data-src');
   });
 });

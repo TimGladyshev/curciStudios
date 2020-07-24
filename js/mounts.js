@@ -19,8 +19,6 @@ restButton.onclick = function () {
   monButton.style.backgroundColor = "rgba(255,255,255,.3)";
   mountsButton.style.backgroundColor = "rgba(255,255,255,.3)";
 
-  /*document.getElementById("monblurb").style.display = "none";*/
-
   restCar.style.display = "block";
   monCar.style.display = "none";
   mountCar.style.display = "none";
@@ -32,8 +30,6 @@ monButton.onclick = function () {
   monButton.style.backgroundColor = "rgba(255,255,255,.7)";
   mountsButton.style.backgroundColor = "rgba(255,255,255,.3)";
 
-  /*document.getElementById("monblurb").style.display = "block";*/
-
   restCar.style.display = "none";
   monCar.style.display = "block";
   mountCar.style.display = "none";
@@ -44,8 +40,6 @@ mountsButton.onclick = function () {
   restButton.style.backgroundColor = "rgba(255,255,255,.3)";
   monButton.style.backgroundColor = "rgba(255,255,255,.3)";
   mountsButton.style.backgroundColor = "rgba(255,255,255,.7)";
-
-  /*document.getElementById("monblurb").style.display = "none";*/
 
   restCar.style.display = "none";
   monCar.style.display = "none";

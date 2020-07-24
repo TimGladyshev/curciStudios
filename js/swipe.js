@@ -1,3 +1,5 @@
+
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 $(document).ready(function() {
   $('.swipeAble').swipe( {
     swipeLeft:function() {

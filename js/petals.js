@@ -1,15 +1,15 @@
 /* Petal movement on caption hover*/
-let captionText = document.getElementsByClassName('caption')[0];
+var captionText = document.getElementsByClassName('caption')[0];
 
 captionText.addEventListener('mouseover', function (e) {
 
-  let lsp = document.getElementsByClassName('ls')[0];
-  let lmp = document.getElementsByClassName('lm')[0];
-  let llp = document.getElementsByClassName('ll')[0];
-  let rsp = document.getElementsByClassName('rs')[0];
-  let rmp = document.getElementsByClassName('rm')[0];
-  let rlp = document.getElementsByClassName('rl')[0];
-  let rhombus = document.getElementsByClassName('rhombus')[0];
+  var lsp = document.getElementsByClassName('ls')[0];
+  var lmp = document.getElementsByClassName('lm')[0];
+  var llp = document.getElementsByClassName('ll')[0];
+  var rsp = document.getElementsByClassName('rs')[0];
+  var rmp = document.getElementsByClassName('rm')[0];
+  var rlp = document.getElementsByClassName('rl')[0];
+  var rhombus = document.getElementsByClassName('rhombus')[0];
 
   lsp.classList.remove('ls');
   lsp.classList.add('ls-out');
@@ -36,13 +36,13 @@ captionText.addEventListener('mouseover', function (e) {
 
 captionText.addEventListener('mouseout', function () {
 
-  let lsp = document.getElementsByClassName('ls-out')[0];
-  let lmp = document.getElementsByClassName('lm-out')[0];
-  let llp = document.getElementsByClassName('ll-out')[0];
-  let rsp = document.getElementsByClassName('rs-out')[0];
-  let rmp = document.getElementsByClassName('rm-out')[0];
-  let rlp = document.getElementsByClassName('rl-out')[0];
-  let rhombus = document.getElementsByClassName('rhombus-out')[0];
+  var lsp = document.getElementsByClassName('ls-out')[0];
+  var lmp = document.getElementsByClassName('lm-out')[0];
+  var llp = document.getElementsByClassName('ll-out')[0];
+  var rsp = document.getElementsByClassName('rs-out')[0];
+  var rmp = document.getElementsByClassName('rm-out')[0];
+  var rlp = document.getElementsByClassName('rl-out')[0];
+  var rhombus = document.getElementsByClassName('rhombus-out')[0];
 
   lsp.classList.add('ls');
   lsp.classList.remove('ls-out');
