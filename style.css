@@ -639,7 +639,7 @@ ul {
 .overlayButtonOut {
   opacity: 1;
   position: absolute;
-  top: 5%;
+  top: 8%;
   left: 50%;
   transition: .5s ease;
   -webkit-transform: translate(-50%, -50%);
@@ -663,7 +663,7 @@ ul {
 .overlayButton2Out {
   opacity: 1;
   position: absolute;
-  top: 5%;
+  top: 8%;
   left: 55%;
   transition: .5s ease;
   -webkit-transform: translate(-50%, -50%);
@@ -687,7 +687,7 @@ ul {
 .overlayButtonModalOut {
   opacity: 1;
   position: absolute;
-  top: 12%;
+  top: 15%;
   left: 50%;
   transition: .5s ease;
   -webkit-transform: translate(-50%, -50%);
