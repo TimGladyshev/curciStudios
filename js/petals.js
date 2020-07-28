@@ -11,8 +11,8 @@ captionText.addEventListener('mouseover', function (e) {
   var rlp = document.getElementsByClassName('rl')[0];
   var rhombus = document.getElementsByClassName('rhombus')[0];
 
-  lsp.classList.remove('ls');
   lsp.classList.add('ls-out');
+  lsp.classList.remove('ls');
 
   lmp.classList.add('lm-out');
   lmp.classList.remove('lm');
