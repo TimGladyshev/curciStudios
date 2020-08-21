@@ -3,13 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Curci Studi</title>
+  <title>Curci Studio</title>
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/fixed.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo/peacock.ico">
+  <meta name="description" content="Boston's Premier Art Restoration Studio">
+  <meta name="author" content="Timothy Gladyshev">
+  <meta name="keywords"
+        content="Restoration, Studio, Art Studio, Art, Art Restoration, Commission, Monument,
+        Monuments, Statue, Construction, Workshop, Design">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -19,22 +25,22 @@
 
   <!-- Nav Bar -->
   <nav class="navbar navbar-expand-xl navbar-light fixed-top">
-    <a class="navbar-brand" href="index.html">
 
-      <picture>
-        <source srcset="img/logo/peacock/optimized/peacock.webp" type="image/webp">
-        <source srcset="img/logo/peacock/peacock.png" type="image/png">
-        <img src="img/logo/peacock/peacock.png" alt="logo">
-      </picture>
+      <a class="navbar-brand" href="index.html">
+        <picture>
+          <source srcset="img/logo/peacock/optimized/peacock.webp" type="image/webp">
+          <source srcset="img/logo/peacock/peacock.png" type="image/png">
+          <img src="img/logo/peacock/peacock.png" alt="logo">
+        </picture>
+        <h3 class="d-inline">&nbsp;Curci Studio</h3></a>
 
-      <h3 class="d-inline">&nbsp;Curci Studio</h3></a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
+
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#home">Home</a>
@@ -63,6 +69,8 @@
                onclick="moveTo('solar')">Greenfield Clock</a>
             <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="9"
                onclick="moveTo('solar')">Tulips</a>
+            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="10"
+               onclick="moveTo('solar')">Water Lily</a>
           </div>
         </li>
         <li class="nav-item drop-down-button">
@@ -87,19 +95,54 @@
                onclick="moveTo('animametric')">The Dance</a>
             <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="3"
                onclick="moveTo('animametric')">Sundance</a>
+            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="4"
+               onclick="moveTo('animametric')">Hummingbird</a>
+            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="5"
+               onclick="moveTo('animametric')">Skybug</a>
           </div>
         </li>
         <li class="nav-item drop-down-button">
           <a class="nav-link" href="#restoration">Restoration</a>
           <div class="drop-down-content finder">
-            <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="0"
-               onclick="moveTo('restoration')">Alexander Calder's Octopus</a>
-            <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="1"
-               onclick="moveTo('restoration')">Elsworth Kelly, Arcs</a>
-            <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="2"
-               onclick="moveTo('restoration')">Louise Nevelson</a>
-            <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="3"
-               onclick="moveTo('restoration')">Shingu</a>
+            <div class="column">
+              <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="0"
+                 onclick="moveTo('restoration');restorationClick();">Alexander Calder's Octopus</a>
+              <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="1"
+                 onclick="moveTo('restoration');restorationClick();">Elsworth Kelly, Arcs</a>
+              <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="2"
+                 onclick="moveTo('restoration');restorationClick();">Louise Nevelson</a>
+              <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="3"
+                 onclick="moveTo('restoration');restorationClick();">Shingu</a>
+            </div>
+            <div class="column">
+              <i class="material-icons">horizontal_rule</i>
+              <a href="#restoration" data-target="#moncarousel-with-lb" data-slide-to="0"
+                 onclick="moveTo('restoration');monumentsClick()">Gerald Horrigan, WWI Monument</a>
+              <a href="#restoration" data-target="#moncarousel-with-lb" data-slide-to="1"
+                 onclick="moveTo('restoration');monumentsClick();">Moseman, Hiker</a>
+              <a href="#restoration" data-target="#moncarousel-with-lb" data-slide-to="2"
+                 onclick="moveTo('restoration');monumentsClick();">Clark, Civil War Monument</a>
+              <a href="#restoration" data-target="#moncarousel-with-lb" data-slide-to="3"
+                 onclick="moveTo('restoration');monumentsClick();">Kuchmeister, Medal of Honor
+                Memorial</a>
+              <a href="#restoration" data-target="#moncarousel-with-lb" data-slide-to="4"
+                 onclick="moveTo('restoration');monumentsClick();">WWI Memorial Tablet</a>
+            </div>
+            <div class="column">
+              <i class="material-icons">horizontal_rule</i>
+              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="0"
+                 onclick="moveTo('restoration');mountsClick()">Coelacanth</a>
+              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="1"
+                 onclick="moveTo('restoration');mountsClick();">Myan Lid Support</a>
+              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="2"
+                 onclick="moveTo('restoration');mountsClick();">Pre Columbian Figure Mount</a>
+              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="3"
+                 onclick="moveTo('restoration');mountsClick();">Tebesca Jaguar</a>
+              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="4"
+                 onclick="moveTo('restoration');mountsClick();">Right Wale</a>
+              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="4"
+                 onclick="moveTo('restoration');mountsClick();">World Tree</a>
+            </div>
           </div>
         </li>
         <li class="nav-item drop-down-button">
@@ -131,6 +174,7 @@
         </li>
       </ul>
     </div>
+
   </nav>
   <!-- end Nav Bar -->
 
@@ -186,8 +230,22 @@
     <i class="material-icons">horizontal_rule</i>
     <h6><strong>Works of art for individuals and public spaces</strong></h6>
     <h6><strong>Restoration projects of significant artworks</strong></h6>
-    <a class="btn btn-outline-light btn-lg" href="#solar">Designs</a>
+    <a class="btn btn-outline-light btn-lg" href="#solar" onmouseover="showToast()">Designs</a>
     <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
+  </div>
+
+  <div id="toast">
+    Only artworks indicated as "Collection of the Artist" are
+    available for sale.
+    <br>We would be happy to create an original work for you on a special order basis.
+  </div>
+
+  <div id="info">
+    We primarily design and create artworks for clients on a commissioned basis. Artworks
+    indicated as in the Collection of the Artist are available for sale,
+    please contact us for pricing. Works in Public or Private Collections are unavailable, however
+    we
+    would be happy to create an original work for you on a special order basis.
   </div>
 
 </div>
@@ -199,25 +257,27 @@
   <div class="row text-center solar-row left">
 
     <div class="col-md-4 order-first blurbContainer">
-        <h3 class="mainName">Solar Sculptures</h3>
-        <div class="mainIcon">
-          <i class="material-icons">wb_sunny</i>
-        </div>
-        <p class="mainBlurb">
-          My solar sculptures are an exploration of mankind’s relationship with nature and
-          technology,
-          and seek to promote an awareness of the normal balance of forces found in nature. Using
-          solar technology, The Solar Flower Blossom sculptures are colorful and plant-like, in that
-          they are seductively colorful, changing their shape, deriving sustenance from the energy
-          in
-          the environment. However they remain as machines. As such they help to make people aware
-          of
-          the natural world and of the use of solar energy. Furthermore the solar technology that
-          powers all of these artworks represents a hope for the future. Inevitably as these
-          sculptures are exhibited even nontechnical people are curious about what makes them work.
-          This curiosity promotes the awareness that I believe is a key to beginning the restoration
-          of the normal balance of nature, as well as survival of the human race on earth.
-        </p>
+      <h3 class="mainName">Solar Sculptures</h3>
+      <div class="mainIcon">
+        <i class="material-icons">wb_sunny</i>
+      </div>
+      <p class="mainBlurb">
+        My solar sculptures are an exploration of mankind’s relationship with nature and
+        technology,
+        and seek to promote an awareness of the normal balance of forces found in nature. Using
+        solar technology, The Solar Flower Blossom sculptures are colorful and plant-like, in that
+        they are seductively colorful, changing their shape, deriving sustenance from the energy
+        in
+        the environment. However they remain as machines. As such they help to make people aware
+        of
+        the natural world and of the use of solar energy. Furthermore the solar technology that
+        powers all of these artworks represents a hope for the future. Inevitably as these
+        sculptures are exhibited even nontechnical people are curious about what makes them work.
+        This curiosity promotes the awareness that I believe is a key to beginning the restoration
+        of the normal balance of nature, as well as survival of the human race on earth.
+        <br><br><i class="material-icons" onmouseover="hoverInfo()"
+                   onmouseleave="infoOut()">info</i>
+      </p>
       <div class="blurbOverlayRight">
         <div class="blurbText">
         </div>
@@ -230,10 +290,10 @@
            data-touch data-ride="carousel">
 
 
-          <a class="indButtonLeft" href="#scarousel-with-lb" data-slide="prev">
-            <span>&#8249; </span></a>
-          <a class="indButtonRight" href="#scarousel-with-lb" data-slide="next">
-            <span>&#8250; </span></a>
+        <a class="indButtonLeft" href="#scarousel-with-lb" data-slide="prev">
+          <span>&#8249; </span></a>
+        <a class="indButtonRight" href="#scarousel-with-lb" data-slide="next">
+          <span>&#8250; </span></a>
 
 
         <ol class="carousel-indicators">
@@ -247,6 +307,7 @@
           <li data-target="#scarousel-with-lb" data-slide-to="7"></li>
           <li data-target="#scarousel-with-lb" data-slide-to="8"></li>
           <li data-target="#scarousel-with-lb" data-slide-to="9"></li>
+          <li data-target="#scarousel-with-lb" data-slide-to="10"></li>
         </ol>
 
         <!-- Slides and lightbox -->
@@ -257,10 +318,12 @@
           <div class="Amarylis solarSlide carousel-item active text-center">
             <figure class="o col-md-12 row d-md-inline-block text-center">
 
-              <img src="img/Solar/Amarylis%20O&C%20Northend.jpg"
-                   class="lazy img-fluid" alt="Amarylis image">
+              <img src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Amarylis%20O&C%20Northend.jpg"
+                   style="height:85vh" class="lazy img-fluid" alt="Amarylis image">
               <div class="img-fluid">
-                <a class="overlayButton" href="img/Solar/Amarylis%20O&C%20Northend.jpg" target="_blank">
+                <a class="overlayButton"
+                   href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Amarylis%20O&C%20Northend.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -288,7 +351,9 @@
               <img data-src="img/Solar/Iris%20open%20closed%20dpi%20150.jpg"
                    class="img-fluid" alt="Iris image">
               <div class="img-fluid">
-                <a class="overlayButton" href="img/Solar/Iris%20open%20closed%20dpi%20150.jpg" target="_blank">
+                <a class="overlayButton"
+                   href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Iris%20double%20640048003.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -316,7 +381,9 @@
               <img data-src="img/Solar/morning%20glories%20150dpi.jpg"
                    class="img-fluid" alt="Morning Glories image">
               <div class="overlay img-fluid">
-                <a class="overlayButton" href="img/Solar/morning%20glories%20150dpi.jpg" target="_blank">
+                <a class="overlayButton"
+                   href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Morning%20Glories%20l%20verticle%20orig.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -345,10 +412,14 @@
           <div class="mg2 carousel-item text-center">
 
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/Solar/morning%20Glories.jpg" target="_blank">
+              <a class="overlayButton"
+                 href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Morning%20Glories%202%20close.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
-              <a class="overlayButton2" href="img/Solar/Morning%20Glories%20tight.jpg" target="_blank">
+              <a class="overlayButton2"
+                 href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Morning%20Glories%202%20orig.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <div class="overlayContent">
@@ -363,13 +434,15 @@
             </div>
 
             <figure class="o col-md-5 d-md-inline-block">
-              <img data-src="img/Solar/morning%20Glories.jpg"
-                   class="img-fluid" alt="Morning Glories 2 image">
+              <img
+                  data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Morning%20Glories%202%20close.jpg"
+                  class="img-fluid" alt="Morning Glories 2 image">
             </figure>
 
             <figure class="t col-md-5 d-md-inline-block">
-              <img data-src="img/Solar/Morning%20Glories%20tight.jpg"
-                   class="img-fluid" alt="Morning Glories 2 image 2">
+              <img
+                  data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Morning%20Glories%202%20orig.jpg"
+                  class="img-fluid" alt="Morning Glories 2 image 2">
             </figure>
           </div>
           <!--Fourth slide-->
@@ -382,7 +455,9 @@
                    class="img-fluid" alt="Noonstone image">
 
               <div class="overlay img-fluid">
-                <a class="overlayButton" href="img/Solar/noonstone%20150dpi.jpg" target="_blank">
+                <a class="overlayButton"
+                   href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Noonstone%20.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -409,7 +484,8 @@
           <!--Sixth Slide-->
           <div class="sb carousel-item text-center">
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/Solar/Sunbirds%200330%20web%20site150.jpg" target="_blank">
+              <a class="overlayButton" href="img/Solar/Sunbirds%200330%20web%20site150.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <a class="overlayButton2" href="img/Solar/Sunbirds%20clip-mobile.m4v" target="_blank">
@@ -440,7 +516,7 @@
             </figure>
             <figure class="col-md-5 d-md-inline-block">
               <video class="lazyVid" autoplay muted loop playsinline width="480" height="360"
-                     poster="img/fewOther/Screenshot%20from%202020-07-22%2022-12-25.png">
+                     poster="img/fewOther/Screenshot%20from%202020-08-18%2014-22-00.png">
                 <source data-src="img/Solar/Sunbirds%20clip-mobile.m4v" type="video/mp4">
                 Your browser does not support this video :(
               </video>
@@ -454,7 +530,9 @@
               <img data-src="img/Solar/Sunflower%20150dpi%20web.jpg"
                    class="img-fluid" alt="Sunflower image">
               <div class="overlay img-fluid">
-                <a class="overlayButton" href="img/Solar/Sunflower%20150dpi%20web.jpg" target="_blank">
+                <a class="overlayButton"
+                   href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Sunflower.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -482,7 +560,9 @@
               <img data-src="img/Solar/Sysiphis%20150dpi.jpg"
                    class="img-fluid" alt="Sysiphis image">
               <div class="overlay img-fluid">
-                <a class="overlayButton" href="img/Solar/Sysiphis%20150dpi.jpg" target="_blank">
+                <a class="overlayButton"
+                   href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Sysiphus%20scan.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -509,7 +589,8 @@
               <img data-src="img/Solar/Greenfield%20Clock%20150dpi%20.jpg"
                    class="img-fluid" alt="Greenfeild Clock image">
               <div class="overlay img-fluid">
-                <a class="overlayButton" href="img/Solar/Greenfield%20Clock%20150dpi%20.jpg" target="_blank">
+                <a class="overlayButton" href="img/Solar/Greenfield%20Clock%20150dpi%20.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -541,7 +622,9 @@
               <img data-src="img/Solar/Tulips%204%20up150%20.jpg"
                    class="img-fluid" alt="Tulips">
               <div class="overlay img-fluid">
-                <a class="overlayButton" href="img/Solar/Tulips%204%20up150%20.jpg" target="_blank">
+                <a class="overlayButton"
+                   href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Tulips%20four%20%20way.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -560,6 +643,38 @@
             </figure>
           </div>
           <!--Tenth Slide-->
+
+          <!--11th slide-->
+          <div class="solarSlide carousel-item text-center">
+            <figure class="o col-md-12 d-md-inline-block">
+
+              <img data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Water%20Lily%20o&c.jpg"
+                   style="height:85vh" class="img-fluid" alt="Iris image">
+              <div class="img-fluid">
+                <a class="overlayButton"
+                   href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Water%20Lily%20o&c.jpg"
+                   target="_blank">
+                  <i class="material-icons">fullscreen</i>
+                </a>
+                <div class="overlayContent">
+                  <h4>Water Lily</h4>
+                  A solar powered sculpture by Gregory Curci
+                  <br>
+                  <br>
+                  WATER LILY (closed/open) solar cells, motor, painted aluminum, stainless steel;
+                  This
+                  floating flower blossom sculpture opens and closes throughout the day on about a
+                  two
+                  minute cycle, faster when sunny, slower when cloudy, and stopping in the
+                  evening.
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+            </figure>
+          </div>
+          <!--/.11th slide-->
 
         </div>
         <!--Slides-->
@@ -614,7 +729,9 @@
                 <img src="img/Wind/He%20Said%20She%20Said.jpg"
                      class="img-fluid" alt="He Said She Said image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/Wind/He%20Said%20She%20Said.jpg" target="_blank">
+                  <a class="overlayButton"
+                     href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/He%20Said%20She%20Said%20blur.jpg"
+                     target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -640,7 +757,9 @@
                 <img data-src="img/Wind/Journey%20To%20The%20Planets%20150dpi.jpg"
                      class="img-fluid" alt="Journey To The Planets image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/Wind/Journey%20To%20The%20Planets%20150dpi.jpg" target="_blank">
+                  <a class="overlayButton"
+                     href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Journey%20To%20The%20Planets%20orig.jpg"
+                     target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -666,7 +785,9 @@
                 <img data-src="img/Wind/Any%20Way%20the%20Wind%20Blows.jpg"
                      class="img-fluid" alt="Any Way The Wind Blows image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/Wind/Any%20Way%20the%20Wind%20Blows.jpg" target="_blank">
+                  <a class="overlayButton"
+                     href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Any%20Way%20The%20Wind%20Blows%20orig.jpg"
+                     target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -706,6 +827,7 @@
             has found many wonderful uses for the wind. My wind powered sculptures are meant to
             reflect the energy and excitement of the wind, and as such are lively
             and colorful.
+            <br><br><i class="material-icons" onmouseover="hoverInfo()" onmouseleave="infoOut()">info</i>
           </p>
         </div>
         <div class="blurbOverlay">
@@ -767,6 +889,8 @@
         that cause us to reflect on our tactile and visual learning experiences. I deliberately
         exploit the interaction of shapes, movement and colors to create artworks that are at once
         machines and organisms.
+        <br><br><i class="material-icons" onmouseover="hoverInfo()"
+                   onmouseleave="infoOut()">info</i>
       </p>
       <div class="blurbOverlayRight">
         <div class="blurbText">
@@ -792,6 +916,8 @@
           <li data-target="#acarousel-with-lb" data-slide-to="1"></li>
           <li data-target="#acarousel-with-lb" data-slide-to="2"></li>
           <li data-target="#acarousel-with-lb" data-slide-to="3"></li>
+          <li data-target="#acarousel-with-lb" data-slide-to="4"></li>
+          <li data-target="#acarousel-with-lb" data-slide-to="4"></li>
         </ol>
         <!--/.Indicators-->
 
@@ -888,7 +1014,9 @@
               <img data-src="img/Animametric/Sundance%201997.jpg"
                    class="img-fluid" alt="Sundance image">
               <div class="overlay img-fluid">
-                <a class="overlayButton" href="img/Animametric/Sundance%201997.jpg" target="_blank">
+                <a class="overlayButton"
+                   href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Sundance%20orig.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -906,6 +1034,62 @@
             </figure>
           </div>
           <!--Fourth Slide-->
+
+          <!--5th Slide-->
+          <div class="sd carousel-item text-center">
+            <figure class="o col-md-12 d-md-inline-block">
+
+              <img data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Hummingbird%20orig.jpg"
+                   style="height:85vh;" class="img-fluid" alt="Sundance image">
+              <div class="overlay img-fluid">
+                <a class="overlayButton"
+                   href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Hummingbird%20orig.jpg"
+                   target="_blank">
+                  <i class="material-icons">fullscreen</i>
+                </a>
+                <div class="overlayContent">
+                  <h4>Hummingbird</h4>
+                  <br>
+                  sculpture © 1990 by Gregory Curci, in Private Collection
+                  <br>
+                  <br>
+                  Painted aluminum, mahogany base. 30”h 34”w 24”d.
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+            </figure>
+          </div>
+          <!--./5th Slide-->
+
+          <!--6th Slide-->
+          <div class="sd carousel-item text-center">
+            <figure class="o col-md-12 d-md-inline-block">
+
+              <img data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Skybug%20orig.jpg"
+                   style="height:85vh;" class="img-fluid" alt="Sundance image">
+              <div class="overlay img-fluid">
+                <a class="overlayButton"
+                   href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Skybug%20orig.jpg"
+                   target="_blank">
+                  <i class="material-icons">fullscreen</i>
+                </a>
+                <div class="overlayContent">
+                  <h4>Skybug</h4>
+                  <br>
+                  Sculpture © 1990 by Gregory Curci, in Private Collection
+                  <br>
+                  <br>
+                  Painted maple, 14”h 22”w 12”d
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+            </figure>
+          </div>
+          <!--./6th Slide-->
 
         </div>
         <!--Slides-->
@@ -962,7 +1146,9 @@
                 <img src="img/Restoration/Calder%20onion%20done%20henry%20150%20dpi.jpg"
                      class="img-fluid" alt="Calder image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/Restoration/Calder%20onion%20done%20henry%20150%20dpi.jpg" target="_blank">
+                  <a class="overlayButton"
+                     href="img/Restoration/Calder%20onion%20done%20henry%20150%20dpi.jpg"
+                     target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -998,7 +1184,8 @@
                 <img data-src="img/Restoration/Kelly%20done%20front%20150%20dpi.jpg"
                      class="img-fluid" alt="Kelly image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/Restoration/Kelly%20done%20front%20150%20dpi.jpg" target="_blank">
+                  <a class="overlayButton"
+                     href="img/Restoration/Kelly%20done%20front%20150%20dpi.jpg" target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -1036,7 +1223,8 @@
                 <img data-src="img/Restoration/Nevelson%20me%20lamp.jpg"
                      class="img-fluid" alt="Nevelson image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/Restoration/Nevelson%20me%20lamp.jpg" target="_blank">
+                  <a class="overlayButton" href="img/Restoration/Nevelson%20me%20lamp.jpg"
+                     target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <a id="nevelsonBtn" class="overlayButtonModal">
@@ -1136,10 +1324,12 @@
             <!--1st Slide-->
             <div class="mon1 carousel-item active text-center">
               <div class="overlay img-fluid">
-                <a class="overlayButton" href="img/Restoration/monuments/Doughboy%20before2011_7.jpg" target="_blank">
+                <a class="overlayButton"
+                   href="img/Restoration/monuments/Doughboy%20before2011_7.jpg" target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
-                <a class="overlayButton2" href="img/Restoration/monuments/Doughboy%20done2011_6.jpg" target="_blank">
+                <a class="overlayButton2" href="img/Restoration/monuments/Doughboy%20done2011_6.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -1173,7 +1363,8 @@
             <!--2nd Slide-->
             <div class="mon2 carousel-item text-center">
               <div class="overlay img-fluid">
-                <a class="overlayButton" href="img/Restoration/monuments/Spainish%20Am%20done.jpg" target="_blank">
+                <a class="overlayButton" href="img/Restoration/monuments/Spainish%20Am%20done.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <a id="mossBtn" class="overlayButtonModal">
@@ -1197,10 +1388,13 @@
             <!--3rd Slide-->
             <div class="mon3 carousel-item text-center">
               <div class="overlay img-fluid">
-                <a class="overlayButton" href="img/Restoration/monuments/Civil%20War%20cleaned.jpg" target="_blank">
+                <a class="overlayButton" href="img/Restoration/monuments/Civil%20War%20cleaned.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
-                <a class="overlayButton2" href="img/Restoration/monuments/Civil%20war%20tablet%20done2011_5.jpg" target="_blank">
+                <a class="overlayButton2"
+                   href="img/Restoration/monuments/Civil%20war%20tablet%20done2011_5.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -1242,7 +1436,8 @@
                 <img data-src="img/Restoration/monuments/Kuchmeister%20done2011_3.jpg"
                      class="img-fluid" alt="Kuchmeister image done">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/Restoration/monuments/Kuchmeister%20done2011_3.jpg" target="_blank">
+                  <a class="overlayButton"
+                     href="img/Restoration/monuments/Kuchmeister%20done2011_3.jpg" target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -1279,7 +1474,9 @@
                 <img data-src="img/Restoration/monuments/WW%201%20tablet%20done2011_1.jpg"
                      class="img-fluid" alt="WWII Tablet image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/Restoration/monuments/WW%201%20tablet%20done2011_1.jpg" target="_blank">
+                  <a class="overlayButton"
+                     href="img/Restoration/monuments/WW%201%20tablet%20done2011_1.jpg"
+                     target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -1340,10 +1537,12 @@
             <!--1st Slide-->
             <div class="mt1 carousel-item active text-center">
               <div class="overlay img-fluid">
-                <a class="overlayButton" href="img/Restoration/mounts/coelacanth%205.jpg" target="_blank">
+                <a class="overlayButton" href="img/Restoration/mounts/coelacanth%205.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
-                <a class="overlayButton2" href="img/Restoration/mounts/coelacanth%206.jpg" target="_blank">
+                <a class="overlayButton2" href="img/Restoration/mounts/coelacanth%206.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -1376,7 +1575,8 @@
                 <a class="overlayButton" href="img/Restoration/mounts/IMG_0088.jpg" target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
-                <a class="overlayButton2" href="img/Restoration/mounts/100_1461.jpg" target="_blank">
+                <a class="overlayButton2" href="img/Restoration/mounts/100_1461.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -1410,7 +1610,8 @@
                 <a class="overlayButton" href="img/Restoration/mounts/100_1462.jpg" target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
-                <a class="overlayButton2" href="img/Restoration/mounts/100_1685.jpg" target="_blank">
+                <a class="overlayButton2" href="img/Restoration/mounts/100_1685.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -1440,7 +1641,8 @@
                 <a class="overlayButton" href="img/Restoration/mounts/100_1902.jpg" target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
-                <a class="overlayButton2" href="img/Restoration/mounts/IMG_0239.jpg" target="_blank">
+                <a class="overlayButton2" href="img/Restoration/mounts/IMG_0239.jpg"
+                   target="_blank">
                   <i class="material-icons">fullscreen</i>
                 </a>
                 <div class="overlayContent">
@@ -1475,7 +1677,8 @@
                 <img data-src="img/Restoration/mounts/IMG_0612.jpg"
                      class="img-fluid" alt="Right Whale image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/Restoration/mounts/IMG_0612.jpg" target="_blank">
+                  <a class="overlayButton" href="img/Restoration/mounts/IMG_0612.jpg"
+                     target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -1500,7 +1703,8 @@
                 <img data-src="img/Restoration/mounts/World%20Tree%20on%20cart8x10.jpg"
                      class="img-fluid" alt="World Tree image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/Restoration/mounts/World%20Tree%20on%20cart8x10.jpg" target="_blank">
+                  <a class="overlayButton"
+                     href="img/Restoration/mounts/World%20Tree%20on%20cart8x10.jpg" target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -1536,6 +1740,8 @@
           On a selective basis our studios will undertake restoration of significant works of art
           for
           institutions, municipalities, and private collectors.</strong>
+          <br><br><i class="material-icons" onmouseover="hoverInfo()"
+                     onmouseleave="infoOut()">info</i>
         </p>
         <br>
         <br>
@@ -1584,6 +1790,8 @@
       <p class="mainBlurb">
         From time to time we will add a few projects that we are either in the middle of or have
         just finished.
+        <br><br><i class="material-icons" onmouseover="hoverInfo()"
+                   onmouseleave="infoOut()">info</i>
       </p>
       <div class="blurbOverlayRight">
         <div class="blurbText">
@@ -1750,7 +1958,8 @@
               <a class="overlayButton" href="img/freshPaint/IMG_4108.jpg" target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
-              <a class="overlayButton2" href="img/freshPaint/Dunster%20Dial%20website3.jpg" target="_blank">
+              <a class="overlayButton2" href="img/freshPaint/Dunster%20Dial%20website3.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <a id="dBtn" class="overlayButtonModal">
@@ -1834,7 +2043,8 @@
                 <img src="img/fewOther/Me%20Painting%20sign%201970.jpg"
                      class="img-fluid" alt="Moseman image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/fewOther/Me%20Painting%20sign%201970.jpg" target="_blank">
+                  <a class="overlayButton" href="img/fewOther/Me%20Painting%20sign%201970.jpg"
+                     target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -1849,10 +2059,11 @@
             <div class="fo2 carousel-item text-center">
               <figure class="o col-md-12 d-md-inline-block">
 
-                <img data-src="img/fewOther/Greenfield%20Sign%20150.jpg"
-                     class="img-fluid" alt="Greenfeild Sign image">
+                <img data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Greenfield%20Energy%20Park%20sign.jpg"
+                     style="height: 85vh" class="img-fluid" alt="Greenfeild Sign image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/fewOther/Greenfield%20Sign%20150.jpg" target="_blank">
+                  <a class="overlayButton" href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Greenfield%20Energy%20Park%20sign%20steps.jpg"
+                     target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -1880,7 +2091,8 @@
                   Your browser does not support this video :(
                 </video>
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/fewOther/Sengenuity%20tank.mp4" target="_blank">
+                  <a class="overlayButton" href="img/fewOther/Sengenuity%20tank.mp4"
+                     target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <div class="overlayContent">
@@ -1910,7 +2122,8 @@
                 <img data-src="img/fewOther/portraits/Ed%20Rosin%20Old%20South.jpg"
                      class="img-fluid" alt="Rosen image">
                 <div class="overlay img-fluid">
-                  <a class="overlayButton" href="img/fewOther/portraits/Ed%20Rosin%20Old%20South.jpg" target="_blank">
+                  <a class="overlayButton"
+                     href="img/fewOther/portraits/Ed%20Rosin%20Old%20South.jpg" target="_blank">
                     <i class="material-icons">fullscreen</i>
                   </a>
                   <a id="pBtn" class="overlayButtonModal">
@@ -1926,7 +2139,8 @@
                     <br>
                     <br>
                     <p>
-                      Left: Ed Rosen at Old South Meeting House, Boston MA. 1/2 inch aluminum plate , silk
+                      Left: Ed Rosen at Old South Meeting House, Boston MA. 1/2 inch aluminum plate
+                      , silk
                       screened artwork from drawing ⓒ 1990
                     </p>
                   </div>
@@ -1955,6 +2169,7 @@
             Over the years we have created many different things, some with a purpose, others just
             for the pure joy of craft and expression. Here are a few examples. Others will get added
             as we get around to putting them here. Enjoy.
+            <br><br><i class="material-icons" onmouseover="hoverInfo()" onmouseleave="infoOut()">info</i>
           </p>
           <div class="blurbOverlayRight">
             <div class="blurbText">
@@ -2283,6 +2498,8 @@
         <li data-target="#mcarousel-with-lb" data-slide-to="0" class="active"></li>
         <li data-target="#mcarousel-with-lb" data-slide-to="1"></li>
         <li data-target="#mcarousel-with-lb" data-slide-to="2"></li>
+        <li data-target="#mcarousel-with-lb" data-slide-to="3"></li>
+        <li data-target="#mcarousel-with-lb" data-slide-to="4"></li>
       </ol>
       <!--/.Indicators-->
 
@@ -2317,7 +2534,9 @@
             <img data-src="img/freshPaint/Merrimac%20Poem%20Wheel%202015%20website2.jpg"
                  class="img-fluid" alt="Merrimac Poem wheel image">
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/freshPaint/Merrimac%20Poem%20Wheel%202015%20website2.jpg" target="_blank">
+              <a class="overlayButton"
+                 href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Merrimac%20Poem%20Wheel%202015%20website1.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <div class="carousel-caption d-none d-md-block">
@@ -2336,7 +2555,8 @@
             <img data-src="img/freshPaint/poetry%20wheel%20model.jpg"
                  class="img-fluid" alt="Model image">
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/freshPaint/poetry%20wheel%20model.jpg" target="_blank">
+              <a class="overlayButton" href="img/freshPaint/poetry%20wheel%20model.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <div class="carousel-caption d-none d-md-block">
@@ -2347,6 +2567,48 @@
           </figure>
         </div>
         <!--/.3rd slide-->
+
+        <!--4th slide-->
+        <div class="m2 carousel-item text-center cim">
+          <figure class="o col-md-12 d-md-inline-block">
+
+            <img data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Merrimac%20Poem%20Wheel%20-%2003.JPG"
+                 style="height: 85vh" class="img-fluid" alt="Merrimac Poem wheel image">
+            <div class="overlay img-fluid">
+              <a class="overlayButton"
+                 href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Merrimac%20Poem%20Wheel%20-%2003.JPG"
+                 target="_blank">
+                <i class="material-icons">fullscreen</i>
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Closeup</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.4th slide-->
+
+        <!--5th slide-->
+        <div class="m2 carousel-item text-center cim">
+          <figure class="o col-md-12 d-md-inline-block">
+
+            <img data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Merrimac%20Poem%20Wheel%20inside%20-%202.JPG"
+                 style="height: 85vh" class="img-fluid" alt="Merrimac Poem wheel image">
+            <div class="overlay img-fluid">
+              <a class="overlayButton"
+                 href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Merrimac%20Poem%20Wheel%20inside%20-%202.JPG"
+                 target="_blank">
+                <i class="material-icons">fullscreen</i>
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Inside</h3>
+              </div>
+            </div>
+
+          </figure>
+        </div>
+        <!--/.5th slide-->
 
 
       </div>
@@ -2488,7 +2750,8 @@
             <img src="img/fewOther/portraits/Pilsbury%20doughboy%20150.jpg"
                  class="img-fluid" alt="DoughBoy image">
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/fewOther/portraits/Pilsbury%20doughboy%20150.jpg" target="_blank">
+              <a class="overlayButton" href="img/fewOther/portraits/Pilsbury%20doughboy%20150.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <div class="carousel-caption d-none d-md-block">
@@ -2511,7 +2774,8 @@
             <img data-src="img/fewOther/portraits/Greenfield%20Clock%20inside.jpg"
                  class="img-fluid" alt="Greenfeild Clock image">
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/fewOther/portraits/Greenfield%20Clock%20inside.jpg" target="_blank">
+              <a class="overlayButton" href="img/fewOther/portraits/Greenfield%20Clock%20inside.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <div class="carousel-caption d-none d-md-block">
@@ -2534,7 +2798,8 @@
             <img data-src="img/fewOther/portraits/nynex%20bank%20240dpi.jpg"
                  class="img-fluid" alt="Piggy Bank image">
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/fewOther/portraits/nynex%20bank%20240dpi.jpg" target="_blank">
+              <a class="overlayButton" href="img/fewOther/portraits/nynex%20bank%20240dpi.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <div class="carousel-caption d-none d-md-block">
@@ -2559,7 +2824,9 @@
             <img data-src="img/fewOther/portraits/Randy%20the%20Dog%20Faced%20boy%20web.jpg"
                  class="img-fluid" alt="Randy image">
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/fewOther/portraits/Randy%20the%20Dog%20Faced%20boy%20web.jpg" target="_blank">
+              <a class="overlayButton"
+                 href="img/fewOther/portraits/Randy%20the%20Dog%20Faced%20boy%20web.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <div class="carousel-caption d-none d-md-block">
@@ -2591,7 +2858,8 @@
             <img data-src="img/fewOther/portraits/Jack%20in%20Box%20Uncle%20Sam.jpg"
                  class="img-fluid" alt="Jack image">
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/fewOther/portraits/Jack%20in%20Box%20Uncle%20Sam.jpg" target="_blank">
+              <a class="overlayButton"
+                 href="img/fewOther/portraits/Jack%20in%20Box%20Uncle%20Sam.jpg" target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <div class="carousel-caption d-none d-md-block">
@@ -2654,7 +2922,9 @@
             <img src="img/Restoration/monuments/Spainish%20Am%20boots%20before%20after.jpg"
                  class="img-fluid" alt="Boots closeup image">
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/Restoration/monuments/Spainish%20Am%20boots%20before%20after.jpg" target="_blank">
+              <a class="overlayButton"
+                 href="img/Restoration/monuments/Spainish%20Am%20boots%20before%20after.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <div class="carousel-caption d-none d-md-block">
@@ -2672,7 +2942,9 @@
             <img data-src="img/Restoration/monuments/Spainish%20Am%20arm%20before2011_3.jpg"
                  class="img-fluid" alt="boots after image">
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/Restoration/monuments/Spainish%20Am%20arm%20before2011_3.jpg" target="_blank">
+              <a class="overlayButton"
+                 href="img/Restoration/monuments/Spainish%20Am%20arm%20before2011_3.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <div class="carousel-caption d-none d-md-block">
@@ -2690,7 +2962,9 @@
             <img data-src="img/Restoration/monuments/Spainish%20Am%20ARM%20DONE2011_5.jpg"
                  class="img-fluid" alt="Arm closeup image">
             <div class="overlay img-fluid">
-              <a class="overlayButton" href="img/Restoration/monuments/Spainish%20Am%20ARM%20DONE2011_5.jpg" target="_blank">
+              <a class="overlayButton"
+                 href="img/Restoration/monuments/Spainish%20Am%20ARM%20DONE2011_5.jpg"
+                 target="_blank">
                 <i class="material-icons">fullscreen</i>
               </a>
               <div class="carousel-caption d-none d-md-block">
@@ -2724,6 +2998,7 @@
 <script src="js/lazy-carousel.js"></script>
 <script src="js/lazy-background.js"></script>
 <script src="js/lazyVid.js"></script>
+<script src="js/toast.js"></script>
 
 
 </body>

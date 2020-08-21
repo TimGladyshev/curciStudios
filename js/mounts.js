@@ -13,8 +13,7 @@ mountCar.style.display = "none";
 
 restButton.style.backgroundColor = "rgba(255,255,255,.7)";
 
-restButton.onclick = function () {
-
+function restorationClick() {
   restButton.style.backgroundColor = "rgba(255,255,255,.7)";
   monButton.style.backgroundColor = "rgba(255,255,255,.3)";
   mountsButton.style.backgroundColor = "rgba(255,255,255,.3)";
@@ -24,8 +23,7 @@ restButton.onclick = function () {
   mountCar.style.display = "none";
 };
 
-monButton.onclick = function () {
-
+function monumentsClick() {
   restButton.style.backgroundColor = "rgba(255,255,255,.3)";
   monButton.style.backgroundColor = "rgba(255,255,255,.7)";
   mountsButton.style.backgroundColor = "rgba(255,255,255,.3)";
@@ -35,8 +33,7 @@ monButton.onclick = function () {
   mountCar.style.display = "none";
 };
 
-mountsButton.onclick = function () {
-
+function mountsClick() {
   restButton.style.backgroundColor = "rgba(255,255,255,.3)";
   monButton.style.backgroundColor = "rgba(255,255,255,.3)";
   mountsButton.style.backgroundColor = "rgba(255,255,255,.7)";
@@ -44,5 +41,17 @@ mountsButton.onclick = function () {
   restCar.style.display = "none";
   monCar.style.display = "none";
   mountCar.style.display = "block";
+};
+
+restButton.onclick = function () {
+  restorationClick();
+};
+
+monButton.onclick = function () {
+  monumentsClick();
+};
+
+mountsButton.onclick = function () {
+  mountsClick();
 };
 
