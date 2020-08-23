@@ -42,6 +42,7 @@ body {
 
 .nBar-brand:hover {
   text-decoration: none !important;
+  color: #a9bafc;
 }
 
 .nBar-brand h3 {
