@@ -36,20 +36,22 @@ body {
   height: 5vh;
 }
 
-.nBar-brand a {
-  text-decoration: none;
+.nBar-brand {
+  text-decoration: none !important;
+}
+
+.nBar-brand:hover {
+  text-decoration: none !important;
 }
 
 .nBar-brand h3 {
   padding-left: .5vw;
   padding-right: 1.5vh;
   font-weight: 500;
-  text-decoration: none;
 }
 
 .nBar-brand h3:hover {
   color: #a9bafc;
-  text-decoration: none;
 }
 
 .hamburger {
@@ -295,7 +297,6 @@ ul {
 }
 
 .caption {
-  width: 50%;
   position: absolute;
   /*top: 35%;*/
   top: 50%;
