@@ -135,7 +135,7 @@ body {
   font-weight: 500;
   font-size: .9rem;
   letter-spacing: .1rem;
-  background: rgba(255, 255, 255, .4) !important;
+  background: rgba(255, 255, 255, .6) !important;
 
   color: #1b1e21;
   text-transform: uppercase;
@@ -184,7 +184,7 @@ body {
 }
 
 .drop-down-content a:hover {
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .9);
 }
 
 .hambOverlay {
@@ -611,8 +611,16 @@ ul {
   scrollbar-width: none;
 }
 
+.shadow-modal .carousel-item {
+  height: 65vh;
+}
+
 .carousel-item img {
   height: 85vh;
+}
+
+.shadow-modal .carousel-item img {
+  height: 65vh;
 }
 
 .carousel-item::-webkit-scrollbar {
@@ -1168,6 +1176,8 @@ ul {
 .shadow-modal-content::-webkit-scrollbar {
   display: none;
 }
+
+
 
 .modal-header-color {
   padding-top: 1rem;

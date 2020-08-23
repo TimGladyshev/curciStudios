@@ -23,161 +23,6 @@
 <!-- Start home -->
 <div id="home">
 
-  <!-- Nav Bar -->
-  <!---
-  <nav class="NB-navbar">
-
-      <a class="NB-navbar-brand" href="index.html">
-        <picture>
-          <source srcset="img/logo/peacock/optimized/peacock.webp" type="image/webp">
-          <source srcset="img/logo/peacock/peacock.png" type="image/png">
-          <img src="img/logo/peacock/peacock.png" alt="logo">
-        </picture>
-        <h3 class="d-inline">&nbsp;Curci Studio</h3></a>
-
-      <button class="NB-navbar-toggler" type="button" data-toggle="collapse"
-              data-target="#navbarResponsive">
-        <span class="NB-navbar-toggler-icon"><i class="material-icons">view_headline</i></span>
-      </button>
-
-    <div class="NB-navbar-collapse" id="navbarResponsive">
-      <ul class="NB-navbar-nav">
-        <li class="NB-nav-item">
-          <a class="NB-nav-link" href="#home">Home</a>
-        </li>
-        <li class="NB-nav-item drop-down-button ">
-          <a class="NB-nav-link" href="#solar">Solar</a>
-          <div class="drop-down-content finder">
-            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="0"
-               onclick="moveTo('solar')">Amarylis</a>
-            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="1"
-               onclick="moveTo('solar')">Iris</a>
-            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="2"
-               onclick="moveTo('solar')">Morning Glories</a>
-            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="3"
-               onclick="moveTo('solar')">Morning Glories 2</a>
-            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="4"
-               onclick="moveTo('solar')">Noonstone</a>
-            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="5"
-               onclick="moveTo('solar')">Sun Birds</a>
-            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="6"
-               onclick="moveTo('solar')">Sunflower</a>
-            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="7"
-               onclick="moveTo('solar')">Sisyphus</a>
-            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="8"
-               onclick="moveTo('solar')">Greenfield Clock</a>
-            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="9"
-               onclick="moveTo('solar')">Tulips</a>
-            <a href="#solar" data-target="#scarousel-with-lb" data-slide-to="10"
-               onclick="moveTo('solar')">Water Lily</a>
-          </div>
-        </li>
-        <li class="NB-nav-item drop-down-button">
-          <a class="NB-nav-link" href="#wind">Wind</a>
-          <div class="drop-down-content finder">
-            <a href="#wind" data-target="#wcarousel-with-lb" data-slide-to="0"
-               onclick="moveTo('wind')">He Said She Said</a>
-            <a href="#wind" data-target="#wcarousel-with-lb" data-slide-to="1"
-               onclick="moveTo('wind')">Journey To The Planets</a>
-            <a href="#wind" data-target="#wcarousel-with-lb" data-slide-to="2"
-               onclick="moveTo('wind')">Wind Can Take You Anywhere</a>
-          </div>
-        </li>
-        <li class="NB-nav-item drop-down-button">
-          <a class="NB-nav-link" href="#animametric">Animametric</a>
-          <div class="drop-down-content finder">
-            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="0"
-               onclick="moveTo('animametric')">Lift Off</a>
-            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="1"
-               onclick="moveTo('animametric')">Peacock</a>
-            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="2"
-               onclick="moveTo('animametric')">The Dance</a>
-            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="3"
-               onclick="moveTo('animametric')">Sundance</a>
-            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="4"
-               onclick="moveTo('animametric')">Hummingbird</a>
-            <a href="#animametric" data-target="#acarousel-with-lb" data-slide-to="5"
-               onclick="moveTo('animametric')">Skybug</a>
-          </div>
-        </li>
-        <li class="NB-nav-item drop-down-button">
-          <a class="NB-nav-link" href="#restoration">Restoration</a>
-          <div class="drop-down-content finder">
-            <div class="column">
-              <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="0"
-                 onclick="moveTo('restoration');restorationClick();">Alexander Calder's Octopus</a>
-              <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="1"
-                 onclick="moveTo('restoration');restorationClick();">Elsworth Kelly, Arcs</a>
-              <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="2"
-                 onclick="moveTo('restoration');restorationClick();">Louise Nevelson</a>
-              <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="3"
-                 onclick="moveTo('restoration');restorationClick();">Shingu</a>
-            </div>
-            <div class="column">
-              <i class="material-icons">horizontal_rule</i>
-              <a href="#restoration" data-target="#moncarousel-with-lb" data-slide-to="0"
-                 onclick="moveTo('restoration');monumentsClick()">Gerald Horrigan, WWI Monument</a>
-              <a href="#restoration" data-target="#moncarousel-with-lb" data-slide-to="1"
-                 onclick="moveTo('restoration');monumentsClick();">Moseman, Hiker</a>
-              <a href="#restoration" data-target="#moncarousel-with-lb" data-slide-to="2"
-                 onclick="moveTo('restoration');monumentsClick();">Clark, Civil War Monument</a>
-              <a href="#restoration" data-target="#moncarousel-with-lb" data-slide-to="3"
-                 onclick="moveTo('restoration');monumentsClick();">Kuchmeister, Medal of Honor
-                Memorial</a>
-              <a href="#restoration" data-target="#moncarousel-with-lb" data-slide-to="4"
-                 onclick="moveTo('restoration');monumentsClick();">WWI Memorial Tablet</a>
-            </div>
-            <div class="column">
-              <i class="material-icons">horizontal_rule</i>
-              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="0"
-                 onclick="moveTo('restoration');mountsClick()">Coelacanth</a>
-              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="1"
-                 onclick="moveTo('restoration');mountsClick();">Myan Lid Support</a>
-              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="2"
-                 onclick="moveTo('restoration');mountsClick();">Pre Columbian Figure Mount</a>
-              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="3"
-                 onclick="moveTo('restoration');mountsClick();">Tebesca Jaguar</a>
-              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="4"
-                 onclick="moveTo('restoration');mountsClick();">Right Wale</a>
-              <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="4"
-                 onclick="moveTo('restoration');mountsClick();">World Tree</a>
-            </div>
-          </div>
-        </li>
-        <li class="NB-nav-item drop-down-button">
-          <a class="NB-nav-link" href="#freshpaint">Fresh Paint</a>
-          <div class="drop-down-content finder">
-            <a href="#freshpaint" data-target="#fpcarousel-with-lb" data-slide-to="0"
-               onclick="moveTo('freshpaint')">Memorial Curch Bell at Harvard University</a>
-            <a href="#freshpaint" data-target="#fpcarousel-with-lb" data-slide-to="1"
-               onclick="moveTo('freshpaint')">Merrimac Poem Wheel</a>
-            <a href="#freshpaint" data-target="#fpcarousel-with-lb" data-slide-to="2"
-               onclick="moveTo('freshpaint')">Bust of Lowell at Harvard University</a>
-            <a href="#freshpaint" data-target="#fpcarousel-with-lb" data-slide-to="3"
-               onclick="moveTo('freshpaint')">Dunster House Sundial</a>
-          </div>
-        </li>
-        <li class="NB-nav-item drop-down-button">
-          <a class="NB-nav-link" href="#other">Few Other Things</a>
-          <div class="drop-down-content finder">
-            <a href="#other" data-target="#focarousel-with-lb" data-slide-to="1"
-               onclick="moveTo('other')">Greenfeild Sign</a>
-            <a href="#other" data-target="#focarousel-with-lb" data-slide-to="2"
-               onclick="moveTo('other')">Sengenuity Sign</a>
-            <a href="#other" data-target="#focarousel-with-lb" data-slide-to="3"
-               onclick="moveTo('other')">Portraits</a>
-          </div>
-        </li>
-        <li class="NB-nav-item">
-          <a class="NB-nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-
-  </nav>
-  --->
-  <!-- end Nav Bar -->
-
   <!---Nav Bar Redo--->
   <div class="nBar" id="nBar">
 
@@ -507,7 +352,7 @@
             <figure class="o col-md-12 row d-md-inline-block text-center">
 
               <img
-                  src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Amarylis%20O&C%20Northend.jpg"
+                  src="img/Solar/Amarylis%20O&C%20Northend.jpg"
                   style="height:85vh" class="lazy img-fluid" alt="Amarylis image">
               <div class="img-fluid">
                 <a class="overlayButton"
@@ -624,13 +469,13 @@
 
             <figure class="o col-md-5 d-md-inline-block">
               <img
-                  data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Morning%20Glories%202%20close.jpg"
+                  data-src="img/Solar/Morning%20Glories%20tight.jpg"
                   class="img-fluid" alt="Morning Glories 2 image">
             </figure>
 
             <figure class="t col-md-5 d-md-inline-block">
               <img
-                  data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Morning%20Glories%202%20orig.jpg"
+                  data-src="img/Solar/morning%20Glories.jpg"
                   class="img-fluid" alt="Morning Glories 2 image 2">
             </figure>
           </div>
@@ -706,7 +551,7 @@
             <figure class="col-md-5 d-md-inline-block">
               <video class="lazyVid" autoplay muted loop playsinline width="480" height="360"
                      poster="img/fewOther/Screenshot%20from%202020-08-18%2014-22-00.png">
-                <source data-src="img/Solar/Sunbirds%20clip-mobile.m4v" type="video/mp4">
+                <source data-src="img/Solar/Sunbirds%20clip-mobile.mp4" type="video/mp4">
                 Your browser does not support this video :(
               </video>
             </figure>
@@ -837,8 +682,8 @@
           <div class="solarSlide carousel-item text-center">
             <figure class="o col-md-12 d-md-inline-block">
 
-              <img data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Water%20Lily%20o&c.jpg"
-                   style="height:85vh" class="img-fluid" alt="Iris image">
+              <img data-src="img/Solar/Water%20Lily.jpg"
+                   class="img-fluid" alt="Iris image">
               <div class="img-fluid">
                 <a class="overlayButton"
                    href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Water%20Lily%20o&c.jpg"
@@ -1228,8 +1073,8 @@
           <div class="sd carousel-item text-center">
             <figure class="o col-md-12 d-md-inline-block">
 
-              <img data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Hummingbird%20orig.jpg"
-                   style="height:85vh;" class="img-fluid" alt="Sundance image">
+              <img data-src="img/Solar/Hummingbird%20orig.jpg"
+                   class="img-fluid" alt="Sundance image">
               <div class="overlay img-fluid">
                 <a class="overlayButton"
                    href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Hummingbird%20orig.jpg"
@@ -1247,7 +1092,6 @@
                   <br>
                 </div>
               </div>
-
             </figure>
           </div>
           <!--./5th Slide-->
@@ -1256,8 +1100,8 @@
           <div class="sd carousel-item text-center">
             <figure class="o col-md-12 d-md-inline-block">
 
-              <img data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Skybug%20orig.jpg"
-                   style="height:85vh;" class="img-fluid" alt="Sundance image">
+              <img data-src="img/Animametric/Skybug%20orig.jpg"
+                   class="img-fluid" alt="Skybug image">
               <div class="overlay img-fluid">
                 <a class="overlayButton"
                    href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Skybug%20orig.jpg"
@@ -2249,8 +2093,8 @@
               <figure class="o col-md-12 d-md-inline-block">
 
                 <img
-                    data-src="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Greenfield%20Energy%20Park%20sign.jpg"
-                    style="height: 85vh" class="img-fluid" alt="Greenfeild Sign image">
+                    data-src="img/fewOther/Greenfield%20Energy%20Park%20sign.jpg"
+                    class="img-fluid" alt="Greenfeild Sign image">
                 <div class="overlay img-fluid">
                   <a class="overlayButton"
                      href="img/wetransfer-cb6c7a/Tim%20web%20photos%202020/Greenfield%20Energy%20Park%20sign%20steps.jpg"
@@ -2436,7 +2280,7 @@
 <!-- Modal for Louise Nevelson  -->
 <div id="nevelsonModel" class="shadow-modal">
   <div class="shadow-modal-content text-center card">
-    <h3 class="modal-header-color">More Details</h3>
+    <h3 class="modal-header-color">Nevelson Details</h3>
     <span class="close nevelson">&times;</span>
 
 
@@ -2671,7 +2515,7 @@
 <!--Modal for Merrimack Poem Wheel-->
 <div id="mModal" class="shadow-modal">
   <div class="shadow-modal-content text-center">
-    <h3 class="modal-header-color">More Details</h3>
+    <h3 class="modal-header-color">Merrimack Poem Wheel Details</h3>
     <span class="close m">&times;</span>
 
     <div id="mcarousel-with-lb" class="carousel slide carousel-multi-item lazy-load"
@@ -2814,7 +2658,7 @@
 <!--Modal for Dunster Sundial-->
 <div id="dModal" class="shadow-modal">
   <div class="shadow-modal-content text-center card">
-    <h3 class="modal-header-color">More Details</h3>
+    <h3 class="modal-header-color">Dunster Sundial Details</h3>
     <span class="close d">&times;</span>
 
     <div id="dcarousel-with-lb" class="carousel slide carousel-multi-item lazy-load"
@@ -2908,7 +2752,7 @@
 <!--Modal for Portraits-->
 <div id="pModal" class="shadow-modal">
   <div class="shadow-modal-content text-center card">
-    <h3 class="modal-header-color">More Details</h3>
+    <h3 class="modal-header-color">Portraits</h3>
     <span class="close p">&times;</span>
 
     <div id="pcarousel-with-lb" class="carousel slide carousel-multi-item lazy-load"
@@ -3083,16 +2927,16 @@
 <!--Modal for Mossman-->
 <div id="mossModal" class="shadow-modal">
   <div class="shadow-modal-content text-center card">
-    <h3 class="modal-header-color">More Details</h3>
+    <h3 class="modal-header-color">Moseman Details</h3>
     <span class="close moss">&times;</span>
 
     <div id="mosscarousel-with-lb" class="carousel slide carousel-multi-item lazy-load"
          data-ride="carousel">
 
       <!--Controls-->
-      <a class="indButtonLeft" href="#moscarousel-with-lb" data-slide="prev">
+      <a class="indButtonLeft" href="#mosscarousel-with-lb" data-slide="prev">
         <span>&#8249; </span></a>
-      <a class="indButtonRight" href="#moscarousel-with-lb" data-slide="next">
+      <a class="indButtonRight" href="#mosscarousel-with-lb" data-slide="next">
         <span>&#8250; </span></a>
       <!--/.Controls-->
 

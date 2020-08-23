@@ -3,21 +3,6 @@ function moveTo(x) {
   window.location.hash = x;
 }
 
-/*var btn = document.getElementsByClassName('nav-item');*/
-/* this makes sure that dropdown doesnt show in condensed nav*/
-$(window).on('resize load', function() {
-  var ddcont = document.getElementsByClassName("finder");
-  if(window.innerWidth < 1200){
-    [].forEach.call(ddcont, function (x) {
-      x.classList.remove('drop-down-content');
-    });
-  } else {
-    [].forEach.call(ddcont, function (y) {
-      y.classList.add('drop-down-content');
-    });
-  }
-});
-
 var slider = document.getElementsByClassName('slider');
 
 for (var i = 0; i < slider.length; i++) {
@@ -30,5 +15,4 @@ for (var i = 0; i < slider.length; i++) {
       child.style.maxHeight = child.scrollHeight + "px";
     }
   });
-
 }
