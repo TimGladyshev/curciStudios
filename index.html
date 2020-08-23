@@ -256,7 +256,7 @@
         <a class="NB-nav-link" href="#restoration">RESTORATION</a>
         <div class="drop-down-content">
           <div class="slider">
-            <a class="slider-link">Artworks</a>
+            <a class="slider-link" href="javascript:void(0)">Artworks</a>
             <div class="slider-content">
               <i class="material-icons">horizontal_rule</i>
               <a href="#restoration" data-target="#rcarousel-with-lb" data-slide-to="0"
@@ -271,7 +271,7 @@
           </div>
           <i class="material-icons">horizontal_rule</i>
           <div class="slider">
-            <a class="slider-link">Monuments</a>
+            <a class="slider-link" href="javascript:void(0)">Monuments</a>
             <div class="slider-content">
               <i class="material-icons">horizontal_rule</i>
               <a href="#restoration" data-target="#moncarousel-with-lb" data-slide-to="0"
@@ -289,7 +289,7 @@
           </div>
           <i class="material-icons">horizontal_rule</i>
           <div class="slider">
-            <a class="slider-link">Mounts and Things</a>
+            <a class="slider-link" href="javascript:void(0)">Mounts and Things</a>
             <div class="slider-content">
               <i class="material-icons">horizontal_rule</i>
               <a href="#restoration" data-target="#mtcarousel-with-lb" data-slide-to="0"
@@ -341,18 +341,23 @@
     </div>
 
     <div class="hamburger">
-      <button class="hDropButton">
+      <button class="hDropButton" onclick="openHamb();">
         <i class="material-icons">dehaze</i>
       </button>
-      <div class="hDropContent">
-        <a class="NB-nav-link" href="#home">Home</a>
-        <a class="NB-nav-link" href="#solar">Solar</a>
-        <a class="NB-nav-link" href="#wind">Wind</a>
-        <a class="NB-nav-link" href="#animametric">Animametric</a>
-        <a class="NB-nav-link" href="#restoration">Restoration</a>
-        <a class="NB-nav-link" href="#freshpaint">Fresh Paint</a>
-        <a class="NB-nav-link" href="#other">Few Other Things</a>
-        <a class="NB-nav-link" href="#contact">Contact</a>
+      <div id="hambOverlay" class="hambOverlay">
+        <a href="javascript:void(0)" class="hambClose" onclick="closeHamb();">
+          <i class="material-icons">trending_flat</i>
+        </a>
+        <div class="hDropContent">
+          <a class="NB-nav-link" href="#home" onclick="closeHamb()">Home</a>
+          <a class="NB-nav-link" href="#solar" onclick="closeHamb()">Solar</a>
+          <a class="NB-nav-link" href="#wind" onclick="closeHamb()">Wind</a>
+          <a class="NB-nav-link" href="#animametric" onclick="closeHamb()">Animametric</a>
+          <a class="NB-nav-link" href="#restoration" onclick="closeHamb()">Restoration</a>
+          <a class="NB-nav-link" href="#freshpaint" onclick="closeHamb()">Fresh Paint</a>
+          <a class="NB-nav-link" href="#other" onclick="closeHamb()">Few Other Things</a>
+          <a class="NB-nav-link" href="#contact" onclick="closeHamb()">Contact</a>
+        </div>
       </div>
     </div>
 
@@ -411,8 +416,10 @@
     <i class="material-icons">horizontal_rule</i>
     <h6><strong>Works of art for individuals and public spaces</strong></h6>
     <h6><strong>Restoration projects of significant artworks</strong></h6>
+    <div class="buttonNoWrap">
     <a class="btn btn-outline-light btn-lg" href="#solar" onmouseover="showToast()">Designs</a>
     <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
+    </div>
   </div>
 
   <div id="toast">

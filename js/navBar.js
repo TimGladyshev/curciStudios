@@ -14,3 +14,12 @@ $(window).on("scroll", function () {
     }
   });
 });
+
+function openHamb() {
+  document.getElementById('hambOverlay').style.width = '100%';
+}
+
+function closeHamb() {
+  document.getElementById('hambOverlay').style.width = '0%';
+}
+
