@@ -1,0 +1,16 @@
+$(window).on("scroll", function () {
+  var curPos = $(window).scrollTop();
+
+  $('.nBar .compressible .dDown .NB-nav-link').each(function () {
+    var link = $(this);
+    var nBarHeight = $('.nBar').outerHeight() + 1;
+    var linkSection = $(link.attr('href'));
+
+    if (linkSection.position().top - nBarHeight <= curPos && link.offset().top + linkSection.height() > curPos) {
+      $('.nBar .compressible .dDown').removeClass('activeBar');
+      link.parent().addClass('activeBar');
+    } else {
+      link.parent().removeClass('activeBar');
+    }
+  });
+});
