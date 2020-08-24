@@ -1179,10 +1179,9 @@ ul {
   display: none;
 }
 
-
-
 .modal-header-color {
   padding-top: 1rem;
+  padding-bottom: .5rem;
   color: white;
 }
 
